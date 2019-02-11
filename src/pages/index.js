@@ -164,20 +164,20 @@ const IndexPage = () => (
       <section>
         <div className="container section-spacing">
           <div className="row">
-            <div className="col-lg-10 col-lg-offset-1 drop-in text-center">
+            <div className="col-lg-10 offset-lg-1 drop-in text-center">
               <h2 id="method">
                 Our Designtific Method focuses on solving your customers’
                 problems while accomplishing your business goals.
               </h2>
             </div>
-            <div className="col-lg-10 col-lg-offset-1 drop-in-wait">
+            <div className="col-lg-10 offset-lg-1 drop-in-wait">
               <img
                 src={molecule}
                 alt="Sodium Halogen Designtific Method molecule"
                 className="img-center img-responsive my-100"
               />
             </div>
-            <div className="col-lg-10 col-lg-offset-1 drop-in">
+            <div className="col-lg-10 offset-lg-1 drop-in">
               <p>
                 Our small, multi-disciplinary team has spent the last 17 years
                 experimenting and refining our process for turning great ideas
@@ -200,7 +200,7 @@ const IndexPage = () => (
 		</div> --> */}
         <div className="container section-spacing">
           <div className="row">
-            <div className="col-lg-10 col-lg-offset-1 drop-in text-center">
+            <div className="col-lg-10 offset-lg-1 drop-in text-center">
               <h2 id="services">We create</h2>
             </div>
             <div id="service1" className="col-md-6">
@@ -290,7 +290,7 @@ const IndexPage = () => (
                 </a>
               </p>
             </div>
-            <div className="col-lg-10 col-lg-offset-1 drop-in text-center">
+            <div className="col-lg-10 offset-lg-1 drop-in text-center">
               {' '}
               <a
                 href="#customers"
@@ -305,7 +305,7 @@ const IndexPage = () => (
       <section className="bg-primary py-100" id="customers">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 col-lg-offset-2 text-center">
+            <div className="col-lg-8 offset-lg-2 text-center">
               <h2>Over the past 15 years, we've helped lots of companies</h2>
               <hr className="light" />
             </div>
@@ -340,7 +340,7 @@ const IndexPage = () => (
       <section>
         <div className="container drop-in py-100">
           <div className="row">
-            <div className="col-sm-8 col-sm-offset-2" id="testimonial">
+            <div className="col-sm-8 offset-sm-2" id="testimonial">
               <p>
                 "Sodium Halogen has everything I look for in a UX designer:
                 Great taste, a hunger for new approaches, a logical mind, and
@@ -350,7 +350,7 @@ const IndexPage = () => (
                 work on time."
               </p>
             </div>
-            <div className="col-md-offset-2 col-sm-3 col-sm-offset-2 col-xs-4 text-center">
+            <div className="offset-md-2 col-sm-3 offset-sm-2 col-xs-4 text-center">
               {' '}
               <img
                 src="http://www.sodiumhalogen.com/wp-content/uploads/2011/12/janicefraser-130x130.jpg"
@@ -560,7 +560,7 @@ const IndexPage = () => (
       <section className="bg-dark footer">
         <div className="container vcenter">
           <div className="row">
-            <div id="contact" className="col-lg-6 col-lg-offset-3 text-center">
+            <div id="contact" className="col-lg-6 offset-lg-3 text-center">
               <h2>
                 Your bottom-line called and wants to know how our Designtific
                 Method can help.
