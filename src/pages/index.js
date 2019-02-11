@@ -211,7 +211,7 @@ const IndexPage = () => (
           <div className="row header-content-inner">
             <div className="col-md-12 text-center">
               <h1>
-                We believe creating great digital products starts with{' '}
+                We believe creating great digital products starts with
                 <em>your</em> customer. This leads to more profitable
                 applications because they actually solve human problems.
               </h1>
@@ -269,7 +269,6 @@ const IndexPage = () => (
               <h2 id="services">We create</h2>
             </div>
             <div id="service1" className="col-md-6">
-              {' '}
               <img
                 src={software}
                 alt="Software Icon with Phone and Computer"
@@ -291,7 +290,7 @@ const IndexPage = () => (
                 <a href="#contact" className="js-scroll-trigger">
                   <em>Let’s chat.</em>
                 </a>
-              </p>{' '}
+              </p>
               <img src={ux} alt="User Experience Icon" className="icon" />
               <h3>Interaction design (UX/UI)</h3>
               <p>
@@ -313,7 +312,6 @@ const IndexPage = () => (
               </p>
             </div>
             <div id="service2" className="col-md-6">
-              {' '}
               <img
                 src={branding}
                 alt="Branding Thumbprint Icon"
@@ -337,7 +335,7 @@ const IndexPage = () => (
                 <a href="#contact" className="js-scroll-trigger">
                   <em>Let’s discover together.</em>
                 </a>
-              </p>{' '}
+              </p>
               <img src={vr} alt="VR Glasses Icon" className="icon" />
               <h3>Virtual Reality design &amp; development</h3>
               <p>
@@ -356,7 +354,6 @@ const IndexPage = () => (
               </p>
             </div>
             <div className="col-lg-10 offset-lg-1 drop-in text-center">
-              {' '}
               <a
                 href="#customers"
                 className="btn btn-primary btn-xl sr-button js-scroll-trigger"
@@ -400,17 +397,15 @@ const IndexPage = () => (
               </p>
             </div>
             <div className="offset-md-2 col-sm-3 offset-sm-2 col-xs-4 text-center">
-              {' '}
               <img
                 src="http://www.sodiumhalogen.com/wp-content/uploads/2011/12/janicefraser-130x130.jpg"
                 alt="Janice Fraser"
                 className="img-circle mt-10"
-              />{' '}
+              />
             </div>
             <div className="col-sm-5 col-xs-8 pt-40">
-              {' '}
               <cite>
-                Janice Fraser –{' '}
+                Janice Fraser –
                 <a href="http://bionicsolution.com/">
                   Chief Product Officer at Bionic Solution and founding CEO of
                   Adaptive Path, the world’s first User Experience firm
@@ -420,13 +415,12 @@ const IndexPage = () => (
           </div>
           <div className="row">
             <div className="col-sm-12 mt-100 text-center">
-              {' '}
               <a
                 href="#contact"
                 className="btn btn-primary btn-xl sr-button js-scroll-trigger"
               >
                 Ready to learn more?
-              </a>{' '}
+              </a>
             </div>
           </div>
         </div>
@@ -439,12 +433,11 @@ const IndexPage = () => (
               <div className="row">
                 <div className="col-xs-6 col-sm-4 col-md-3 team__member">
                   <div className="polygon-each-img-wrap">
-                    {' '}
                     <img
                       src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/william_head_sm-e1517091609512.jpg"
                       alt="demo-clip-heptagon"
                       className="polygon-clip-hexagon"
-                    />{' '}
+                    />
                   </div>
                   <p className="team__name">William Donnell</p>
                   <p className="team__title">Lead Desgintist &amp; Founder</p>
@@ -456,12 +449,11 @@ const IndexPage = () => (
                 </div>
                 <div className="col-xs-6 col-sm-4 col-md-3 team__member">
                   <div className="polygon-each-img-wrap">
-                    {' '}
                     <img
                       src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/team-barrett-gay-1.jpg"
                       alt="demo-clip-heptagon"
                       className="polygon-clip-hexagon"
-                    />{' '}
+                    />
                   </div>
                   <p className="team__name">Barrett Gay</p>
                   <p className="team__title">Sr. Software &amp; VR Dev</p>
@@ -473,12 +465,11 @@ const IndexPage = () => (
                 </div>
                 <div className="col-xs-6 col-sm-4 col-md-3 team__member">
                   <div className="polygon-each-img-wrap">
-                    {' '}
                     <img
                       src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/team-quincy-jones-1.jpg"
                       alt="demo-clip-heptagon"
                       className="polygon-clip-hexagon"
-                    />{' '}
+                    />
                   </div>
                   <p className="team__name">Quincy Jones</p>
                   <p className="team__title">Sr. Hardware &amp; VR Dev</p>
@@ -490,12 +481,11 @@ const IndexPage = () => (
                 </div>
                 <div className="col-xs-6 col-sm-4 col-md-3 team__member">
                   <div className="polygon-each-img-wrap">
-                    {' '}
                     <img
                       src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/shane_sm.jpg"
                       alt="demo-clip-heptagon"
                       className="polygon-clip-hexagon"
-                    />{' '}
+                    />
                   </div>
                   <p className="team__name">Shane Aday</p>
                   <p className="team__title">Design Alchemist</p>
@@ -507,12 +497,11 @@ const IndexPage = () => (
                 </div>
                 <div className="col-xs-6 col-sm-4 col-md-3 team__member">
                   <div className="polygon-each-img-wrap">
-                    {' '}
                     <img
                       src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/chance_smith-sh1.jpg"
                       alt="demo-clip-heptagon"
                       className="polygon-clip-hexagon"
-                    />{' '}
+                    />
                   </div>
                   <p className="team__name">Chance Smith</p>
                   <p className="team__title">Innovation Strategist</p>
@@ -524,12 +513,11 @@ const IndexPage = () => (
                 </div>
                 <div className="col-xs-6 col-sm-4 col-md-3 team__member">
                   <div className="polygon-each-img-wrap">
-                    {' '}
                     <img
                       src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/team-brantley.jpg"
                       alt="demo-clip-heptagon"
                       className="polygon-clip-hexagon"
-                    />{' '}
+                    />
                   </div>
                   <p className="team__name">Brantley English</p>
                   <p className="team__title">Code Architect</p>
@@ -541,12 +529,11 @@ const IndexPage = () => (
                 </div>
                 <div className="col-xs-6 col-sm-4 col-md-3 team__member">
                   <div className="polygon-each-img-wrap">
-                    {' '}
                     <img
                       src="https://sh-drop.s3.us-east-1.amazonaws.com/zb/zach-head-bw.jpg"
                       alt="demo-clip-heptagon"
                       className="polygon-clip-hexagon"
-                    />{' '}
+                    />
                   </div>
                   <p className="team__name">Zach Boatwright</p>
                   <p className="team__title">Content Agronomist</p>
@@ -558,12 +545,11 @@ const IndexPage = () => (
                 </div>
                 <div className="col-xs-6 col-sm-4 col-md-3 team__member">
                   <div className="polygon-each-img-wrap">
-                    {' '}
                     <img
                       src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/adam-curl-sh.jpg"
                       alt="demo-clip-heptagon"
                       className="polygon-clip-hexagon"
-                    />{' '}
+                    />
                   </div>
                   <p className="team__name">Adam Curl</p>
                   <p className="team__title">Code Chemist</p>
@@ -575,12 +561,11 @@ const IndexPage = () => (
                 </div>
                 <div className="col-xs-6 col-sm-4 col-md-3 team__member">
                   <div className="polygon-each-img-wrap">
-                    {' '}
                     <img
                       src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/jill_sm.jpg"
                       alt="demo-clip-heptagon"
                       className="polygon-clip-hexagon"
-                    />{' '}
+                    />
                   </div>
                   <p className="team__name">Jill Donnell</p>
                   <p className="team__title">Pure Awesome</p>

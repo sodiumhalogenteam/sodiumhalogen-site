@@ -6,6 +6,7 @@ import {
   sansSerifFont,
   serifFont,
 } from './Styles.mixins'
+
 const palette = {
   themeprimary: '#8d980b',
   graybase: '#22292e',
@@ -17,6 +18,27 @@ const palette = {
 }
 
 const Styles = styled.div`
+  /*/////////
+  // spacing
+  /////////*/
+  .mb-100 {
+    margin-bottom: 100px;
+  }
+  .mt-10 {
+    margin-top: 10px;
+  }
+  .mt-100 {
+    margin-top: 100px;
+  }
+  .py-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .pt-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   /*/////////
   // main
   /////////*/
@@ -43,6 +65,7 @@ const Styles = styled.div`
 
   hr.light {
     border-color: white;
+    margin: 0 auto;
   }
 
   a {
@@ -85,6 +108,7 @@ const Styles = styled.div`
 
   .bgsh-primary {
     background-color: ${palette.themeprimary};
+    color: white;
   }
 
   .bg-dark {
