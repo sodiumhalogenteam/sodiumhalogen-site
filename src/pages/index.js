@@ -2,128 +2,146 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
+
+//images
+import molecule from '../images/Designtific-Method-molecule.png'
+import software from '../images/icons/software-development-temp.png'
+import ux from '../images/icons/user-experience-temp.png'
+import branding from '../images/icons/brand-creation-temp.png'
+import vr from '../images/icons/virtual-reality-temp.png'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div id="particles-js" />
-    <div class="team-gifs">
-      <div class="hover-gif">
-        <figure class="hover-gif__img">
+    {/* <div className="team-gifs">
+      <div className="hover-gif">
+        <figure className="hover-gif__img">
           <img
-            class="js-lazy-image"
+            className="js-lazy-image"
+            alt="Adam gives a thumbs up"
             src=""
             data-src="./assets/img/gifs/adam-thumbs-up-punch.gif"
           />
         </figure>
       </div>
-      <div class="hover-gif">
-        <figure class="hover-gif__img">
+      <div className="hover-gif">
+        <figure className="hover-gif__img">
           <img
-            class="js-lazy-image"
+            className="js-lazy-image"
+            alt="Brantley gives two thumbs up"
             src=""
             data-src="./assets/img/gifs/brantley-double-thumbs.gif"
           />
         </figure>
       </div>
-      <div class="hover-gif">
-        <figure class="hover-gif__img">
+      <div className="hover-gif">
+        <figure className="hover-gif__img">
           <img
-            class="js-lazy-image"
+            className="js-lazy-image"
+            alt="Brantley falls down"
             src=""
             data-src="./assets/img/gifs/brantley-down-and-out.gif"
           />
         </figure>
       </div>
-      <div class="hover-gif">
-        <figure class="hover-gif__img">
+      <div className="hover-gif">
+        <figure className="hover-gif__img">
           <img
-            class="js-lazy-image"
+            className="js-lazy-image"
+            alt="William does thumbs up dance"
             src=""
             data-src="./assets/img/gifs/dance-thumbs-up-wm.gif"
           />
         </figure>
       </div>
-      <div class="hover-gif">
-        <figure class="hover-gif__img">
+      <div className="hover-gif">
+        <figure className="hover-gif__img">
           <img
-            class="js-lazy-image"
+            className="js-lazy-image"
+            alt="Fistbump"
             src=""
             data-src="./assets/img/gifs/fistbump-camera.gif"
           />
         </figure>
       </div>
-      <div class="hover-gif">
-        <figure class="hover-gif__img">
+      <div className="hover-gif">
+        <figure className="hover-gif__img">
           <img
-            class="js-lazy-image"
+            className="js-lazy-image"
+            alt="Shane uses the mirror effect"
             src=""
             data-src="./assets/img/gifs/moshed_2016-1-26_4.29.25.gif"
           />
         </figure>
       </div>
-      <div class="hover-gif">
-        <figure class="hover-gif__img">
+      <div className="hover-gif">
+        <figure className="hover-gif__img">
           <img
-            class="js-lazy-image"
+            className="js-lazy-image"
+            alt="Adam gives thumbs up"
             src=""
             data-src="./assets/img/gifs/onit.gif"
           />
         </figure>
       </div>
-      <div class="hover-gif">
-        <figure class="hover-gif__img">
+      <div className="hover-gif">
+        <figure className="hover-gif__img">
           <img
-            class="js-lazy-image"
+            className="js-lazy-image"
+            alt="Shane blows a kiss"
             src=""
             data-src="./assets/img/gifs/shane-kiss.gif"
           />
         </figure>
       </div>
-      <div class="hover-gif">
-        <figure class="hover-gif__img">
+      <div className="hover-gif">
+        <figure className="hover-gif__img">
           <img
-            class="js-lazy-image"
+            className="js-lazy-image"
+            alt="Team celebration"
             src=""
             data-src="./assets/img/gifs/team-celebrate.gif"
           />
         </figure>
       </div>
-      <div class="hover-gif">
-        <figure class="hover-gif__img">
+      <div className="hover-gif">
+        <figure className="hover-gif__img">
           <img
-            class="js-lazy-image"
+            className="js-lazy-image"
+            alt="Fistbump"
             src=""
             data-src="./assets/img/gifs/thumbsup-fistbump2.gif"
           />
         </figure>
       </div>
-      <div class="hover-gif">
-        <figure class="hover-gif__img">
+      <div className="hover-gif">
+        <figure className="hover-gif__img">
           <img
-            class="js-lazy-image"
+            className="js-lazy-image"
+            alt="Zach keeps it coming"
             src=""
             data-src="./assets/img/gifs/zach-keep-it-coming.gif"
           />
         </figure>
       </div>
-      <div class="hover-gif">
-        <figure class="hover-gif__img">
+      <div className="hover-gif">
+        <figure className="hover-gif__img">
           <img
-            class="js-lazy-image"
+            className="js-lazy-image"
+            alt="Zack is on it"
             src=""
             data-src="./assets/img/gifs/zach-on-it.gif"
           />
         </figure>
       </div>
-    </div>
+    </div> */}
 
-    <header class="section-spacing">
-      <div class="header-content container">
-        <div class="row header-content-inner">
-          <div class="col-md-12 text-center">
+    <header className="section-spacing">
+      <div className="header-content container">
+        <div className="row header-content-inner">
+          <div className="col-md-12 text-center">
             <h1>
               We believe creating great digital products starts with{' '}
               <em>your</em> customer. This leads to more profitable applications
@@ -131,7 +149,7 @@ const IndexPage = () => (
             </h1>
             <a
               href="#method"
-              class="btn btn-primary btn-xl sr-button js-scroll-trigger"
+              className="btn btn-primary btn-xl sr-button js-scroll-trigger"
             >
               How do we apply what we believe?
             </a>
@@ -141,22 +159,22 @@ const IndexPage = () => (
     </header>
 
     <section>
-      <div class="container section-spacing">
-        <div class="row">
-          <div class="col-lg-10 col-lg-offset-1 drop-in text-center">
+      <div className="container section-spacing">
+        <div className="row">
+          <div className="col-lg-10 col-lg-offset-1 drop-in text-center">
             <h2 id="method">
               Our Designtific Method focuses on solving your customers’ problems
               while accomplishing your business goals.
             </h2>
           </div>
-          <div class="col-lg-10 col-lg-offset-1 drop-in-wait">
+          <div className="col-lg-10 col-lg-offset-1 drop-in-wait">
             <img
-              src="./assets/img/Designtific-Method-molecule.png"
+              src={molecule}
               alt="Sodium Halogen Designtific Method molecule"
-              class="img-center img-responsive my-100"
+              className="img-center img-responsive my-100"
             />
           </div>
-          <div class="col-lg-10 col-lg-offset-1 drop-in">
+          <div className="col-lg-10 col-lg-offset-1 drop-in">
             <p>
               Our small, multi-disciplinary team has spent the last 17 years
               experimenting and refining our process for turning great ideas
@@ -164,7 +182,7 @@ const IndexPage = () => (
             </p>
             <a
               href="#services"
-              class="btn btn-primary btn-xl sr-button js-scroll-trigger"
+              className="btn btn-primary btn-xl sr-button js-scroll-trigger"
             >
               What do we do?
             </a>
@@ -174,19 +192,20 @@ const IndexPage = () => (
     </section>
 
     <section>
-      {/* <!-- <div id="services-image-stack" class="image-stack">
-			<img src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/SH-work-with-client.jpg" alt="" class="active"/>
+      {/* <!-- <div id="services-image-stack" className="image-stack">
+			<img src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/SH-work-with-client.jpg" alt="" className="active"/>
 		</div> --> */}
-      <div class="container section-spacing">
-        <div class="row">
-          <div class="col-lg-10 col-lg-offset-1 drop-in text-center">
+      <div className="container section-spacing">
+        <div className="row">
+          <div className="col-lg-10 col-lg-offset-1 drop-in text-center">
             <h2 id="services">We create</h2>
           </div>
-          <div id="service1" class="col-md-6">
+          <div id="service1" className="col-md-6">
             {' '}
             <img
-              src="assets/img/icons/software-development-temp.png"
-              class="icon"
+              src={software}
+              alt="Software Icon with Phone and Computer"
+              className="icon"
             />
             <h3>Software/application design &amp; development</h3>
             <p>
@@ -200,12 +219,12 @@ const IndexPage = () => (
               that are intuitive, software that saves your team time and money
               and mobile apps that delight. <em>Sound interesting?</em>
             </p>
-            <p class="mb-100">
-              <a href="#contact" class="js-scroll-trigger">
+            <p className="mb-100">
+              <a href="#contact" className="js-scroll-trigger">
                 <em>Let’s chat.</em>
               </a>
             </p>{' '}
-            <img src="assets/img/icons/user-experience-temp.png" class="icon" />
+            <img src={ux} alt="User Experience Icon" className="icon" />
             <h3>Interaction design (UX/UI)</h3>
             <p>
               Is your website or application not converting the way it should?
@@ -216,15 +235,19 @@ const IndexPage = () => (
               Research, strategy, sketching and prototyping are the tools we’ll
               use to craft a user experience as beautiful as the user interface.
             </p>
-            <p class="mb-100">
-              <a href="#contact" class="js-scroll-trigger">
+            <p className="mb-100">
+              <a href="#contact" className="js-scroll-trigger">
                 <em>Let’s create something beautifully effective together.</em>
               </a>
             </p>
           </div>
-          <div id="service2" class="col-md-6">
+          <div id="service2" className="col-md-6">
             {' '}
-            <img src="assets/img/icons/brand-creation-temp.png" class="icon" />
+            <img
+              src={branding}
+              alt="Branding Thumbprint Icon"
+              className="icon"
+            />
             <h3>Brand design &amp; development</h3>
             <p>
               Does your brand reflect who you are as an organization? Does it
@@ -238,12 +261,12 @@ const IndexPage = () => (
                 Looking to discover your new brand and share it with the world?
               </em>
             </p>
-            <p class="mb-100">
-              <a href="#contact" class="js-scroll-trigger">
+            <p className="mb-100">
+              <a href="#contact" className="js-scroll-trigger">
                 <em>Let’s discover together.</em>
               </a>
             </p>{' '}
-            <img src="assets/img/icons/virtual-reality-temp.png" class="icon" />
+            <img src={vr} alt="VR Glasses Icon" className="icon" />
             <h3>Virtual Reality design &amp; development</h3>
             <p>
               Got a crazy brilliant idea for how you can use virtual reality to
@@ -254,17 +277,17 @@ const IndexPage = () => (
               We’ve built immersive experiences for the Oculus Rift and HTC
               Vive. <em>Intrigued?</em>
             </p>
-            <p class="mb-100">
-              <a href="#contact" class="js-scroll-trigger">
+            <p className="mb-100">
+              <a href="#contact" className="js-scroll-trigger">
                 <em>Let’s put our heads together.</em>
               </a>
             </p>
           </div>
-          <div class="col-lg-10 col-lg-offset-1 drop-in text-center">
+          <div className="col-lg-10 col-lg-offset-1 drop-in text-center">
             {' '}
             <a
               href="#customers"
-              class="btn btn-primary btn-xl sr-button js-scroll-trigger"
+              className="btn btn-primary btn-xl sr-button js-scroll-trigger"
             >
               Who have we worked with?
             </a>
@@ -272,14 +295,14 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section class="bg-primary py-100" id="customers">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 text-center">
+    <section className="bg-primary py-100" id="customers">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-8 col-lg-offset-2 text-center">
             <h2>Over the past 15 years, we've helped lots of companies</h2>
-            <hr class="light" />
+            <hr className="light" />
           </div>
-          <div class="col-lg-12 text-center">
+          <div className="col-lg-12 text-center">
             {' '}
             <img src="./assets/img/logo-images/logo-vandy.png" alt="" />{' '}
             <img
@@ -296,8 +319,8 @@ const IndexPage = () => (
             <img src="./assets/img/logo-images/logo-chick-fil-a.png" alt="" />{' '}
             <img src="./assets/img/logo-images/logo-zonda.png" alt="" />{' '}
             <img src="./assets/img/logo-images/logo-mars.png" alt="" />
-            <hr class="light" />
-            <p class="text-faded">
+            <hr className="light" />
+            <p className="text-faded">
               Over 300 companies from startups to enterprise
             </p>
           </div>
@@ -305,9 +328,9 @@ const IndexPage = () => (
       </div>
     </section>
     <section>
-      <div class="container drop-in py-100">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2" id="testimonial">
+      <div className="container drop-in py-100">
+        <div className="row">
+          <div className="col-sm-8 col-sm-offset-2" id="testimonial">
             <p>
               "Sodium Halogen has everything I look for in a UX designer: Great
               taste, a hunger for new approaches, a logical mind, and humility
@@ -316,15 +339,15 @@ const IndexPage = () => (
               giving and taking feedback, and delivering great work on time."
             </p>
           </div>
-          <div class="col-md-offset-2 col-sm-3 col-sm-offset-2 col-xs-4 text-center">
+          <div className="col-md-offset-2 col-sm-3 col-sm-offset-2 col-xs-4 text-center">
             {' '}
             <img
               src="http://www.sodiumhalogen.com/wp-content/uploads/2011/12/janicefraser-130x130.jpg"
               alt="Janice Fraser"
-              class="img-circle mt-10"
+              className="img-circle mt-10"
             />{' '}
           </div>
-          <div class="col-sm-5 col-xs-8 pt-40">
+          <div className="col-sm-5 col-xs-8 pt-40">
             {' '}
             <cite>
               Janice Fraser –{' '}
@@ -335,12 +358,12 @@ const IndexPage = () => (
             </cite>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-12 mt-100 text-center">
+        <div className="row">
+          <div className="col-sm-12 mt-100 text-center">
             {' '}
             <a
               href="#contact"
-              class="btn btn-primary btn-xl sr-button js-scroll-trigger"
+              className="btn btn-primary btn-xl sr-button js-scroll-trigger"
             >
               Ready to learn more?
             </a>{' '}
@@ -349,165 +372,165 @@ const IndexPage = () => (
       </div>
     </section>
     <section>
-      <div class="container drop-in">
-        <div class="row">
-          <div class="col-sm-12 team" id="team">
+      <div className="container drop-in">
+        <div className="row">
+          <div className="col-sm-12 team" id="team">
             <h2>Our designtists</h2>
-            <div class="row">
-              <div class="col-xs-6 col-sm-4 col-md-3 team__member">
-                <div class="polygon-each-img-wrap">
+            <div className="row">
+              <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+                <div className="polygon-each-img-wrap">
                   {' '}
                   <img
                     src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/william_head_sm-e1517091609512.jpg"
                     alt="demo-clip-heptagon"
-                    class="polygon-clip-hexagon"
+                    className="polygon-clip-hexagon"
                   />{' '}
                 </div>
-                <p class="team__name">William Donnell</p>
-                <p class="team__title">Lead Desgintist &amp; Founder</p>
-                <p class="team__email">
-                  <a href="mailto:wm@SodiumHalogen.com" class="btn">
+                <p className="team__name">William Donnell</p>
+                <p className="team__title">Lead Desgintist &amp; Founder</p>
+                <p className="team__email">
+                  <a href="mailto:wm@SodiumHalogen.com" className="btn">
                     email William
                   </a>
                 </p>
               </div>
-              <div class="col-xs-6 col-sm-4 col-md-3 team__member">
-                <div class="polygon-each-img-wrap">
+              <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+                <div className="polygon-each-img-wrap">
                   {' '}
                   <img
                     src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/team-barrett-gay-1.jpg"
                     alt="demo-clip-heptagon"
-                    class="polygon-clip-hexagon"
+                    className="polygon-clip-hexagon"
                   />{' '}
                 </div>
-                <p class="team__name">Barrett Gay</p>
-                <p class="team__title">Sr. Software &amp; VR Dev</p>
-                <p class="team__email">
-                  <a href="mailto:barrett@SodiumHalogen.com" class="btn">
+                <p className="team__name">Barrett Gay</p>
+                <p className="team__title">Sr. Software &amp; VR Dev</p>
+                <p className="team__email">
+                  <a href="mailto:barrett@SodiumHalogen.com" className="btn">
                     email Barrett
                   </a>
                 </p>
               </div>
-              <div class="col-xs-6 col-sm-4 col-md-3 team__member">
-                <div class="polygon-each-img-wrap">
+              <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+                <div className="polygon-each-img-wrap">
                   {' '}
                   <img
                     src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/team-quincy-jones-1.jpg"
                     alt="demo-clip-heptagon"
-                    class="polygon-clip-hexagon"
+                    className="polygon-clip-hexagon"
                   />{' '}
                 </div>
-                <p class="team__name">Quincy Jones</p>
-                <p class="team__title">Sr. Hardware &amp; VR Dev</p>
-                <p class="team__email">
-                  <a href="mailto:quincy@SodiumHalogen.com" class="btn">
+                <p className="team__name">Quincy Jones</p>
+                <p className="team__title">Sr. Hardware &amp; VR Dev</p>
+                <p className="team__email">
+                  <a href="mailto:quincy@SodiumHalogen.com" className="btn">
                     email Quincy
                   </a>
                 </p>
               </div>
-              <div class="col-xs-6 col-sm-4 col-md-3 team__member">
-                <div class="polygon-each-img-wrap">
+              <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+                <div className="polygon-each-img-wrap">
                   {' '}
                   <img
                     src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/shane_sm.jpg"
                     alt="demo-clip-heptagon"
-                    class="polygon-clip-hexagon"
+                    className="polygon-clip-hexagon"
                   />{' '}
                 </div>
-                <p class="team__name">Shane Aday</p>
-                <p class="team__title">Design Alchemist</p>
-                <p class="team__email">
-                  <a href="mailto:shane@SodiumHalogen.com" class="btn">
+                <p className="team__name">Shane Aday</p>
+                <p className="team__title">Design Alchemist</p>
+                <p className="team__email">
+                  <a href="mailto:shane@SodiumHalogen.com" className="btn">
                     email Shane
                   </a>
                 </p>
               </div>
-              <div class="col-xs-6 col-sm-4 col-md-3 team__member">
-                <div class="polygon-each-img-wrap">
+              <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+                <div className="polygon-each-img-wrap">
                   {' '}
                   <img
                     src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/chance_smith-sh1.jpg"
                     alt="demo-clip-heptagon"
-                    class="polygon-clip-hexagon"
+                    className="polygon-clip-hexagon"
                   />{' '}
                 </div>
-                <p class="team__name">Chance Smith</p>
-                <p class="team__title">Innovation Strategist</p>
-                <p class="team__email">
-                  <a href="mailto:chance@SodiumHalogen.com" class="btn">
+                <p className="team__name">Chance Smith</p>
+                <p className="team__title">Innovation Strategist</p>
+                <p className="team__email">
+                  <a href="mailto:chance@SodiumHalogen.com" className="btn">
                     email Chance
                   </a>
                 </p>
               </div>
-              <div class="col-xs-6 col-sm-4 col-md-3 team__member">
-                <div class="polygon-each-img-wrap">
+              <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+                <div className="polygon-each-img-wrap">
                   {' '}
                   <img
                     src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/team-brantley.jpg"
                     alt="demo-clip-heptagon"
-                    class="polygon-clip-hexagon"
+                    className="polygon-clip-hexagon"
                   />{' '}
                 </div>
-                <p class="team__name">Brantley English</p>
-                <p class="team__title">Code Architect</p>
-                <p class="team__email">
-                  <a href="mailto:brantley@SodiumHalogen.com" class="btn">
+                <p className="team__name">Brantley English</p>
+                <p className="team__title">Code Architect</p>
+                <p className="team__email">
+                  <a href="mailto:brantley@SodiumHalogen.com" className="btn">
                     email Brantley
                   </a>
                 </p>
               </div>
-              <div class="col-xs-6 col-sm-4 col-md-3 team__member">
-                <div class="polygon-each-img-wrap">
+              <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+                <div className="polygon-each-img-wrap">
                   {' '}
                   <img
                     src="https://sh-drop.s3.us-east-1.amazonaws.com/zb/zach-head-bw.jpg"
                     alt="demo-clip-heptagon"
-                    class="polygon-clip-hexagon"
+                    className="polygon-clip-hexagon"
                   />{' '}
                 </div>
-                <p class="team__name">Zach Boatwright</p>
-                <p class="team__title">Content Agronomist</p>
-                <p class="team__email">
-                  <a href="mailto:zach@SodiumHalogen.com" class="btn">
+                <p className="team__name">Zach Boatwright</p>
+                <p className="team__title">Content Agronomist</p>
+                <p className="team__email">
+                  <a href="mailto:zach@SodiumHalogen.com" className="btn">
                     email Zach
                   </a>
                 </p>
               </div>
-              <div class="col-xs-6 col-sm-4 col-md-3 team__member">
-                <div class="polygon-each-img-wrap">
+              <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+                <div className="polygon-each-img-wrap">
                   {' '}
                   <img
                     src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/adam-curl-sh.jpg"
                     alt="demo-clip-heptagon"
-                    class="polygon-clip-hexagon"
+                    className="polygon-clip-hexagon"
                   />{' '}
                 </div>
-                <p class="team__name">Adam Curl</p>
-                <p class="team__title">Code Chemist</p>
-                <p class="team__email">
-                  <a href="mailto:adam@SodiumHalogen.com" class="btn">
+                <p className="team__name">Adam Curl</p>
+                <p className="team__title">Code Chemist</p>
+                <p className="team__email">
+                  <a href="mailto:adam@SodiumHalogen.com" className="btn">
                     email Adam
                   </a>
                 </p>
               </div>
-              <div class="col-xs-6 col-sm-4 col-md-3 team__member">
-                <div class="polygon-each-img-wrap">
+              <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+                <div className="polygon-each-img-wrap">
                   {' '}
                   <img
                     src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/jill_sm.jpg"
                     alt="demo-clip-heptagon"
-                    class="polygon-clip-hexagon"
+                    className="polygon-clip-hexagon"
                   />{' '}
                 </div>
-                <p class="team__name">Jill Donnell</p>
-                <p class="team__title">Pure Awesome</p>
-                <p class="team__email">
-                  <a href="mailto:jill@SodiumHalogen.com" class="btn">
+                <p className="team__name">Jill Donnell</p>
+                <p className="team__title">Pure Awesome</p>
+                <p className="team__email">
+                  <a href="mailto:jill@SodiumHalogen.com" className="btn">
                     email Jill
                   </a>
                 </p>
               </div>
-              <svg class="clip-svg">
+              <svg className="clip-svg">
                 <defs>
                   <clipPath
                     id="polygon-clip-hexagon"
@@ -523,23 +546,23 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section class="bg-dark footer">
-      <div class="container vcenter">
-        <div class="row">
-          <div id="contact" class="col-lg-6 col-lg-offset-3 text-center">
+    <section className="bg-dark footer">
+      <div className="container vcenter">
+        <div className="row">
+          <div id="contact" className="col-lg-6 col-lg-offset-3 text-center">
             <h2>
               Your bottom-line called and wants to know how our Designtific
               Method can help.
             </h2>
             <a
               href="http://bit.ly/shform"
-              class="btn btn-primary btn-xl sr-button"
+              className="btn btn-primary btn-xl sr-button"
             >
               Tell us about your project
             </a>
           </div>
-          <div class="footer__bottom">
-            <div class="col-md-6">
+          <div className="footer__bottom">
+            <div className="col-md-6">
               <ul>
                 <li>
                   Jackson, TN <br />
@@ -555,7 +578,7 @@ const IndexPage = () => (
                 </li>
               </ul>
             </div>
-            <div class="col-md-6">
+            <div className="col-md-6">
               <p>Ask us a Question</p>
               <a href="mailto:info@sodiumhalogen.com">info@sodiumhalogen.com</a>
             </div>
