@@ -352,6 +352,7 @@ const Styles = styled.div`
       left: 0;
       width: 100%;
       padding-top: 150px;
+      ${serifFont()}
       ul {
         padding: 0;
         list-style: none;
