@@ -83,7 +83,7 @@ const Styles = styled.div`
     padding: 50px 0;
   }
 
-  .bg-primary {
+  .bgsh-primary {
     background-color: ${palette.themeprimary};
   }
 
@@ -128,6 +128,7 @@ const Styles = styled.div`
     .nav-inner {
       display: flex;
       justify-content: center;
+      margin: 0 auto;
     }
     .navbar-brand {
       // margin: 0 auto;

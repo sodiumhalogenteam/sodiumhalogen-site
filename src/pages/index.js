@@ -13,6 +13,71 @@ import ux from '../images/icons/user-experience-temp.png'
 import branding from '../images/icons/brand-creation-temp.png'
 import vr from '../images/icons/virtual-reality-temp.png'
 
+//company images
+import popvox from '../images/logo-images/logo-popvox.png'
+import geCapital from '../images/logo-images/logo-ge-capital.png'
+import vandy from '../images/logo-images/logo-vandy.png'
+import networkForGood from '../images/logo-images/logo-network-for-good.png'
+import iron from '../images/logo-images/logo-iron.png'
+import estateAssist from '../images/logo-images/logo-estate-assist.png'
+import haven from '../images/logo-images/logo-haven.png'
+import allygn from '../images/logo-images/logo-allygn.png'
+import bypass from '../images/logo-images/logo-bypass.png'
+import chickfila from '../images/logo-images/logo-chick-fil-a.png'
+import zonda from '../images/logo-images/logo-zonda.png'
+import mars from '../images/logo-images/logo-mars.png'
+
+const companyLogos = [
+  {
+    src: popvox,
+    alt: 'Popvox',
+  },
+  {
+    src: geCapital,
+    alt: 'GE Captial',
+  },
+  {
+    src: vandy,
+    alt: 'Vanderbilt',
+  },
+  {
+    src: networkForGood,
+    alt: 'Network for Good',
+  },
+  {
+    src: iron,
+    alt: 'Iron',
+  },
+  {
+    src: estateAssist,
+    alt: 'Estate Assist',
+  },
+  {
+    src: haven,
+    alt: 'Haven',
+  },
+  {
+    src: allygn,
+    alt: 'Allygn',
+  },
+  {
+    src: bypass,
+    alt: 'Bypass',
+  },
+  {
+    src: chickfila,
+    alt: 'Chick Fil A',
+  },
+  {
+    src: zonda,
+    alt: 'Zonda',
+  },
+  {
+    src: mars,
+    alt: 'Mars',
+  },
+]
+
 const IndexPage = () => (
   <Styles>
     <Layout>
@@ -302,7 +367,7 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
-      <section className="bg-primary py-100" id="customers">
+      <section className="bgsh-primary py-100" id="customers">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 offset-lg-2 text-center">
@@ -310,25 +375,9 @@ const IndexPage = () => (
               <hr className="light" />
             </div>
             <div className="col-lg-12 text-center">
-              {' '}
-              <img src="./assets/img/logo-images/logo-vandy.png" alt="" />{' '}
-              <img
-                src="./assets/img/logo-images/logo-network-for-good.png"
-                alt=""
-              />{' '}
-              <img src="./assets/img/logo-images/logo-iron.png" alt="" />{' '}
-              <img
-                src="./assets/img/logo-images/logo-estate-assist.png"
-                alt=""
-              />{' '}
-              <img src="./assets/img/logo-images/logo-popvox.png" alt="" />{' '}
-              <img src="./assets/img/logo-images/logo-ge-capital.png" alt="" />{' '}
-              <img src="./assets/img/logo-images/logo-haven.png" alt="" />{' '}
-              <img src="./assets/img/logo-images/logo-allygn.png" alt="" />{' '}
-              <img src="./assets/img/logo-images/logo-bypass.png" alt="" />{' '}
-              <img src="./assets/img/logo-images/logo-chick-fil-a.png" alt="" />{' '}
-              <img src="./assets/img/logo-images/logo-zonda.png" alt="" />{' '}
-              <img src="./assets/img/logo-images/logo-mars.png" alt="" />
+              {companyLogos.map(logo => (
+                <img src={logo.src} alt={`${logo.alt} sh customer`} />
+              ))}
               <hr className="light" />
               <p className="text-faded">
                 Over 300 companies from startups to enterprise
