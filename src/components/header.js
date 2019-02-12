@@ -11,11 +11,11 @@ const Header = ({ siteTitle, headerLogo }) => (
       textDecoration: `none`,
     }}
   >
-    <nav id="mainNav" class="navbar navbar-default container">
-      <div class="nav-inner">
-        <a class="navbar-brand" href="#page-top">
+    <nav id="mainNav" className="navbar navbar-default container">
+      <div className="nav-inner">
+        <div className="navbar-brand" href="#page-top">
           <img src={logo} />
-        </a>
+        </div>
       </div>
     </nav>
   </Link>
