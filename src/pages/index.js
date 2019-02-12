@@ -329,7 +329,9 @@ class IndexPage extends React.Component {
                     href="#method"
                     className="btn btn-primary btn-xl sr-button js-scroll-trigger"
                   >
-                    How do we apply what we believe?
+                    <Link to="method" smooth duration={500}>
+                      How do we apply what we believe?
+                    </Link>
                   </a>
                 </div>
               </div>
@@ -368,7 +370,9 @@ class IndexPage extends React.Component {
                       href="#services"
                       className="btn btn-primary btn-xl sr-button js-scroll-trigger"
                     >
-                      What do we do?
+                      <Link to="services" smooth duration={500}>
+                        What do we do?
+                      </Link>
                     </a>
                   </Fade>
                 </div>
@@ -491,7 +495,9 @@ class IndexPage extends React.Component {
                       href="#customers"
                       className="btn btn-primary btn-xl sr-button js-scroll-trigger"
                     >
-                      Who have we worked with?
+                      <Link to="customers" smooth duration={500}>
+                        Who have we worked with?
+                      </Link>
                     </a>
                   </Fade>
                 </div>
@@ -561,7 +567,9 @@ class IndexPage extends React.Component {
                       href="#contact"
                       className="btn btn-primary btn-xl sr-button js-scroll-trigger"
                     >
-                      Ready to learn more?
+                      <Link to="contact" smooth duration={500}>
+                        Ready to learn more?
+                      </Link>
                     </a>
                   </div>
                 </div>
