@@ -211,7 +211,7 @@ const IndexPage = () => (
           <div className="row header-content-inner">
             <div className="col-md-12 text-center">
               <h1>
-                We believe creating great digital products starts with
+                We believe creating great digital products starts with{' '}
                 <em>your</em> customer. This leads to more profitable
                 applications because they actually solve human problems.
               </h1>

@@ -61,11 +61,12 @@ const Styles = styled.div`
     border-color: ${palette.themeprimary};
     border-width: 3px;
     max-width: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   hr.light {
     border-color: white;
-    margin: 0 auto;
   }
 
   a {
@@ -131,7 +132,7 @@ const Styles = styled.div`
   }
 
   .text-faded {
-    color: fade(white, 70%);
+    color: rgba(255, 255, 255, 0.7);
   }
 
   .no-padding {
@@ -204,7 +205,7 @@ const Styles = styled.div`
   @media (min-width: 768px) {
     background-color: transparent;
     .navbar-header .navbar-brand {
-      color: fade(white, 70%);
+      color: rgba(255, 255, 255, 0.7);
       background-position: 0 -70px;
       &:hover,
       &:focus {
@@ -213,7 +214,7 @@ const Styles = styled.div`
     }
     .nav > li > a,
     .nav > li > a:focus {
-      color: fade(white, 70%);
+      color: rgba(255, 255, 255, 0.7);
       &:hover {
         color: white;
       }
@@ -257,7 +258,7 @@ const Styles = styled.div`
         }
         p {
           font-weight: 300;
-          color: fade(white, 70%);
+          color: rgba(255, 255, 255, 0.7);
           font-size: 16px;
           margin-bottom: 50px;
         }
