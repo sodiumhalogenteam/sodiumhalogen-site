@@ -120,7 +120,7 @@ class IndexPage extends React.Component {
       <Styles>
         <Particles
           style={{
-            position: 'absolute',
+            position: 'fixed',
             top: 0,
           }}
           params={{
