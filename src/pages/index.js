@@ -2,6 +2,8 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import lozad from 'lozad'
 import Particles from 'react-particles-js'
+import Fade from 'react-reveal/Fade'
+import { Link, Events } from 'react-scroll'
 
 //components
 import Layout from '../components/layout'
@@ -96,9 +98,23 @@ const companyLogos = [
 
 class IndexPage extends React.Component {
   componentDidMount() {
+    ///Lazy Loading
     const observer = lozad()
     observer.observe()
+    ///Scrolling
+    Events.scrollEvent.register('begin', function() {
+      console.log('begin', arguments)
+    })
+
+    Events.scrollEvent.register('end', function() {
+      console.log('end', arguments)
+    })
   }
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin')
+    Events.scrollEvent.remove('end')
+  }
+  handleScroll(event) {}
   render() {
     return (
       <Styles>
@@ -324,31 +340,37 @@ class IndexPage extends React.Component {
             <div className="container section-spacing">
               <div className="row">
                 <div className="col-lg-10 offset-lg-1 drop-in text-center">
-                  <h2 id="method">
-                    Our Designtific Method focuses on solving your customers’
-                    problems while accomplishing your business goals.
-                  </h2>
+                  <Fade>
+                    <h2 id="method">
+                      Our Designtific Method focuses on solving your customers’
+                      problems while accomplishing your business goals.
+                    </h2>
+                  </Fade>
                 </div>
                 <div className="col-lg-10 offset-lg-1 drop-in-wait">
-                  <img
-                    src={molecule}
-                    alt="Sodium Halogen Designtific Method molecule"
-                    className="img-center img-responsive my-100"
-                  />
+                  <Fade>
+                    <img
+                      src={molecule}
+                      alt="Sodium Halogen Designtific Method molecule"
+                      className="img-center img-responsive my-100"
+                    />
+                  </Fade>
                 </div>
                 <div className="col-lg-10 offset-lg-1 drop-in">
-                  <p>
-                    Our small, multi-disciplinary team has spent the last 17
-                    years experimenting and refining our process for turning
-                    great ideas into solid strategy and great digital products
-                    and experiences.
-                  </p>
-                  <a
-                    href="#services"
-                    className="btn btn-primary btn-xl sr-button js-scroll-trigger"
-                  >
-                    What do we do?
-                  </a>
+                  <Fade>
+                    <p>
+                      Our small, multi-disciplinary team has spent the last 17
+                      years experimenting and refining our process for turning
+                      great ideas into solid strategy and great digital products
+                      and experiences.
+                    </p>
+                    <a
+                      href="#services"
+                      className="btn btn-primary btn-xl sr-button js-scroll-trigger"
+                    >
+                      What do we do?
+                    </a>
+                  </Fade>
                 </div>
               </div>
             </div>
@@ -361,102 +383,117 @@ class IndexPage extends React.Component {
             <div className="container section-spacing">
               <div className="row">
                 <div className="col-lg-10 offset-lg-1 drop-in text-center">
-                  <h2 id="services">We create</h2>
+                  <Fade>
+                    <h2 id="services">We create</h2>
+                  </Fade>
                 </div>
                 <div id="service1" className="col-md-6">
-                  <img
-                    src={software}
-                    alt="Software Icon with Phone and Computer"
-                    className="icon"
-                  />
-                  <h3>Software/application design &amp; development</h3>
-                  <p>
-                    Does your organization have internal processes that software
-                    could automate? Maybe a web-based or mobile application is
-                    the core of your company?
-                    <br />
-                    <br />
-                    Our team can leverage our experience working with Bay Area
-                    startups and enterprise companies. Together we can create
-                    apps that are intuitive, software that saves your team time
-                    and money and mobile apps that delight.{' '}
-                    <em>Sound interesting?</em>
-                  </p>
-                  <p className="mb-100">
-                    <a href="#contact" className="js-scroll-trigger">
-                      <em>Let’s chat.</em>
-                    </a>
-                  </p>
-                  <img src={ux} alt="User Experience Icon" className="icon" />
-                  <h3>Interaction design (UX/UI)</h3>
-                  <p>
-                    Is your website or application not converting the way it
-                    should? Are users getting stuck or not understanding how to
-                    accomplish simple tasks?
-                    <br />
-                    <br />
-                    Research, strategy, sketching and prototyping are the tools
-                    we’ll use to craft a user experience as beautiful as the
-                    user interface.
-                  </p>
-                  <p className="mb-100">
-                    <a href="#contact" className="js-scroll-trigger">
-                      <em>
-                        Let’s create something beautifully effective together.
-                      </em>
-                    </a>
-                  </p>
+                  <Fade>
+                    <img
+                      src={software}
+                      alt="Software Icon with Phone and Computer"
+                      className="icon"
+                    />
+                    <h3>Software/application design &amp; development</h3>
+                    <p>
+                      Does your organization have internal processes that
+                      software could automate? Maybe a web-based or mobile
+                      application is the core of your company?
+                      <br />
+                      <br />
+                      Our team can leverage our experience working with Bay Area
+                      startups and enterprise companies. Together we can create
+                      apps that are intuitive, software that saves your team
+                      time and money and mobile apps that delight.{' '}
+                      <em>Sound interesting?</em>
+                    </p>
+                    <p className="mb-100">
+                      <Link to="contact" smooth duration={500}>
+                        <em className="link">Let’s chat.</em>
+                      </Link>
+                    </p>
+                    <img src={ux} alt="User Experience Icon" className="icon" />
+                    <h3>Interaction design (UX/UI)</h3>
+                    <p>
+                      Is your website or application not converting the way it
+                      should? Are users getting stuck or not understanding how
+                      to accomplish simple tasks?
+                      <br />
+                      <br />
+                      Research, strategy, sketching and prototyping are the
+                      tools we’ll use to craft a user experience as beautiful as
+                      the user interface.
+                    </p>
+                    <p className="mb-100">
+                      <a href="#contact" className="js-scroll-trigger">
+                        <Link to="contact" smooth duration={500}>
+                          <em>
+                            Let’s create something beautifully effective
+                            together.
+                          </em>
+                        </Link>
+                      </a>
+                    </p>
+                  </Fade>
                 </div>
                 <div id="service2" className="col-md-6">
-                  <img
-                    src={branding}
-                    alt="Branding Thumbprint Icon"
-                    className="icon"
-                  />
-                  <h3>Brand design &amp; development</h3>
-                  <p>
-                    Does your brand reflect who you are as an organization? Does
-                    it show your uniqueness and inspire trust?
-                    <br />
-                    <br />
-                    We believe your team knows what you really stand for, but
-                    might not have taken the time to really understand who your
-                    customer is and what your company’s purpose is.{' '}
-                    <em>
-                      Looking to discover your new brand and share it with the
-                      world?
-                    </em>
-                  </p>
-                  <p className="mb-100">
-                    <a href="#contact" className="js-scroll-trigger">
-                      <em>Let’s discover together.</em>
-                    </a>
-                  </p>
-                  <img src={vr} alt="VR Glasses Icon" className="icon" />
-                  <h3>Virtual Reality design &amp; development</h3>
-                  <p>
-                    Got a crazy brilliant idea for how you can use virtual
-                    reality to accomplish your business goals? Or maybe you need
-                    help coming up with that crazy idea? Sounds like our kind of
-                    crazy.
-                    <br />
-                    <br />
-                    We’ve built immersive experiences for the Oculus Rift and
-                    HTC Vive. <em>Intrigued?</em>
-                  </p>
-                  <p className="mb-100">
-                    <a href="#contact" className="js-scroll-trigger">
-                      <em>Let’s put our heads together.</em>
-                    </a>
-                  </p>
+                  <Fade>
+                    <img
+                      src={branding}
+                      alt="Branding Thumbprint Icon"
+                      className="icon"
+                    />
+                    <h3>Brand design &amp; development</h3>
+                    <p>
+                      Does your brand reflect who you are as an organization?
+                      Does it show your uniqueness and inspire trust?
+                      <br />
+                      <br />
+                      We believe your team knows what you really stand for, but
+                      might not have taken the time to really understand who
+                      your customer is and what your company’s purpose is.{' '}
+                      <em>
+                        Looking to discover your new brand and share it with the
+                        world?
+                      </em>
+                    </p>
+                    <p className="mb-100">
+                      <a href="#contact" className="js-scroll-trigger">
+                        <Link to="contact" smooth duration={500}>
+                          <em>Let’s discover together.</em>
+                        </Link>
+                      </a>
+                    </p>
+                    <img src={vr} alt="VR Glasses Icon" className="icon" />
+                    <h3>Virtual Reality design &amp; development</h3>
+                    <p>
+                      Got a crazy brilliant idea for how you can use virtual
+                      reality to accomplish your business goals? Or maybe you
+                      need help coming up with that crazy idea? Sounds like our
+                      kind of crazy.
+                      <br />
+                      <br />
+                      We’ve built immersive experiences for the Oculus Rift and
+                      HTC Vive. <em>Intrigued?</em>
+                    </p>
+                    <p className="mb-100">
+                      <a href="#contact" className="js-scroll-trigger">
+                        <Link to="contact" smooth duration={500}>
+                          <em>Let’s put our heads together.</em>
+                        </Link>
+                      </a>
+                    </p>
+                  </Fade>
                 </div>
                 <div className="col-lg-10 offset-lg-1 drop-in text-center">
-                  <a
-                    href="#customers"
-                    className="btn btn-primary btn-xl sr-button js-scroll-trigger"
-                  >
-                    Who have we worked with?
-                  </a>
+                  <Fade>
+                    <a
+                      href="#customers"
+                      className="btn btn-primary btn-xl sr-button js-scroll-trigger"
+                    >
+                      Who have we worked with?
+                    </a>
+                  </Fade>
                 </div>
               </div>
             </div>
@@ -487,46 +524,49 @@ class IndexPage extends React.Component {
             </div>
           </section>
           <section>
-            <div className="container drop-in py-100">
-              <div className="row">
-                <div className="col-sm-8 offset-sm-2" id="testimonial">
-                  <p>
-                    "Sodium Halogen has everything I look for in a UX designer:
-                    Great taste, a hunger for new approaches, a logical mind,
-                    and humility that makes them a delight to work with. Even
-                    working remotely, They are fantastic collaborators, sharing
-                    in idea generation, giving and taking feedback, and
-                    delivering great work on time."
-                  </p>
+            <Fade>
+              <div className="container drop-in py-100">
+                <div className="row">
+                  <div className="col-sm-8 offset-sm-2" id="testimonial">
+                    <p>
+                      "Sodium Halogen has everything I look for in a UX
+                      designer: Great taste, a hunger for new approaches, a
+                      logical mind, and humility that makes them a delight to
+                      work with. Even working remotely, They are fantastic
+                      collaborators, sharing in idea generation, giving and
+                      taking feedback, and delivering great work on time."
+                    </p>
+                  </div>
+                  <div className="offset-md-2 col-sm-3 offset-sm-2 col-xs-4 text-center">
+                    <img
+                      src="http://www.sodiumhalogen.com/wp-content/uploads/2011/12/janicefraser-130x130.jpg"
+                      alt="Janice Fraser"
+                      className="img-circle mt-10"
+                    />
+                  </div>
+                  <div className="col-sm-5 col-xs-8 pt-40">
+                    <cite>
+                      Janice Fraser –
+                      <a href="http://bionicsolution.com/">
+                        Chief Product Officer at Bionic Solution and founding
+                        CEO of Adaptive Path, the world’s first User Experience
+                        firm
+                      </a>
+                    </cite>
+                  </div>
                 </div>
-                <div className="offset-md-2 col-sm-3 offset-sm-2 col-xs-4 text-center">
-                  <img
-                    src="http://www.sodiumhalogen.com/wp-content/uploads/2011/12/janicefraser-130x130.jpg"
-                    alt="Janice Fraser"
-                    className="img-circle mt-10"
-                  />
-                </div>
-                <div className="col-sm-5 col-xs-8 pt-40">
-                  <cite>
-                    Janice Fraser –
-                    <a href="http://bionicsolution.com/">
-                      Chief Product Officer at Bionic Solution and founding CEO
-                      of Adaptive Path, the world’s first User Experience firm
+                <div className="row">
+                  <div className="col-sm-12 mt-100 text-center">
+                    <a
+                      href="#contact"
+                      className="btn btn-primary btn-xl sr-button js-scroll-trigger"
+                    >
+                      Ready to learn more?
                     </a>
-                  </cite>
+                  </div>
                 </div>
               </div>
-              <div className="row">
-                <div className="col-sm-12 mt-100 text-center">
-                  <a
-                    href="#contact"
-                    className="btn btn-primary btn-xl sr-button js-scroll-trigger"
-                  >
-                    Ready to learn more?
-                  </a>
-                </div>
-              </div>
-            </div>
+            </Fade>
           </section>
           <section>
             <div className="container drop-in">

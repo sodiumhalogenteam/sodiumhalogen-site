@@ -69,7 +69,9 @@ const Styles = styled.div`
     border-color: white;
   }
 
-  a {
+  a,
+  .link {
+    cursor: pointer;
     text-decoration: none;
     ${transitionAll()};
     color: ${palette.themeprimary};
