@@ -325,14 +325,15 @@ class IndexPage extends React.Component {
                     <em>your</em> customer. This leads to more profitable
                     applications because they actually solve human problems.
                   </h1>
-                  <a
-                    href="#method"
-                    className="btn btn-primary btn-xl sr-button js-scroll-trigger"
+
+                  <Link
+                    className="btn btn-primary button-link btn-xl sr-button"
+                    to="method"
+                    smooth
+                    duration={500}
                   >
-                    <Link to="method" smooth duration={500}>
-                      How do we apply what we believe?
-                    </Link>
-                  </a>
+                    How do we apply what we believe?
+                  </Link>
                 </div>
               </div>
             </div>
@@ -366,14 +367,15 @@ class IndexPage extends React.Component {
                       great ideas into solid strategy and great digital products
                       and experiences.
                     </p>
-                    <a
-                      href="#services"
-                      className="btn btn-primary btn-xl sr-button js-scroll-trigger"
+
+                    <Link
+                      to="services"
+                      smooth
+                      duration={500}
+                      className="btn btn-primary button-link btn-xl sr-button"
                     >
-                      <Link to="services" smooth duration={500}>
-                        What do we do?
-                      </Link>
-                    </a>
+                      What do we do?
+                    </Link>
                   </Fade>
                 </div>
               </div>
@@ -429,14 +431,11 @@ class IndexPage extends React.Component {
                       the user interface.
                     </p>
                     <p className="mb-100">
-                      <a href="#contact" className="js-scroll-trigger">
-                        <Link to="contact" smooth duration={500}>
-                          <em>
-                            Let’s create something beautifully effective
-                            together.
-                          </em>
-                        </Link>
-                      </a>
+                      <Link to="contact" smooth duration={500}>
+                        <em className="link">
+                          Let’s create something beautifully effective together.
+                        </em>
+                      </Link>
                     </p>
                   </Fade>
                 </div>
@@ -462,11 +461,9 @@ class IndexPage extends React.Component {
                       </em>
                     </p>
                     <p className="mb-100">
-                      <a href="#contact" className="js-scroll-trigger">
-                        <Link to="contact" smooth duration={500}>
-                          <em>Let’s discover together.</em>
-                        </Link>
-                      </a>
+                      <Link to="contact" smooth duration={500}>
+                        <em className="link">Let’s discover together.</em>
+                      </Link>
                     </p>
                     <img src={vr} alt="VR Glasses Icon" className="icon" />
                     <h3>Virtual Reality design &amp; development</h3>
@@ -481,24 +478,22 @@ class IndexPage extends React.Component {
                       HTC Vive. <em>Intrigued?</em>
                     </p>
                     <p className="mb-100">
-                      <a href="#contact" className="js-scroll-trigger">
-                        <Link to="contact" smooth duration={500}>
-                          <em>Let’s put our heads together.</em>
-                        </Link>
-                      </a>
+                      <Link to="contact" smooth duration={500}>
+                        <em className="link">Let’s put our heads together.</em>
+                      </Link>
                     </p>
                   </Fade>
                 </div>
                 <div className="col-lg-10 offset-lg-1 drop-in text-center">
                   <Fade>
-                    <a
-                      href="#customers"
-                      className="btn btn-primary btn-xl sr-button js-scroll-trigger"
+                    <Link
+                      to="customers"
+                      smooth
+                      duration={500}
+                      className="btn btn-primary button-link btn-xl sr-button"
                     >
-                      <Link to="customers" smooth duration={500}>
-                        Who have we worked with?
-                      </Link>
-                    </a>
+                      Who have we worked with?
+                    </Link>
                   </Fade>
                 </div>
               </div>
@@ -563,14 +558,14 @@ class IndexPage extends React.Component {
                 </div>
                 <div className="row">
                   <div className="col-sm-12 mt-100 text-center">
-                    <a
-                      href="#contact"
-                      className="btn btn-primary btn-xl sr-button js-scroll-trigger"
+                    <Link
+                      to="contact"
+                      smooth
+                      duration={500}
+                      className="btn btn-primary button-link btn-xl sr-button"
                     >
-                      <Link to="contact" smooth duration={500}>
-                        Ready to learn more?
-                      </Link>
-                    </a>
+                      Ready to learn more?
+                    </Link>
                   </div>
                 </div>
               </div>

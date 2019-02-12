@@ -433,6 +433,9 @@ const Styles = styled.div`
   .btn-xl {
     padding: 15px 30px;
   }
+  .button-link {
+    color: white !important;
+  }
 
   // Extras
   // -- Highlight Color Customization
