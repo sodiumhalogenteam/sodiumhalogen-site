@@ -355,7 +355,7 @@ class IndexPage extends React.Component {
                     <img
                       src={molecule}
                       alt="Sodium Halogen Designtific Method molecule"
-                      className="img-center img-responsive my-100"
+                      className="img-center img-fluid my-100"
                     />
                   </Fade>
                 </div>
