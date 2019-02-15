@@ -595,7 +595,7 @@ class IndexPage extends React.Component {
                         </a>
                       </p>
                     </div>
-                    <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+                    {/* <div className="col-xs-6 col-sm-4 col-md-3 team__member">
                       <div className="polygon-each-img-wrap">
                         <img
                           src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/team-barrett-gay-1.jpg"
@@ -737,7 +737,7 @@ class IndexPage extends React.Component {
                           email Jill
                         </a>
                       </p>
-                    </div>
+                    </div> */}
                     <svg className="clip-svg">
                       <defs>
                         <clipPath
