@@ -1,118 +1,118 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import lozad from 'lozad'
-import Particles from 'react-particles-js'
-import Fade from 'react-reveal/Fade'
-import { Link, Events } from 'react-scroll'
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import lozad from "lozad";
+import Particles from "react-particles-js";
+import Fade from "react-reveal/Fade";
+import { Link, Events } from "react-scroll";
 
 //components
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Styles from '../components/Styles'
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Styles from "../components/Styles";
 
 //images
-import molecule from '../images/Designtific-Method-molecule.png'
-import software from '../images/icons/software-development-temp.png'
-import ux from '../images/icons/user-experience-temp.png'
-import branding from '../images/icons/brand-creation-temp.png'
-import vr from '../images/icons/virtual-reality-temp.png'
+import molecule from "../images/Designtific-Method-molecule.png";
+import software from "../images/icons/software-development-temp.png";
+import ux from "../images/icons/user-experience-temp.png";
+import branding from "../images/icons/brand-creation-temp.png";
+import vr from "../images/icons/virtual-reality-temp.png";
 
 //company images
-import popvox from '../images/logo-images/logo-popvox.png'
-import geCapital from '../images/logo-images/logo-ge-capital.png'
-import vandy from '../images/logo-images/logo-vandy.png'
-import networkForGood from '../images/logo-images/logo-network-for-good.png'
-import iron from '../images/logo-images/logo-iron.png'
-import estateAssist from '../images/logo-images/logo-estate-assist.png'
-import haven from '../images/logo-images/logo-haven.png'
-import allygn from '../images/logo-images/logo-allygn.png'
-import bypass from '../images/logo-images/logo-bypass.png'
-import chickfila from '../images/logo-images/logo-chick-fil-a.png'
-import zonda from '../images/logo-images/logo-zonda.png'
-import mars from '../images/logo-images/logo-mars.png'
+import popvox from "../images/logo-images/logo-popvox.png";
+import geCapital from "../images/logo-images/logo-ge-capital.png";
+import vandy from "../images/logo-images/logo-vandy.png";
+import networkForGood from "../images/logo-images/logo-network-for-good.png";
+import iron from "../images/logo-images/logo-iron.png";
+import estateAssist from "../images/logo-images/logo-estate-assist.png";
+import haven from "../images/logo-images/logo-haven.png";
+import allygn from "../images/logo-images/logo-allygn.png";
+import bypass from "../images/logo-images/logo-bypass.png";
+import chickfila from "../images/logo-images/logo-chick-fil-a.png";
+import zonda from "../images/logo-images/logo-zonda.png";
+import mars from "../images/logo-images/logo-mars.png";
 
 //team gifs
-import adamThumbs from '../images/gifs/adam-thumbs-up-punch.gif'
-import brantleyThumbs from '../images/gifs/brantley-double-thumbs.gif'
-import brantleyFalls from '../images/gifs/brantley-down-and-out.gif'
-import williamThumbs from '../images/gifs/dance-thumbs-up-wm.gif'
-import fistbump from '../images/gifs/fistbump-camera.gif'
-import shaneMirror from '../images/gifs/moshed_2016-1-26_4.29.25.gif'
-import adamWorks from '../images/gifs/onit.gif'
-import shaneKiss from '../images/gifs/shane-kiss.gif'
-import teamCelebration from '../images/gifs/team-celebrate.gif'
-import fistbumpTwo from '../images/gifs/thumbsup-fistbump2.gif'
-import zachKeeps from '../images/gifs/zach-keep-it-coming.gif'
-import zachWorks from '../images/gifs/zach-on-it.gif'
+import adamThumbs from "../images/gifs/adam-thumbs-up-punch.gif";
+import brantleyThumbs from "../images/gifs/brantley-double-thumbs.gif";
+import brantleyFalls from "../images/gifs/brantley-down-and-out.gif";
+import williamThumbs from "../images/gifs/dance-thumbs-up-wm.gif";
+import fistbump from "../images/gifs/fistbump-camera.gif";
+import shaneMirror from "../images/gifs/moshed_2016-1-26_4.29.25.gif";
+import adamWorks from "../images/gifs/onit.gif";
+import shaneKiss from "../images/gifs/shane-kiss.gif";
+import teamCelebration from "../images/gifs/team-celebrate.gif";
+import fistbumpTwo from "../images/gifs/thumbsup-fistbump2.gif";
+import zachKeeps from "../images/gifs/zach-keep-it-coming.gif";
+import zachWorks from "../images/gifs/zach-on-it.gif";
 
 const companyLogos = [
   {
     src: popvox,
-    alt: 'Popvox',
+    alt: "Popvox"
   },
   {
     src: geCapital,
-    alt: 'GE Captial',
+    alt: "GE Captial"
   },
   {
     src: vandy,
-    alt: 'Vanderbilt',
+    alt: "Vanderbilt"
   },
   {
     src: networkForGood,
-    alt: 'Network for Good',
+    alt: "Network for Good"
   },
   {
     src: iron,
-    alt: 'Iron',
+    alt: "Iron"
   },
   {
     src: estateAssist,
-    alt: 'Estate Assist',
+    alt: "Estate Assist"
   },
   {
     src: haven,
-    alt: 'Haven',
+    alt: "Haven"
   },
   {
     src: allygn,
-    alt: 'Allygn',
+    alt: "Allygn"
   },
   {
     src: bypass,
-    alt: 'Bypass',
+    alt: "Bypass"
   },
   {
     src: chickfila,
-    alt: 'Chick Fil A',
+    alt: "Chick Fil A"
   },
   {
     src: zonda,
-    alt: 'Zonda',
+    alt: "Zonda"
   },
   {
     src: mars,
-    alt: 'Mars',
-  },
-]
+    alt: "Mars"
+  }
+];
 
 class IndexPage extends React.Component {
   componentDidMount() {
     ///Lazy Loading
-    const observer = lozad()
-    observer.observe()
+    const observer = lozad();
+    observer.observe();
     ///Scrolling
-    Events.scrollEvent.register('begin', function() {
-      console.log('begin', arguments)
-    })
+    Events.scrollEvent.register("begin", function() {
+      console.log("begin", arguments);
+    });
 
-    Events.scrollEvent.register('end', function() {
-      console.log('end', arguments)
-    })
+    Events.scrollEvent.register("end", function() {
+      console.log("end", arguments);
+    });
   }
   componentWillUnmount() {
-    Events.scrollEvent.remove('begin')
-    Events.scrollEvent.remove('end')
+    Events.scrollEvent.remove("begin");
+    Events.scrollEvent.remove("end");
   }
   handleScroll(event) {}
   render() {
@@ -120,8 +120,8 @@ class IndexPage extends React.Component {
       <Styles>
         <Particles
           style={{
-            position: 'fixed',
-            top: 0,
+            position: "fixed",
+            top: 0
           }}
           params={{
             particles: {
@@ -129,22 +129,22 @@ class IndexPage extends React.Component {
                 value: 80,
                 density: {
                   enable: true,
-                  value_area: 800,
-                },
+                  value_area: 800
+                }
               },
-              color: { value: '#000' },
+              color: { value: "#000" },
               shape: {
-                type: 'circle',
+                type: "circle",
                 stroke: {
                   width: 0,
-                  color: '#000000',
+                  color: "#000000"
                 },
                 polygon: { nb_sides: 5 },
                 image: {
-                  src: 'img/github.svg',
+                  src: "img/github.svg",
                   width: 100,
-                  height: 100,
-                },
+                  height: 100
+                }
               },
               opacity: {
                 value: 0.4,
@@ -153,8 +153,8 @@ class IndexPage extends React.Component {
                   enable: false,
                   speed: 1,
                   opacity_min: 0.1,
-                  sync: false,
-                },
+                  sync: false
+                }
               },
               size: {
                 value: 3,
@@ -163,32 +163,32 @@ class IndexPage extends React.Component {
                   enable: false,
                   speed: 40,
                   size_min: 0.1,
-                  sync: false,
-                },
+                  sync: false
+                }
               },
               line_linked: {
                 enable: true,
                 distance: 150,
-                color: '#ffffff',
+                color: "#ffffff",
                 opacity: 0.4,
-                width: 1,
+                width: 1
               },
               move: {
                 enable: true,
                 speed: 1,
-                direction: 'none',
+                direction: "none",
                 random: false,
                 straight: false,
-                out_mode: 'out',
+                out_mode: "out",
                 bounce: false,
                 attract: {
                   enable: false,
                   rotateX: 600,
-                  rotateY: 1200,
-                },
-              },
+                  rotateY: 1200
+                }
+              }
             },
-            retina_detect: true,
+            retina_detect: true
           }}
         />
         <Layout>
@@ -321,7 +321,7 @@ class IndexPage extends React.Component {
               <div className="row header-content-inner">
                 <div className="col-md-12 text-center">
                   <h1>
-                    We believe creating great digital products starts with{' '}
+                    We believe creating great digital products starts with{" "}
                     <em>your</em> customer. This leads to more profitable
                     applications because they actually solve human problems.
                   </h1>
@@ -410,7 +410,7 @@ class IndexPage extends React.Component {
                       Our team can leverage our experience working with Bay Area
                       startups and enterprise companies. Together we can create
                       apps that are intuitive, software that saves your team
-                      time and money and mobile apps that delight.{' '}
+                      time and money and mobile apps that delight.{" "}
                       <em>Sound interesting?</em>
                     </p>
                     <p className="mb-100">
@@ -454,7 +454,7 @@ class IndexPage extends React.Component {
                       <br />
                       We believe your team knows what you really stand for, but
                       might not have taken the time to really understand who
-                      your customer is and what your company’s purpose is.{' '}
+                      your customer is and what your company’s purpose is.{" "}
                       <em>
                         Looking to discover your new brand and share it with the
                         world?
@@ -798,7 +798,7 @@ class IndexPage extends React.Component {
           </section>
         </Layout>
       </Styles>
-    )
+    );
   }
 }
-export default IndexPage
+export default IndexPage;
