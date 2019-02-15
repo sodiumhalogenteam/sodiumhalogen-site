@@ -5,7 +5,7 @@ date: '2014-12-20T22:12:03.284Z'
 tags: ['Startup']
 ---
 
-![speaking at Lean Startup Conference](william-at-lean-startup-conference-2014-360x270.jpg)
+![speaking at Lean Startup Conference](william-at-lean-startup-conference-2014.jpg)
 
 I just got back from speaking at the Lean Startup Conference in San Francisco for a [<font color="#555555">best multi tool</font>](http://www.carlsonknives.com/best-multi-tool-reviews/) firm. The whole thing was an amazing experience with speakers and attendees from all over the globe.
 
