@@ -143,6 +143,11 @@ const Styles = styled.div`
   .text-center {
     text-align: center;
   }
+  @media (max-width: 600px) {
+    .team-gifs {
+      display: none;
+    }
+  }
   // Navigation
 
   .navbar-default {
