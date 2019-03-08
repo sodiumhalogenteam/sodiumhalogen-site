@@ -131,7 +131,39 @@ class Staff extends Component {
         <div className="col-xs-6 col-sm-4 col-md-3 team__member">
           <div className="polygon-each-img-wrap">
             <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/adam-curl-sh.jpg"
+              src="https://sh-drop.s3.us-east-1.amazonaws.com/zb/zach-head-bw.jpg"
+              alt="demo-clip-heptagon"
+              className="polygon-clip-hexagon"
+            />
+          </div>
+          <p className="team__name">Katie Cooper</p>
+          <p className="team__title">Brand Designtist</p>
+          <p className="team__email">
+            <a href="mailto:katie@SodiumHalogen.com" className="btn">
+              email Katie
+            </a>
+          </p>
+        </div>
+        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+          <div className="polygon-each-img-wrap">
+            <img
+              src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/katie-cooper-bw.jpg"
+              alt="demo-clip-heptagon"
+              className="polygon-clip-hexagon"
+            />
+          </div>
+          <p className="team__name">Derrick Smith</p>
+          <p className="team__title">Content Designtist</p>
+          <p className="team__email">
+            <a href="mailto:derrick@SodiumHalogen.com" className="btn">
+              email Derrick
+            </a>
+          </p>
+        </div>
+        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+          <div className="polygon-each-img-wrap">
+            <img
+              src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/derrick-smith.jpg"
               alt="demo-clip-heptagon"
               className="polygon-clip-hexagon"
             />
