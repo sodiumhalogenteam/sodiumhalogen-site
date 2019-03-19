@@ -611,7 +611,7 @@ class IndexPage extends React.Component {
                       </li>
                       <li>
                         Secret HQ <br />
-                        <a href="#">***.***.****</a>
+                        <button>***.***.****</button>
                       </li>
                     </ul>
                   </div>

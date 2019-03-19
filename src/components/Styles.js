@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import {
   transitionAll,
-  backgroundCover,
   buttonVariant,
   sansSerifFont,
   serifFont,
@@ -68,8 +67,13 @@ const Styles = styled.div`
   hr.light {
     border-color: white;
   }
-
+  button {
+    background: none;
+    border: none;
+    box-shadow: 0 1px 0 0 currentColor;
+  }
   a,
+  button,
   .link {
     cursor: pointer;
     text-decoration: none;
@@ -582,7 +586,9 @@ const Styles = styled.div`
       margin: 0;
     }
     &__email {
-      box-shadow: none;
+      .btn {
+        box-shadow: none;
+      }
     }
   }
   .hexagon {
