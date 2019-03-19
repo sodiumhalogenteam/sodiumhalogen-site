@@ -353,6 +353,9 @@ const Styles = styled.div`
     }
     .container {
       position: relative;
+      .btn-primary {
+        box-shadow: none;
+      }
     }
     &__bottom {
       text-align: center;
@@ -567,6 +570,9 @@ const Styles = styled.div`
     }
     &__member {
       height: 330px;
+      @media (max-width: 748px) {
+        margin-bottom: 30px;
+      }
     }
     &__name {
       margin: 0;
@@ -574,6 +580,9 @@ const Styles = styled.div`
     &__title {
       font-size: 1.1em;
       margin: 0;
+    }
+    &__email {
+      box-shadow: none;
     }
   }
   .hexagon {
