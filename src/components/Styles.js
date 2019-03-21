@@ -576,13 +576,7 @@ const Styles = styled.div`
     }
     &__member {
       height: 330px;
-<<<<<<< HEAD
       margin-bottom: 30px;
-=======
-      @media (max-width: 748px) {
-        margin-bottom: 30px;
-      }
->>>>>>> 3fee2bc4a62f4ef9a23b6a4a5a5722b099ec9b96
     }
     &__name {
       margin: 0;
