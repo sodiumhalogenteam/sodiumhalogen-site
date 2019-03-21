@@ -131,7 +131,7 @@ class Staff extends Component {
         <div className="col-xs-6 col-sm-4 col-md-3 team__member">
           <div className="polygon-each-img-wrap">
             <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/zb/zach-head-bw.jpg"
+              src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/katie-cooper-bw.jpg"
               alt="demo-clip-heptagon"
               className="polygon-clip-hexagon"
             />
@@ -147,7 +147,7 @@ class Staff extends Component {
         <div className="col-xs-6 col-sm-4 col-md-3 team__member">
           <div className="polygon-each-img-wrap">
             <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/katie-cooper-bw.jpg"
+              src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/derrick-smith.jpg"
               alt="demo-clip-heptagon"
               className="polygon-clip-hexagon"
             />
@@ -163,7 +163,7 @@ class Staff extends Component {
         <div className="col-xs-6 col-sm-4 col-md-3 team__member">
           <div className="polygon-each-img-wrap">
             <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/derrick-smith.jpg"
+              src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/adam-curl-sh.jpg"
               alt="demo-clip-heptagon"
               className="polygon-clip-hexagon"
             />
@@ -189,6 +189,22 @@ class Staff extends Component {
           <p className="team__email">
             <a href="mailto:jill@SodiumHalogen.com" className="btn">
               email Jill
+            </a>
+          </p>
+        </div>
+        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+          <div className="polygon-each-img-wrap">
+            <img
+              src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/braden-donnell-2.jpg"
+              alt="demo-clip-heptagon"
+              className="polygon-clip-hexagon"
+            />
+          </div>
+          <p className="team__name">Braden Donnell</p>
+          <p className="team__title">Photography & Video</p>
+          <p className="team__email">
+            <a href="mailto:braden@SodiumHalogen.com" className="btn">
+              email Braden
             </a>
           </p>
         </div>

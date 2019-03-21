@@ -499,6 +499,8 @@ const Styles = styled.div`
         justify-content: center;
         img {
           height: 100%;
+          margin: auto;
+          object-fit: cover;
         }
       }
     }
@@ -567,6 +569,7 @@ const Styles = styled.div`
     }
     &__member {
       height: 330px;
+      margin-bottom: 30px;
     }
     &__name {
       margin: 0;
