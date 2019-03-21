@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import {
   transitionAll,
-  backgroundCover,
   buttonVariant,
   sansSerifFont,
   serifFont,
@@ -68,8 +67,13 @@ const Styles = styled.div`
   hr.light {
     border-color: white;
   }
-
+  button {
+    background: none;
+    border: none;
+    box-shadow: 0 1px 0 0 currentColor;
+  }
   a,
+  button,
   .link {
     cursor: pointer;
     text-decoration: none;
@@ -353,6 +357,9 @@ const Styles = styled.div`
     }
     .container {
       position: relative;
+      .btn-primary {
+        box-shadow: none;
+      }
     }
     &__bottom {
       text-align: center;
@@ -569,7 +576,13 @@ const Styles = styled.div`
     }
     &__member {
       height: 330px;
+<<<<<<< HEAD
       margin-bottom: 30px;
+=======
+      @media (max-width: 748px) {
+        margin-bottom: 30px;
+      }
+>>>>>>> 3fee2bc4a62f4ef9a23b6a4a5a5722b099ec9b96
     }
     &__name {
       margin: 0;
@@ -577,6 +590,11 @@ const Styles = styled.div`
     &__title {
       font-size: 1.1em;
       margin: 0;
+    }
+    &__email {
+      .btn {
+        box-shadow: none;
+      }
     }
   }
   .hexagon {

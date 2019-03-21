@@ -14,7 +14,7 @@ const Header = ({ siteTitle, headerLogo }) => (
     <nav id="mainNav" className="navbar navbar-default container">
       <div className="nav-inner">
         <div className="navbar-brand" href="#page-top">
-          <img src={logo} />
+          <img src={logo} alt="logo" />
         </div>
       </div>
     </nav>
