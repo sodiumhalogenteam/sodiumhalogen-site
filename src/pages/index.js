@@ -17,6 +17,7 @@ import software from '../images/icons/software-development-temp.png'
 import ux from '../images/icons/user-experience-temp.png'
 import branding from '../images/icons/brand-creation-temp.png'
 import vr from '../images/icons/virtual-reality-temp.png'
+import janice from '../images/homepage/janicefraser-130x130.jpg'
 
 //company images
 import popvox from '../images/logo-images/logo-popvox.png'
@@ -541,7 +542,7 @@ class IndexPage extends React.Component {
                   </div>
                   <div className="offset-md-2 col-sm-3 offset-sm-2 col-xs-4 text-center">
                     <img
-                      src="http://www.sodiumhalogen.com/wp-content/uploads/2011/12/janicefraser-130x130.jpg"
+                      src={janice}
                       alt="Janice Fraser"
                       className="img-circle mt-10"
                     />
