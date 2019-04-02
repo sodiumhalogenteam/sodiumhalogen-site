@@ -7,17 +7,18 @@ import { Link, Events } from 'react-scroll'
 
 //components
 import Layout from '../components/layout'
+import NotificationBox from '../components/NotificationBox'
 import SEO from '../components/seo'
 import Staff from '../components/Staff'
 import Styles from '../components/Styles'
 
 //images
+import branding from '../images/icons/brand-creation-temp.png'
+import janice from '../images/homepage/janicefraser-130x130.jpg'
 import molecule from '../images/Designtific-Method-molecule.png'
 import software from '../images/icons/software-development-temp.png'
 import ux from '../images/icons/user-experience-temp.png'
-import branding from '../images/icons/brand-creation-temp.png'
 import vr from '../images/icons/virtual-reality-temp.png'
-import janice from '../images/homepage/janicefraser-130x130.jpg'
 
 //company images
 import popvox from '../images/logo-images/logo-popvox.png'
@@ -317,6 +318,8 @@ class IndexPage extends React.Component {
               </figure>
             </div>
           </div>
+
+          <NotificationBox />
 
           <header className="section-spacing">
             <div className="header-content container">
