@@ -1,27 +1,27 @@
 ## Redirect upload folders to AWS S3
-/?up_be/(.*)$ https://sh-drop.s3.us-east-1.amazonaws.com/be/$1 301
-/?up/(.*)$ https://sh-drop.s3.us-east-1.amazonaws.com/wd/$1 301
-/?up_c/(.*)$ https://sh-drop.s3.us-east-1.amazonaws.com/cs/$1 301
-/?up_s/(.*)$ https://sh-drop.s3.us-east-1.amazonaws.com/sa/$1 301
-/?up_d/(.*)$ https://sh-drop.s3.us-east-1.amazonaws.com/dd/$1 301
+/?up_be/(.*)$       https://sh-drop.s3.us-east-1.amazonaws.com/be/$1 301
+/?up/(.*)$          https://sh-drop.s3.us-east-1.amazonaws.com/wd/$1 301
+/?up_c/(.*)$        https://sh-drop.s3.us-east-1.amazonaws.com/cs/$1 301
+/?up_s/(.*)$        https://sh-drop.s3.us-east-1.amazonaws.com/sa/$1 301
+/?up_d/(.*)$        https://sh-drop.s3.us-east-1.amazonaws.com/dd/$1 301
 
 
 ## Macroscope
-/client/([^/]+)/([^/]+)/([^/]+) /client_view/_show_mocks.php?client_name=$1&folder=$2&image=$3
-/client/([^/]+)/([^/]+) /client_view/_show_mocks.php?client_name=$1&folder=$2
-/client/([^/]+) /client_view/_show_mocks.php?client_name=$1
-/client/ /client_view/login.php
+/client/([^/]+)/([^/]+)/([^/]+)     /client_view/_show_mocks.php?client_name=$1&folder=$2&image=$3
+/client/([^/]+)/([^/]+)             /client_view/_show_mocks.php?client_name=$1&folder=$2
+/client/([^/]+)                     /client_view/_show_mocks.php?client_name=$1
+/client/                            /client_view/login.php
 
-/login /client/
-/project /client/
+/login      /client/
+/project    /client/
 
-/wm https://calendly.com/wm/30min/
-/adam https://calendly.com/adamcurl/30min/
-/brantley https://calendly.com/brantleyenglish/meet/
-/zach https://calendly.com/zachboatwright/30min
-/zachchat https://appear.in/zachboatwrightchat
-/chance https://calendly.com/chance/30min/
-/chance-chat https://meet.google.com/oeq-rewx-rgm?authuser=1
-/chancechat https://meet.google.com/oeq-rewx-rgm?authuser=1
-/mtwchance https://meet.google.com/oeq-rewx-rgm?authuser=1
-/chat https://plus.google.com/hangouts/_/event/cpgo2l8dk8jqnkpdkc6ddkbr85s
+/wm             https://calendly.com/wm/30min/
+/adam           https://calendly.com/adamcurl/30min/
+/brantley       https://calendly.com/brantleyenglish/meet/
+/zach           https://calendly.com/zachboatwright/30min
+/zachchat       https://appear.in/zachboatwrightchat
+/chance         https://calendly.com/chance/30min/
+/chance-chat    https://meet.google.com/oeq-rewx-rgm?authuser=1
+/chancechat     https://meet.google.com/oeq-rewx-rgm?authuser=1
+/mtwchance      https://meet.google.com/oeq-rewx-rgm?authuser=1
+/chat           https://plus.google.com/hangouts/_/event/cpgo2l8dk8jqnkpdkc6ddkbr85s
