@@ -1,0 +1,28 @@
+## Redirect upload folders to AWS S3
+RewriteRule ^/?up_be/(.*)$ https://sh-drop.s3.us-east-1.amazonaws.com/be/$1 [R=301,L]
+RewriteRule ^/?up/(.*)$ https://sh-drop.s3.us-east-1.amazonaws.com/wd/$1 [R=301,L]
+RewriteRule ^/?up_c/(.*)$ https://sh-drop.s3.us-east-1.amazonaws.com/cs/$1 [R=301,L]
+RewriteRule ^/?up_s/(.*)$ https://sh-drop.s3.us-east-1.amazonaws.com/sa/$1 [R=301,L]
+RewriteRule ^/?up_d/(.*)$ https://sh-drop.s3.us-east-1.amazonaws.com/dd/$1 [R=301,L]
+
+Options +FollowSymlinks
+
+## Macroscope
+RewriteRule ^client/([^/]+)/([^/]+)/([^/]+) /client_view/_show_mocks.php?client_name=$1&folder=$2&image=$3 [NC]
+RewriteRule ^client/([^/]+)/([^/]+) /client_view/_show_mocks.php?client_name=$1&folder=$2 [NC]
+RewriteRule ^client/([^/]+) /client_view/_show_mocks.php?client_name=$1 [NC]
+RewriteRule ^client/ /client_view/login.php [NC]
+
+Redirect /login /client/
+Redirect /project /client/
+
+Redirect /wm https://calendly.com/wm/30min/
+Redirect /adam https://calendly.com/adamcurl/30min/
+Redirect /brantley https://calendly.com/brantleyenglish/meet/
+Redirect /zach https://calendly.com/zachboatwright/30min
+Redirect /zachchat https://appear.in/zachboatwrightchat
+Redirect /chance https://calendly.com/chance/30min/
+Redirect /chance-chat https://meet.google.com/oeq-rewx-rgm?authuser=1
+Redirect /chancechat https://meet.google.com/oeq-rewx-rgm?authuser=1
+Redirect /mtwchance https://meet.google.com/oeq-rewx-rgm?authuser=1
+Redirect /chat https://plus.google.com/hangouts/_/event/cpgo2l8dk8jqnkpdkc6ddkbr85s
