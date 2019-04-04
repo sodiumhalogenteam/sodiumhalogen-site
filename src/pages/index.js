@@ -104,7 +104,7 @@ class IndexPage extends React.Component {
     ///Lazy Loading
     const observer = lozad()
     observer.observe()
-    var match = document.cookie.match(RegExp('(?:^|;\\s*)' + name + '=([^;]*)'))
+
     ///Scrolling
     Events.scrollEvent.register('begin', function() {
       console.log('begin', arguments)
