@@ -5,8 +5,15 @@ import styled from 'styled-components'
 const Styles = styled.div`
   .polygon-each-img-wrap {
     .polygon-clip-hexagon {
-      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-      /* clip-path: url('#polygon-clip-hexagon'); */
+      -webkit-clip-path: polygon(
+        50% 3%,
+        90% 25%,
+        90% 75%,
+        50% 97%,
+        10% 75%,
+        10% 25%
+      );
+      clip-path: polygon(50% 3%, 90% 25%, 90% 75%, 50% 97%, 10% 75%, 10% 25%);
     }
   }
 `
@@ -25,7 +32,7 @@ class Staff extends Component {
             />
           </div>
           <p className="team__name">William Donnell</p>
-          <p className="team__title">Lead Desgintist &amp; Founder</p>
+          <p className="team__title">Founder &amp; Lead Desgintist</p>
           <p className="team__email">
             <a href="mailto:wm@SodiumHalogen.com" className="btn">
               email William
@@ -41,7 +48,7 @@ class Staff extends Component {
             />
           </div>
           <p className="team__name">Barrett Gay</p>
-          <p className="team__title">Sr. Software &amp; VR Dev</p>
+          <p className="team__title">Founder &amp; Sr. Software &amp; VR Dev</p>
           <p className="team__email">
             <a href="mailto:barrett@SodiumHalogen.com" className="btn">
               email Barrett
@@ -57,7 +64,7 @@ class Staff extends Component {
             />
           </div>
           <p className="team__name">Quincy Jones</p>
-          <p className="team__title">Sr. Hardware &amp; VR Dev</p>
+          <p className="team__title">Founder &amp; Sr. Hardware &amp; VR Dev</p>
           <p className="team__email">
             <a href="mailto:quincy@SodiumHalogen.com" className="btn">
               email Quincy

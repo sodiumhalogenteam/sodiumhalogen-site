@@ -348,7 +348,7 @@ class IndexPage extends React.Component {
               <div className="row">
                 <div className="col-lg-10 offset-lg-1 drop-in text-center">
                   <Fade>
-                    <h2 id="method">
+                    <h2 id="method" className="designtific-section">
                       Our Designtific Method focuses on solving your customers’
                       problems while accomplishing your business goals.
                     </h2>

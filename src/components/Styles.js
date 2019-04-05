@@ -66,8 +66,11 @@ const Styles = styled.div`
 
   hr.light {
     border-color: white;
-    text-align: auto;
+    text-align: center;
+    width: 100%;
     color: white;
+    display: block;
+    margin: 0 auto 1rem;
   }
   button {
     background: none;
@@ -302,10 +305,15 @@ const Styles = styled.div`
     }
   }
 
+  .designtific-section {
+    padding-top: 20px;
+  }
+
   .img-center {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin: 100px auto;
   }
 
   section {
@@ -647,16 +655,16 @@ const Styles = styled.div`
 
   .polygon-clip-hexagon {
     -webkit-clip-path: polygon(
-      50% 0%,
-      100% 25%,
-      100% 75%,
-      50% 100%,
-      0% 75%,
-      0% 25%
+      50% 3%,
+      90% 25%,
+      90% 75%,
+      50% 97%,
+      10% 75%,
+      10% 25%
     );
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    -webkit-clip-path: url('#polygon-clip-hexagon');
-    clip-path: url('#polygon-clip-hexagon');
+    clip-path: polygon(50% 3%, 90% 25%, 90% 75%, 50% 97%, 10% 75%, 10% 25%);
+    /* -webkit-clip-path: url('#polygon-clip-hexagon');
+    clip-path: url('#polygon-clip-hexagon'); */
   }
 `
 

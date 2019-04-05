@@ -24,11 +24,12 @@ const Styles = styled.div`
     }
     span {
       position: absolute;
-      top: -2px;
-      right: 0px;
       opacity: 0.3;
       font-family: helvetica;
       font-size: 12px;
+      right: 10px;
+      top: 3px;
+      font-size: 1.4rem;
       /* padding: 5px; */
     }
   }
