@@ -366,7 +366,7 @@ class IndexPage extends React.Component {
                 <div className="col-lg-10 offset-lg-1 drop-in">
                   <Fade>
                     <p>
-                      Our small, multi-disciplinary team has spent the last 17
+                      Our small, multi-disciplinary team has spent the last 18
                       years experimenting and refining our process for turning
                       great ideas into solid strategy and great digital products
                       and experiences.
@@ -508,7 +508,7 @@ class IndexPage extends React.Component {
               <div className="row">
                 <div className="col-lg-8 offset-lg-2 text-center">
                   <h2>
-                    Over the past 15 years, we've helped lots of companies
+                    Over the past 18 years, we've helped lots of companies
                   </h2>
                   <hr className="light" />
                 </div>

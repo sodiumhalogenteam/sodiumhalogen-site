@@ -66,6 +66,8 @@ const Styles = styled.div`
 
   hr.light {
     border-color: white;
+    text-align: auto;
+    color: white;
   }
   button {
     background: none;
