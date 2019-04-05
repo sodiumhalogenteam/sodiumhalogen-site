@@ -320,8 +320,6 @@ class IndexPage extends React.Component {
             </div>
           </div>
 
-          <NotificationBox />
-
           <header className="section-spacing">
             <div className="header-content container">
               <div className="row header-content-inner">
@@ -631,6 +629,7 @@ class IndexPage extends React.Component {
             </div>
           </section>
         </Layout>
+        <NotificationBox />
       </Styles>
     )
   }
