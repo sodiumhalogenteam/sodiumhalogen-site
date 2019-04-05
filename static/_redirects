@@ -1,13 +1,13 @@
 ## Redirect upload folders to AWS S3
-/?up_be/(.*)$       https://sh-drop.s3.us-east-1.amazonaws.com/be/$1 301
-/?up/(.*)$          https://sh-drop.s3.us-east-1.amazonaws.com/wd/$1 301
-/?up_c/(.*)$        https://sh-drop.s3.us-east-1.amazonaws.com/cs/$1 301
-/?up_s/(.*)$        https://sh-drop.s3.us-east-1.amazonaws.com/sa/$1 301
-/?up_d/(.*)$        https://sh-drop.s3.us-east-1.amazonaws.com/dd/$1 301
+/?up_be/*            https://sh-drop.s3.us-east-1.amazonaws.com/be/:splat
+/?up/*          https://sh-drop.s3.us-east-1.amazonaws.com/wd/:splat
+/?up_c/*        https://sh-drop.s3.us-east-1.amazonaws.com/cs/:splat
+/?up_s/*        https://sh-drop.s3.us-east-1.amazonaws.com/sa/:splat
+/?up_d/*        https://sh-drop.s3.us-east-1.amazonaws.com/dd/:splat
 
-/?client/(.*)$         http://client.sodiumhalogen.com/c/$1 301
-/?login/(.*)$          http://client.sodiumhalogen.com/c/$1 301
-/?project/(.*)$        http://client.sodiumhalogen.com/c/$1 301
+/?client/*         http://client.sodiumhalogen.com/c/:splat
+/?login/*          http://client.sodiumhalogen.com/c/:splat
+/?project/*        http://client.sodiumhalogen.com/c/:splat
 
 
 /wm             https://calendly.com/wm/30min/
