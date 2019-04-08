@@ -15,7 +15,7 @@ import Styles from '../components/Styles'
 //images
 import branding from '../images/icons/brand-creation-temp.png'
 import janice from '../images/homepage/janicefraser-130x130.jpg'
-import molecule from '../images/Designtific-Method-molecule-copy.png'
+import molecule from '../images/designtific-molecule.png'
 import software from '../images/icons/software-development-temp.png'
 import ux from '../images/icons/user-experience-temp.png'
 import vr from '../images/icons/virtual-reality-temp.png'
