@@ -663,8 +663,6 @@ const Styles = styled.div`
       10% 25%
     );
     clip-path: polygon(50% 3%, 90% 25%, 90% 75%, 50% 97%, 10% 75%, 10% 25%);
-    /* -webkit-clip-path: url('#polygon-clip-hexagon');
-    clip-path: url('#polygon-clip-hexagon'); */
   }
 `
 
