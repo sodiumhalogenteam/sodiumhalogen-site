@@ -37,13 +37,6 @@ const Styles = styled.div`
 // #endregion
 
 const NotificationBox = props => {
-  const [showBox, setShowBox] = useState(false)
-  useEffect(() => {
-    setTimeout(() => {
-      setShowBox(true)
-    }, 5000)
-  })
-
   const handleClose = () => {
     document.cookie = `sh_cta_website_guide=closed;max-age=604800;domain=localhost`
     setShowBox(false)
@@ -59,9 +52,16 @@ const NotificationBox = props => {
     }
     if (getCookie('sh_cta_website_guide') === 'closed') {
       setHasClosedThisBox(true)
-      setShowBox(false)
     }
   })
+  const [showBox, setShowBox] = useState(false)
+  useEffect(() => {
+    if (!hasClosedThisBox) {
+      setTimeout(() => {
+        setShowBox(true)
+      }, 5000)
+    }
+  }, [hasClosedThisBox])
 
   return (
     <Styles>
