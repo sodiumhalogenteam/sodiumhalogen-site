@@ -57,8 +57,10 @@ const NotificationBox = props => {
       )
       return match ? match[1] : null
     }
-    if (getCookie('sh_cta_website_guide') === 'closed')
+    if (getCookie('sh_cta_website_guide') === 'closed') {
       setHasClosedThisBox(true)
+      setShowBox(false)
+    }
   })
 
   return (
