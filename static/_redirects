@@ -12,6 +12,7 @@
 # email signature images + some other things
 /_images/william-email-sig-head.jpg   https://sh-drop.s3.us-east-1.amazonaws.com/wd/william-email-sig-head.jpg
 /_images/*      http://client.sodiumhalogen.com/_images/:splat
+/clients/tlm/signature/     http://client.sodiumhalogen.com/app/tlm/signature/
 
 /wm             https://calendly.com/wm/30min/
 /adam           https://calendly.com/adamcurl/30min/
@@ -25,4 +26,4 @@
 /chat           https://plus.google.com/hangouts/_/event/cpgo2l8dk8jqnkpdkc6ddkbr85s
 
 # Redirect default Netlify subdomain to primary domain
-https://inspiring-knuth-f6a767.netlify.com/* https://sodiumhalogen.com/:splat 301!     
+https://inspiring-knuth-f6a767.netlify.com/* https://sodiumhalogen.com/:splat 301!   
