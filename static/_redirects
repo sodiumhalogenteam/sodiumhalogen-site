@@ -12,6 +12,8 @@
 # email signature images + some other things
 /_images/william-email-sig-head.jpg   https://sh-drop.s3.us-east-1.amazonaws.com/wd/william-email-sig-head.jpg
 /_images/*      http://client.sodiumhalogen.com/_images/:splat
+
+#tlm email signature generator
 /clients/tlm/signature/     http://client.sodiumhalogen.com/app/tlm/signature/
 
 /wm             https://calendly.com/wm/30min/
