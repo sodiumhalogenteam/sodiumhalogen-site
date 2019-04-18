@@ -15,7 +15,7 @@ Failure just lets us know to try something else, so my latest iteration involves
 
 ## Magic Wand of Content Creation?
 
-Here is why I think it's magical. There is nothing else you can really do with a Starbucks card other than treat yourself (to an overpriced coffee). You can't feel like you should buy groceries or gas with it. It's a liscense to indulge a little, and that's what makes it precious.
+Here is why I think it's magical. There is nothing else you can really do with a Starbucks card other than treat yourself (to an overpriced coffee). You can't feel like you should buy groceries or gas with it. It's a license to indulge a little, and that's what makes it precious.
 
 ## Will This Iteration Solve the Problem?
 
