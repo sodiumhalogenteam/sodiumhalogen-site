@@ -32,7 +32,7 @@ class Staff extends Component {
             />
           </div>
           <p className="team__name">William Donnell</p>
-          <p className="team__title">Founder &amp; Lead Desgintist</p>
+          <p className="team__title">Founder &amp; Lead Designtist</p>
           <p className="team__email">
             <a href="mailto:wm@SodiumHalogen.com" className="btn">
               email William
