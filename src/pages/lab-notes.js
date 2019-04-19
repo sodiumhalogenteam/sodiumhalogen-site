@@ -2,10 +2,19 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import Bio from '../components/bio'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
-
+import { palette } from '../components/Styles'
+import styled from 'styled-components'
+// #region Styled Components
+const StyledLink = styled(Link)`
+  color: ${palette.themeprimary};
+  &:hover {
+    color: ${palette.gray};
+  }
+`
+// #endregion
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -18,22 +27,27 @@ class BlogIndex extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <Bio />
+        {/* <Bio /> */}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
+            <div
+              key={node.fields.slug}
+              style={{
+                marginBottom: rhythm(2),
+              }}
+            >
               <h3
                 style={{
-                  marginBottom: rhythm(1 / 4),
+                  marginBottom: rhythm(1 / 3),
                 }}
               >
-                <Link
+                <StyledLink
                   style={{ boxShadow: `none` }}
                   to={`/lab-notes/${node.fields.slug}`}
                 >
                   {title}
-                </Link>
+                </StyledLink>
               </h3>
               <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />

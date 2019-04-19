@@ -157,105 +157,6 @@ const Styles = styled.div`
       display: none;
     }
   }
-  // Navigation
-
-  .navbar-default {
-    margin-top: 20px;
-    padding: 0;
-    background-color: white;
-    border-color: transparent;
-    ${sansSerifFont()};
-    ${transitionAll()};
-    .nav-inner {
-      display: flex;
-      justify-content: center;
-      margin: 0 auto;
-    }
-    .navbar-brand {
-      // margin: 0 auto;
-      img {
-        text-transform: uppercase;
-        text-indent: -1000em;
-        // width: 240px;
-        // height: 45px;
-        // margin: 15px auto 0;
-      }
-    }
-
-    &:hover,
-    &:focus {
-      color: darken(${palette.themeprimary}, 10%);
-      // background-position: 0 -70px;
-    }
-  }
-  .navbar-header .navbar-toggle {
-    font-weight: 700;
-    font-size: 12px;
-    color: ${palette.graydarker};
-    text-transform: uppercase;
-  }
-  .nav {
-    > li {
-      > a,
-      > a:focus {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 13px;
-        color: ${palette.graydarker};
-        &:hover {
-          color: ${palette.themeprimary};
-        }
-      }
-      &.active {
-        > a,
-        > a:focus {
-          color: ${palette.themeprimary} !important;
-          background-color: transparent;
-          &:hover {
-            background-color: transparent;
-          }
-        }
-      }
-    }
-  }
-  @media (min-width: 768px) {
-    background-color: transparent;
-    .navbar-header .navbar-brand {
-      color: rgba(255, 255, 255, 0.7);
-      background-position: 0 -70px;
-      &:hover,
-      &:focus {
-        color: white;
-      }
-    }
-    .nav > li > a,
-    .nav > li > a:focus {
-      color: rgba(255, 255, 255, 0.7);
-      &:hover {
-        color: white;
-      }
-    }
-    &.affix {
-      background-color: white;
-      border-color: fade(${palette.graydarker}, 5%);
-      .navbar-header .navbar-brand {
-        color: ${palette.themeprimary};
-        font-size: 14px;
-        &:hover,
-        &:focus {
-          color: darken(${palette.themeprimary}, 10%);
-        }
-      }
-      .nav > li > a,
-      .nav > li > a:focus {
-        color: ${palette.graydarker};
-        &:hover {
-          color: ${palette.themeprimary};
-        }
-      }
-    }
-  }
-  // }
 
   // Homepage Header
 
@@ -665,5 +566,5 @@ const Styles = styled.div`
     clip-path: polygon(50% 3%, 90% 25%, 90% 75%, 50% 97%, 10% 75%, 10% 25%);
   }
 `
-
+export { palette }
 export default Styles
