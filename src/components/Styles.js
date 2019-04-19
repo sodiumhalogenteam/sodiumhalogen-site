@@ -99,9 +99,7 @@ const Styles = styled.div`
     ${sansSerifFont()};
     line-height: 1.23;
   }
-  a {
-    color: red;
-  }
+
   p {
     font-size: 22px;
     line-height: 1.5;
