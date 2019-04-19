@@ -1,20 +1,11 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Bio from '../components/bio'
+// import Bio from '../components/bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
-import { palette } from '../components/Styles'
-import styled from 'styled-components'
-// #region Styled Components
-const StyledLink = styled(Link)`
-  color: ${palette.themeprimary};
-  &:hover {
-    color: ${palette.gray};
-  }
-`
-// #endregion
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -42,12 +33,12 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 3),
                 }}
               >
-                <StyledLink
+                <Link
                   style={{ boxShadow: `none` }}
                   to={`/lab-notes/${node.fields.slug}`}
                 >
                   {title}
-                </StyledLink>
+                </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />

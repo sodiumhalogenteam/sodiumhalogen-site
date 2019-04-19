@@ -1,12 +1,13 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
+import '../custom.scss'
 import lozad from 'lozad'
 import Particles from 'react-particles-js'
 import Fade from 'react-reveal/Fade'
 import { Link, Events } from 'react-scroll'
 
 //components
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import NotificationBox from '../components/NotificationBox'
 import SEO from '../components/seo'
 import Staff from '../components/Staff'

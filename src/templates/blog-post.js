@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Bio from '../components/bio'
+// import Bio from '../components/bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
             ...scale(-1 / 5),
             display: `block`,
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginTop: rhythm(1 / 4),
           }}
         >
           {post.frontmatter.date}

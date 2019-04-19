@@ -55,7 +55,6 @@ module.exports = {
         trackingId: `UA-196100-12`,
       },
     },
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -68,13 +67,15 @@ module.exports = {
         icon: `content/assets/sh-logo-favicon-source.png`,
       },
     },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-feed`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-sass',
   ],
 }
