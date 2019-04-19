@@ -27,7 +27,10 @@ Anderson Design had seen great success selling art prints, posters and books. Th
 
 Joel wanted to give more sizes and framing options on their best seller - art prints. He also wanted to offer a feature he (or we) had not seen before - custom wall calendars. We would need to come up with an intuitive way for customers to choose 12 different designs (from ADG's more than 800 designs) for their calendar.
 
-[video width="1240" height="808" mp4="http://www.sodiumhalogen.com/wp-content/uploads/2017/01/case-study-adg-home-new.mp4"][/video]
+<video width="100%" height="300" controls>
+    <source src="https://sh-drop.s3.amazonaws.com/sh-site-assets/blog/case-study-adg-home-new.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 <cite>Here is the new home page, focused on selling designs on all types of products. Was it a success? Keep reading.</cite>
 
@@ -52,7 +55,10 @@ One of the most challenging features of the new site was allowing customers to e
 
 ### Final walk through of the custom calendar flow
 
-[video width="1240" height="808" mp4="http://sodiumhalogen.com/up/case-study-final-calendar-0n4EcYCzF7.mp4"][/video]
+<video width="100%" height="300" controls>
+    <source src="https://sh-drop.s3.amazonaws.com/sh-site-assets/blog/case-study-final-calendar-0n4EcYCzF7.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 ## Custom Shopify app
 
@@ -62,7 +68,10 @@ Through research, we know that seeing the size and look of the new art in contex
 
 ## Designtific Conclusion
 
-[video width="1240" height="808" mp4="http://sodiumhalogen.com/up/case-study-adg-flow-sm-x0k2SgkZIE.mp4"][/video]
+<video width="100%" height="300" controls>
+    <source src="chttps://sh-drop.s3.amazonaws.com/sh-site-assets/blog/case-study-adg-flow-sm-x0k2SgkZIE.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 <cite>Final walk through of the site</cite>
 
