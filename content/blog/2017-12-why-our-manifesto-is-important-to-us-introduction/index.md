@@ -2,6 +2,7 @@
 layout: post
 title: Why our Manifesto is Important to Us - Introduction
 date: '2017-04-12T22:12:03.284Z'
+author: William Donnell
 ---
 
 We believe that it is important to uphold a series of morals and beliefs within the workplace. This is why we have our manifesto.
