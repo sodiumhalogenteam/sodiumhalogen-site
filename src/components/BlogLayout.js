@@ -6,10 +6,10 @@ import Header from './header'
 import './layout.css'
 import '../custom.scss'
 
-const Layout = ({ children, location }) => (
+const BlogLayout = ({ children, location }) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+      query BlogSiteTitleQuery {
         site {
           siteMetadata {
             title
@@ -20,14 +20,23 @@ const Layout = ({ children, location }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div>{children}</div>
+        <div
+          style={{
+            margin: `0 auto`,
+            maxWidth: 700,
+            padding: `15px 1.0875rem 1.45rem`,
+            paddingTop: 0,
+          }}
+        >
+          {children}
+        </div>
       </>
     )}
   />
 )
 
-Layout.propTypes = {
+BlogLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default BlogLayout
