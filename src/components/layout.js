@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import './layout.css'
+import '../custom.scss'
 
 const blogWrapper = {
   margin: `0 auto`,
