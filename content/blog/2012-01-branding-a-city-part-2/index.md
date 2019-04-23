@@ -5,7 +5,7 @@ date: '2012-01-29T22:12:03.284Z'
 tags: ['Branding', 'Jackson, TN']
 ---
 
-![](jackson_brand_0378-w950-h950-300x225.jpg 'Branding Jackson TN')As part of the branding process for Jackson, TN, we got together with the fine folks at Younger Associates. The plan was to go through the notes from our focus groups and boil them down into the important parts that really represent our town.
+![Branding Jackson TN](jackson_brand.jpg)As part of the branding process for Jackson, TN, we got together with the fine folks at Younger Associates. The plan was to go through the notes from our focus groups and boil them down into the important parts that really represent our town.
 
 Borrowing from our work with DC and SF startups, we put each of the different ideas on post it notes and then sorted them into categories. As a team, we determined the most important ideas and then talked about user personas.
 

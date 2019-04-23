@@ -69,7 +69,7 @@ Through research, we know that seeing the size and look of the new art in contex
 ## Designtific Conclusion
 
 <video width="100%" height="300" controls>
-    <source src="chttps://sh-drop.s3.amazonaws.com/sh-site-assets/blog/case-study-adg-flow-sm-x0k2SgkZIE.mp4" type="video/mp4">
+    <source src="https://sh-drop.s3.amazonaws.com/sh-site-assets/blog/case-study-adg-flow-sm-x0k2SgkZIE.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
 

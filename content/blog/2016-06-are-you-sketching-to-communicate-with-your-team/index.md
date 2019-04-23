@@ -7,7 +7,7 @@ tags: ['Design', 'UX']
 
 There's something special about sketching. Sketching is how you can communicate an idea, and register the creative side of your brain.
 
-![sketch donation thank you page gif](sketch-km-dN6GT3W3lP.gif)
+![sketch donation thank you page gif](https://sh-drop.s3.amazonaws.com/sh-site-assets/blog/sketch-km-dN6GT3W3lP.gif)
 
 One of our current clients is Kontakt Mission.
 

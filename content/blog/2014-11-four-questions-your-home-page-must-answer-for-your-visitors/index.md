@@ -5,7 +5,7 @@ date: '2014-11-06T22:12:03.284Z'
 tags: ['UX']
 ---
 
-![4questions](4questions-360x180.jpg)
+![4questions](4questions.jpg)
 #1 - What do you do?
 
 #2 - Who are you?

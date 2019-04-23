@@ -5,7 +5,7 @@ date: '2014-10-03T22:12:03.284Z'
 tags: ['UX']
 ---
 
-![carrot](sumall_carrot_incentive-360x240.png)
+![carrot](sumall_carrot_incentive.png)
 
 Getting content from the client often makes me feel more like a dentist than a project manager. Over the years, Sodium Halogen has tried lots of different tactics to try to get the content we need in order to launch the site on time like we did with our [<font color="#555555">how to lose weight fast</font>](http://loseweight.io) partner website. And almost all of those tactics...have failed.
 

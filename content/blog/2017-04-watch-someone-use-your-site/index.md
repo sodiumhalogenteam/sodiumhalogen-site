@@ -21,7 +21,7 @@ Ok, now that you've decided to test the site, where do you start?
 
 What is the purpose of your site? What do you want people to do? Fill out a form? Buy now? Sign up for your mailing list? Think about the most important actions you want the visitor to take.
 
-### ![](2wk-blog.gif)
+![](2wk-blog.gif)
 
 ### Pick your top 2-3 actions
 

@@ -13,6 +13,6 @@ I was helping facilitate a workshop for White House staffers. We helped them val
 
 These are the same techniques and principles (Lean Startup principles) that Sodium Halogen uses to build effective tools for our client's customers.
 
-![white-house-help2](white-house-help2.jpg)
+![white-house-help2](white-house-help.jpg)
 
 These are smart people who genuinely work hard to serve the citizens of the United States. It was awesome to help equip them to do that better. I hope they learned as much as I did.
