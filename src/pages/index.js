@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade'
 import { Link, Events } from 'react-scroll'
 
 //components
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import NotificationBox from '../components/NotificationBox'
 import SEO from '../components/seo'
 import Staff from '../components/Staff'
