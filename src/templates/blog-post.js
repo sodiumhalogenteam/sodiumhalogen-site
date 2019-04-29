@@ -24,7 +24,10 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(1 / 4),
           }}
         >
-          {post.frontmatter.date}
+          {post.frontmatter.date} |{' '}
+          <a href={`${post.frontmatter.author.social}`}>
+            {post.frontmatter.author.id}
+          </a>
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -82,6 +85,9 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         author {
           id
+          bio
+          social
+          meeting
         }
       }
     }

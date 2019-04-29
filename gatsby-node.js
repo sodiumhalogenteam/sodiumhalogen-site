@@ -19,6 +19,12 @@ exports.createPages = ({ graphql, actions }) => {
               }
               frontmatter {
                 title
+                author {
+                  id
+                  bio
+                  social
+                  meeting
+                }
               }
             }
           }
