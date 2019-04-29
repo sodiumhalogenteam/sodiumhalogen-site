@@ -3,6 +3,7 @@ layout: post
 title: Eight tips to make your website a success
 date: '2016-08-09T22:12:03.284Z'
 tags: ['Experiment', 'UX']
+author: William Donnell
 ---
 
 Dear potential customer that didn't hire us,

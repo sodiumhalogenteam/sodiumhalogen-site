@@ -3,6 +3,7 @@ layout: post
 title: Anderson Design Group
 date: '2017-01-19T22:12:03.284Z'
 tags: ['Design', 'UX']
+author: William Donnell
 ---
 
 ### Anderson Design Group asked us to help them sell more products with a new website.

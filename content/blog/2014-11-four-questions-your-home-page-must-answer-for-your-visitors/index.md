@@ -3,6 +3,7 @@ layout: post
 title: Four questions your home page must answer for your visitors
 date: '2014-11-06T22:12:03.284Z'
 tags: ['UX']
+author: William Donnell
 ---
 
 ![4questions](4questions.jpg)

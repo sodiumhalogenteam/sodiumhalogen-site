@@ -3,6 +3,7 @@ layout: post
 title: The Content Conundrum and the Carrot
 date: '2014-10-03T22:12:03.284Z'
 tags: ['UX']
+author: William Donnell
 ---
 
 ![carrot](sumall_carrot_incentive.png)

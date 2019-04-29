@@ -3,6 +3,7 @@ layout: post
 title: I'm sorry Kaitlin - an apology song
 date: '2015-01-25T22:12:03.284Z'
 tags: ['Design']
+author: William Donnell
 ---
 
 Ever replied to an email and thought you hit send...only to find out later you never hit send? Yea, me too. I wanted to make it up to my new friend Kaitlin, so I wrong an apology song.

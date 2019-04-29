@@ -3,6 +3,7 @@ layout: post
 title: Deep Fried UX from the Deep South
 date: '2012-01-28T22:12:03.284Z'
 tags: ['Startup', 'UX']
+author: William Donnell
 ---
 
 We have just completed a 10 week LUXr course with the team at POPVOX. With the amazing Janice Frasier leading the program, I was able to attend the class designed to teach startups to use lean methodologies and create amazing products people want to use.

@@ -3,6 +3,7 @@ layout: post
 title: Watch someone use your site
 date: '2017-04-14T22:12:03.284Z'
 tags: ['Experiment', 'UX']
+author: William Donnell
 ---
 
 Are you looking for ways to improve your website? Trying to figure out why your site is not converting like you wish it did? Of course you are. Well, there is a sure-fire way to get insights-watch people use your site.

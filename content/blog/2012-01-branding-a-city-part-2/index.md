@@ -3,6 +3,7 @@ layout: post
 title: Branding a city - part 2
 date: '2012-01-29T22:12:03.284Z'
 tags: ['Branding', 'Jackson, TN']
+author: William Donnell
 ---
 
 ![Branding Jackson TN](jackson_brand.jpg)As part of the branding process for Jackson, TN, we got together with the fine folks at Younger Associates. The plan was to go through the notes from our focus groups and boil them down into the important parts that really represent our town.

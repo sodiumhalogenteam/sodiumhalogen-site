@@ -3,6 +3,7 @@ layout: post
 title: Are you sketching to communicate with your team?
 date: '2016-06-06T22:12:03.284Z'
 tags: ['Design', 'UX']
+author: William Donnell
 ---
 
 There's something special about sketching. Sketching is how you can communicate an idea, and register the creative side of your brain.
