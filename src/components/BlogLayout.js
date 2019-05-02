@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import { slide as Menu } from 'react-burger-menu'
 import Styles from '../components/Styles'
+import burger from '../images/burger.svg'
 
 import Header from './header'
 import './layout.css'
@@ -22,7 +23,7 @@ const BlogLayout = ({ children, location }) => (
     render={data => (
       <>
         <Styles>
-          <Menu right>
+          <Menu customBurgerIcon={<img src={burger} />} right>
             <Link
               to="/"
               style={{

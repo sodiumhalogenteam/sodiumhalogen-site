@@ -9,7 +9,7 @@ import {
 function LightenDarkenColor(col, amt) {
   var usePound = false
 
-  if (col[0] == '#') {
+  if (col[0] === '#') {
     col = col.slice(1)
     usePound = true
   }
@@ -598,12 +598,18 @@ const Styles = styled.div`
   // Burger Menu - yumm
   /////////*/
   /* Position and sizing of burger button */
+  .bm-icon {
+    fill: ${palette.themeprimary};
+  }
   .bm-burger-button {
     position: fixed;
-    width: 36px;
-    height: 30px;
+    width: 39px;
+    height: 39px;
     right: 36px;
-    top: 36px;
+    top: 28px;
+    button {
+      box-shadow: none;
+    }
   }
 
   /* Color/shape of burger icon bars */

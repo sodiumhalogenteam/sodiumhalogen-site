@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import { slide as Menu } from 'react-burger-menu'
+import burger from '../images/burger.svg'
 
 import Header from './header'
 import './layout.css'
@@ -20,7 +21,7 @@ const Layout = ({ children, location }) => (
     `}
     render={data => (
       <>
-        <Menu right>
+        <Menu customBurgerIcon={<img src={burger} />} right>
           <Link
             to="/"
             style={{

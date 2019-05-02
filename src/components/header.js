@@ -12,8 +12,7 @@ const Nav = styled.nav`
   // Navigation
 
   &.navbar-default {
-    margin-top: 20px;
-    padding: 0;
+    padding-top: 20px;
     background-color: white;
     border-color: transparent;
     ${sansSerifFont()};
