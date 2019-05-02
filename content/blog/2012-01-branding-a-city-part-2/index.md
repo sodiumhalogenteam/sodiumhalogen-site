@@ -2,7 +2,7 @@
 layout: post
 title: Branding a city - part 2
 date: '2012-01-29T22:12:03.284Z'
-tags: ['Branding', 'Jackson, TN']
+tags: ['branding', 'Jackson, TN']
 author: William Donnell
 ---
 

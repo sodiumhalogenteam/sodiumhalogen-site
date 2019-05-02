@@ -2,7 +2,7 @@
 layout: post
 title: Anderson Design Group
 date: '2017-01-19T22:12:03.284Z'
-tags: ['Design', 'UX']
+tags: ['design', 'UX']
 author: William Donnell
 ---
 

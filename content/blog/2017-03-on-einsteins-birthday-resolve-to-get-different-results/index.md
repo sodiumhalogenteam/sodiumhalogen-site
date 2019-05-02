@@ -2,7 +2,7 @@
 layout: post
 title: On Einstein's birthday - resolve to get different results
 date: '2017-03-14T22:12:03.284Z'
-tags: ['Experiment']
+tags: ['experiment']
 author: William Donnell
 ---
 

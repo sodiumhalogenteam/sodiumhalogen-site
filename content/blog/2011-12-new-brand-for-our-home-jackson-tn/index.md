@@ -2,7 +2,7 @@
 layout: post
 title: New brand for our home - Jackson, TN
 date: '2011-12-22T22:12:03.284Z'
-tags: ['Branding', 'Design', 'Jackson, TN']
+tags: ['branding', 'design', 'Jackson, TN']
 author: William Donnell
 ---
 

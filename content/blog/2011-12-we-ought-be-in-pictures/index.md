@@ -2,7 +2,7 @@
 layout: post
 title: We ought be in pictures
 date: '2011-12-22T22:12:03.284Z'
-tags: ['Branding', 'Design', 'Jackson, TN', 'Startup', 'UI', 'UX']
+tags: ['branding', 'design', 'Jackson, TN', 'startup', 'UI', 'UX']
 author: William Donnell
 ---
 

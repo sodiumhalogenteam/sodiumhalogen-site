@@ -2,7 +2,7 @@
 layout: post
 title: Speaking at Lean Startup Conference
 date: '2014-12-20T22:12:03.284Z'
-tags: ['Startup']
+tags: ['startup']
 author: William Donnell
 ---
 

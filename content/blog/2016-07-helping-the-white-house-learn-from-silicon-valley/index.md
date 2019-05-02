@@ -2,7 +2,7 @@
 layout: post
 title: Helping the White House learn from Silicon Valley
 date: '2016-07-22T22:12:03.284Z'
-tags: ['Experiment', 'Startup']
+tags: ['experiment', 'startup']
 author: William Donnell
 ---
 

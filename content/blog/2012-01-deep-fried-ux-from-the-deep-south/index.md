@@ -2,7 +2,7 @@
 layout: post
 title: Deep Fried UX from the Deep South
 date: '2012-01-28T22:12:03.284Z'
-tags: ['Startup', 'UX']
+tags: ['startup', 'UX']
 author: William Donnell
 ---
 

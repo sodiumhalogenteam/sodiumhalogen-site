@@ -27,7 +27,11 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date} |{' '}
           <a href={`${post.frontmatter.author.social}`}>
             {post.frontmatter.author.id}
-          </a>
+          </a>{' '}
+          |{' '}
+          {post.frontmatter.tags.map(tag => (
+            <li>{tag}</li>
+          ))}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -82,6 +86,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        tags
         date(formatString: "MMMM DD, YYYY")
         author {
           id

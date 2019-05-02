@@ -2,7 +2,7 @@
 layout: post
 title: Watch someone use your site
 date: '2017-04-14T22:12:03.284Z'
-tags: ['Experiment', 'UX']
+tags: ['experiment', 'UX']
 author: William Donnell
 ---
 

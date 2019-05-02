@@ -2,7 +2,7 @@
 layout: post
 title: Winning at SXSW
 date: '2011-08-27T22:12:03.284Z'
-tags: ['Startup']
+tags: ['startup']
 author: William Donnell
 ---
 

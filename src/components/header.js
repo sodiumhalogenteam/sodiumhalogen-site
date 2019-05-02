@@ -112,21 +112,23 @@ const Nav = styled.nav`
 // #endregion
 
 const Header = ({ siteTitle, headerLogo }) => (
-  <Link
-    to="/"
-    style={{
-      color: `white`,
-      textDecoration: `none`,
-    }}
-  >
+  <div>
     <Nav id="mainNav" className="navbar navbar-default container">
       <div className="nav-inner">
         <div className="navbar-brand" href="#page-top">
-          <img src={logo} alt="logo" />
+          <Link
+            to="/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
       </div>
     </Nav>
-  </Link>
+  </div>
 )
 
 Header.propTypes = {

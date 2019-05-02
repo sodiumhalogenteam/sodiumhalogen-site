@@ -2,7 +2,7 @@
 layout: post
 title: Are you sketching to communicate with your team?
 date: '2016-06-06T22:12:03.284Z'
-tags: ['Design', 'UX']
+tags: ['design', 'UX']
 author: William Donnell
 ---
 
