@@ -1,12 +1,16 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { TiTags } from 'react-icons/ti'
+import styled from 'styled-components'
 
-import Button from '../utils/tag-button'
+// import Button from '../utils/tag-button'
 // import { rhythm } from '../utils/typography'
 // import { space, scale } from '../utils/tags-presets'
 const _ = require(`lodash`)
-
+const TagWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
 const TagsSection = ({ tags }) => {
   if (!tags) return null
   const tagLinks = tags.map((tag, i) => {
@@ -19,17 +23,18 @@ const TagsSection = ({ tags }) => {
     )
   })
   return (
-    <div>
+    <TagWrap>
       <em>Tagged with {tagLinks}</em>
-      <Button
+      <Link
+        className="btn btn-primary"
         css={{ flexShrink: 0 }}
         small
         key="blog-post-view-all-tags-button"
         to="./tags"
       >
         View All Tags <TiTags />
-      </Button>
-    </div>
+      </Link>
+    </TagWrap>
   )
 }
 

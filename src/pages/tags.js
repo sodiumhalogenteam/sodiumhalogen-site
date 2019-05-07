@@ -7,6 +7,7 @@ import kebabCase from 'lodash/kebabCase'
 // Components
 import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
+import BlogLayout from '../components/BlogLayout'
 
 const TagsPage = ({
   data: {
@@ -18,7 +19,7 @@ const TagsPage = ({
 }) => (
   <div>
     <Helmet title={title} />
-    <div>
+    <BlogLayout>
       <h1>Tags</h1>
       <ul>
         {group.map(tag => (
@@ -29,7 +30,7 @@ const TagsPage = ({
           </li>
         ))}
       </ul>
-    </div>
+    </BlogLayout>
   </div>
 )
 

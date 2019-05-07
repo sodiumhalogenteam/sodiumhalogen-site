@@ -1,11 +1,23 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import TagsSection from '../components/tags-section'
+import styled from 'styled-components'
 
 // import Bio from '../components/bio'
 import BlogLayout from '../components/BlogLayout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
+
+// #region Styled Components
+const BlogFooter = styled.ul`
+  display: inline-block;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  padding: 0 !important;
+  margin: 0;
+`
+// #endregion
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -38,16 +50,12 @@ class BlogPostTemplate extends React.Component {
         />
         {/* <Bio /> */}
 
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <TagsSection tags={this.props.data.markdownRemark.frontmatter.tags} />
+        <BlogFooter>
+          <li>
+            <TagsSection
+              tags={this.props.data.markdownRemark.frontmatter.tags}
+            />
+          </li>
           <li>
             {previous && (
               <Link to={`/lab-notes/${previous.fields.slug}`} rel="prev">
@@ -62,7 +70,7 @@ class BlogPostTemplate extends React.Component {
               </Link>
             )}
           </li>
-        </ul>
+        </BlogFooter>
       </BlogLayout>
     )
   }
