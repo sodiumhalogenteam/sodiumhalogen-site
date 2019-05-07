@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import TagsSection from '../components/tags-section'
 
 // import Bio from '../components/bio'
 import BlogLayout from '../components/BlogLayout'
@@ -27,11 +28,7 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date} |{' '}
           <a href={`${post.frontmatter.author.social}`}>
             {post.frontmatter.author.id}
-          </a>{' '}
-          |{' '}
-          {post.frontmatter.tags.map(tag => (
-            <li>{tag}</li>
-          ))}
+          </a>
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -50,6 +47,7 @@ class BlogPostTemplate extends React.Component {
             padding: 0,
           }}
         >
+          <TagsSection tags={this.props.data.markdownRemark.frontmatter.tags} />
           <li>
             {previous && (
               <Link to={`/lab-notes/${previous.fields.slug}`} rel="prev">

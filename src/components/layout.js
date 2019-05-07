@@ -21,7 +21,7 @@ const Layout = ({ children, location }) => (
     `}
     render={data => (
       <>
-        <Menu customBurgerIcon={<img src={burger} />} right>
+        <Menu customBurgerIcon={<img src={burger} alt="burger icon" />} right>
           <Link
             to="/"
             style={{

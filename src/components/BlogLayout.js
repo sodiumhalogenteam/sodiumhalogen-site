@@ -23,7 +23,7 @@ const BlogLayout = ({ children, location }) => (
     render={data => (
       <>
         <Styles>
-          <Menu customBurgerIcon={<img src={burger} />} right>
+          <Menu customBurgerIcon={<img src={burger} alt="burger icon" />} right>
             <Link
               to="/"
               style={{
