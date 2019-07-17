@@ -128,7 +128,7 @@ class Staff extends Component {
             />
           </div>
           <p className="team__name">Zach Boatwright</p>
-          <p className="team__title">Content Agronomist</p>
+          <p className="team__title">Code Agronomist</p>
           <p className="team__email">
             <a href="mailto:zach@SodiumHalogen.com" className="btn">
               email Zach
