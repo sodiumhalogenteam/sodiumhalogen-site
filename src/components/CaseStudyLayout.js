@@ -2,17 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import { slide as Menu } from 'react-burger-menu'
-import Styles from '../components/Styles'
+import Styles from './Styles'
 import burger from '../images/burger.svg'
 
 import Header from './header'
 import './layout.css'
 import '../custom.scss'
 
-const BlogLayout = ({ children, location }) => (
+const CaseStudyLayout = ({ children, location }) => (
   <StaticQuery
     query={graphql`
-      query BlogSiteTitleQuery {
+      query CaseStudySiteTitleQuery {
         site {
           siteMetadata {
             title
@@ -69,8 +69,8 @@ const BlogLayout = ({ children, location }) => (
   />
 )
 
-BlogLayout.propTypes = {
+CaseStudyLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default BlogLayout
+export default CaseStudyLayout
