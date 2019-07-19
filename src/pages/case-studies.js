@@ -37,7 +37,7 @@ class CaseStudyIndex extends React.Component {
               >
                 <Link
                   style={{ boxShadow: `none` }}
-                  to={`/lab-notes/${node.fields.slug}`}
+                  to={`/case-studies/${node.fields.slug}`}
                 >
                   {title}
                 </Link>

@@ -38,9 +38,9 @@ class CaseStudyTemplate extends React.Component {
           }}
         >
           {post.frontmatter.date} |{' '}
-          <a href={`${post.frontmatter.author.social}`}>
+          {/* <a href={`${post.frontmatter.author.social}`}>
             {post.frontmatter.author.id}
-          </a>
+          </a> */}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
