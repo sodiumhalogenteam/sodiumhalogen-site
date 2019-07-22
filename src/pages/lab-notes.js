@@ -28,11 +28,7 @@ class BlogIndex extends React.Component {
                 marginBottom: rhythm(2),
               }}
             >
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 3),
-                }}
-              >
+              <h3>
                 <Link
                   style={{ boxShadow: `none` }}
                   to={`/lab-notes/${node.fields.slug}`}

@@ -7,6 +7,7 @@ import Styles from '../components/Styles'
 import burger from '../images/burger.svg'
 
 import Header from './header'
+import BlogContainer from './BlogContainer'
 import './layout.css'
 import '../custom.scss'
 
@@ -54,7 +55,7 @@ const BlogLayout = ({ children, location }) => (
             </Link>
           </Menu>
           <Header siteTitle={data.site.siteMetadata.title} />
-          <div>{children}</div>
+          <BlogContainer>{children}</BlogContainer>
         </Styles>
       </>
     )}

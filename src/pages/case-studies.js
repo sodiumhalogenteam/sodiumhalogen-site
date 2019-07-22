@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 // import Bio from '../components/bio'
-import CaseStudyLayout from '../components/CaseStudyLayout'
+import BlogLayout from '../components/BlogLayout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
 
@@ -13,7 +13,7 @@ class CaseStudyIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <CaseStudyLayout location={this.props.location} title={siteTitle}>
+      <BlogLayout location={this.props.location} title={siteTitle}>
         <SEO
           title="All case studies"
           keywords={[`case studies`, `gatsby`, `javascript`, `react`]}
@@ -45,7 +45,7 @@ class CaseStudyIndex extends React.Component {
             </div>
           )
         })}
-      </CaseStudyLayout>
+      </BlogLayout>
     )
   }
 }
