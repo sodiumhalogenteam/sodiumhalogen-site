@@ -8,8 +8,8 @@ tags: ['software', 'design', 'brand', 'identity']
   <img src ="./vertex-logo.png">
 </div>
 
-##Lorem ipsum
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+##Creating Vertex Optic
+Synapse is a CLI program (command line interface) created by The Vertex Project that allows analysts to inspect massive amounts of data by showing the interconnections between the different values. Synapse is one of the most powerful data analysis tools currently available, but due to the fact that it was only available through the terminal, it was difficult for new users to learn and use. It took months of training for data analysts to be able to use it, and even more time for them to master it.
 
 <div class="blog-image-container">
   <div>
@@ -17,9 +17,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </div>
 </div>
 
-##Since Vertex developed Synapse with a command line interface, it was not accessible to a wide range of users.
-Synapse is one of the most powerful data analysis tools currently available. Due to the fact that it was only available through the terminal, it was difficult for new users to learn and use. It took months of training for data analysts to be able to use it, and even more time for them to master it.
-
+##Since Vertex developed Synapse for a CLI, it was not accessible to a wide range of users.
 To fix this issue, we made an accessible, beginner-friendly interface that can be used by senior analysts who care about efficiency and workflow, as well as by junior analysts and others who only use it occasionally as a part of their job. Optic was born. This has allowed Synapse to move from just being one of the most powerful data analysis platforms to also being the most accessible, a combination that often isn’t seen.
 
 Not only has creating a UI made the platform more accessible to new and current users, but it has also allowed for the addition of new data visualization features not possible in a terminal setting, such as force graph and timeline view (coming soon).
