@@ -138,7 +138,8 @@ const Styles = styled.div`
     font-weight: 600;
   }
 
-  p {
+  p,
+  li {
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 20px;

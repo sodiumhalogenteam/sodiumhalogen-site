@@ -85,6 +85,3 @@ The team wanted the limiting factor in productivity for those using the app to b
 We accomplished this by building a clean, streamlined interface that still keeps a complex set of features surfaced and easy to access.
 
 Sodium Halogen creates seamless UX/UI design which is brought to life via efficient development, making for products with a great user experience and that are a joy to use. This combination is one of the reasons why the Vertex team chose us.
-
-Do you have something that you’d like to build but don’t know how to get started?
-[Tell us about your idea]

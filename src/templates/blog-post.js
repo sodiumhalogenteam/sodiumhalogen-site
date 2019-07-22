@@ -10,13 +10,20 @@ import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
 
 // #region Styled Components
-const BlogFooter = styled.ul`
+const BlogFooter = styled.div`
   display: inline-block;
   list-style: none;
   width: 60%;
   text-align: center;
   padding: 0 !important;
   margin: 0 20%;
+  h2 {
+    margin: 0 15% 30px;
+  }
+`
+
+const CTA = styled.div`
+  margin-bottom: 100px;
 `
 // #endregion
 
@@ -59,6 +66,20 @@ class BlogPostTemplate extends React.Component {
           {/* <Bio /> */}
         </BlogContainer>
         <BlogFooter>
+          {post.frontmatter.layout === 'case-study' ? (
+            <CTA>
+              <h2>
+                Do you have something that you'd like to buld but don't know how
+                to get started?
+              </h2>
+              <a
+                href="https://william10.typeform.com/to/iKe3eC"
+                class="btn btn-primary"
+              >
+                Tell Us About Your Idea
+              </a>
+            </CTA>
+          ) : null}
           <li>
             <TagsSection
               tags={this.props.data.markdownRemark.frontmatter.tags}

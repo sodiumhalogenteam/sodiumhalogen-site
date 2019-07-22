@@ -11,6 +11,7 @@ const BlogContainer = styled.div`
   h2,
   h3,
   p,
+  ul,
   small {
     margin: 0 25%;
     padding-bottom: ${rhythm(0.75)};
@@ -21,7 +22,7 @@ const BlogContainer = styled.div`
   }
 
   hr {
-    margin: 0 20% ${rhythm(1)};
+    margin: 0 25% ${rhythm(1)};
   }
 
   div.header {
