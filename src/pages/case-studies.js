@@ -12,8 +12,6 @@ class CaseStudyIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
-    console.log(this.props)
-
     return (
       <CaseStudyLayout location={this.props.location} title={siteTitle}>
         <SEO

@@ -6,7 +6,6 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  const caseStudy = path.resolve('./src/templates/case-study.js')
   const tagTemplate = path.resolve('src/templates/tags.js')
   return graphql(
     `
@@ -73,7 +72,7 @@ exports.createPages = ({ graphql, actions }) => {
 
       createPage({
         path: '/case-studies' + study.node.fields.slug,
-        component: caseStudy,
+        component: blogPost,
         context: {
           slug: study.node.fields.slug,
           previous,

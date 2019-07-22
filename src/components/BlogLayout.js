@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import { slide as Menu } from 'react-burger-menu'
@@ -53,16 +54,7 @@ const BlogLayout = ({ children, location }) => (
             </Link>
           </Menu>
           <Header siteTitle={data.site.siteMetadata.title} />
-          <div
-            style={{
-              margin: `0 auto`,
-              maxWidth: 700,
-              padding: `15px 1.0875rem 1.45rem`,
-              paddingTop: 0,
-            }}
-          >
-            {children}
-          </div>
+          <div>{children}</div>
         </Styles>
       </>
     )}

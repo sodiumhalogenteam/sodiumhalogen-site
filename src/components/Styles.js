@@ -126,12 +126,23 @@ const Styles = styled.div`
   h6 {
     ${sansSerifFont()};
     line-height: 1.23;
+    color: #434b52;
+  }
+
+  h1 {
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
   }
 
   p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.5;
     margin-bottom: 20px;
+    color: #7e7e7e;
   }
 
   ul {
@@ -190,10 +201,9 @@ const Styles = styled.div`
 
   header {
     .header-content {
-      margin-top: 30vh;
+      margin-top: 12vh;
       .header-content-inner {
         h1 {
-          font-weight: 700;
           margin-top: 0;
           margin-bottom: 20px;
           font-size: 30px;
@@ -271,6 +281,9 @@ const Styles = styled.div`
         width: auto;
       }
     }
+    h2 {
+      color: white;
+    }
   }
   // service
   img.icon {
@@ -293,6 +306,9 @@ const Styles = styled.div`
     @media (min-width: 768px) {
       padding-top: 0;
       padding-bottom: 0;
+    }
+    h2 {
+      color: white;
     }
     .container {
       position: relative;
@@ -518,6 +534,7 @@ const Styles = styled.div`
       margin-bottom: 30px;
     }
     &__name {
+      color: #434b52;
       margin: 0;
     }
     &__title {
