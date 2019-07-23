@@ -21,6 +21,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/case-studies`,
+        name: `case-studies`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
       },
@@ -68,6 +75,18 @@ module.exports = {
         name: `Sodium Halogen Blog`,
         short_name: `SH-Blog`,
         start_url: `/lab-notes`,
+        background_color: `#ffffff`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `content/assets/sh-logo-favicon-source.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Sodium Halogen Case Studies`,
+        short_name: `SH-Case-Studies`,
+        start_url: `/case-studies`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,

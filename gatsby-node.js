@@ -28,6 +28,7 @@ exports.createPages = ({ graphql, actions }) => {
                   social
                   meeting
                 }
+                layout
               }
             }
           }
@@ -40,7 +41,9 @@ exports.createPages = ({ graphql, actions }) => {
     }
 
     // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.allMarkdownRemark.edges.filter(
+      edge => edge.node.frontmatter.layout === 'post'
+    )
 
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
@@ -56,6 +59,28 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
+
+    // Create case study pages
+    const studies = result.data.allMarkdownRemark.edges.filter(
+      edge => edge.node.frontmatter.layout === 'case-study'
+    )
+
+    studies.forEach((study, index) => {
+      const previous =
+        index === studies.length - 1 ? null : studies[index + 1].node
+      const next = index === 0 ? null : studies[index - 1].node
+
+      createPage({
+        path: '/case-studies' + study.node.fields.slug,
+        component: blogPost,
+        context: {
+          slug: study.node.fields.slug,
+          previous,
+          next,
+        },
+      })
+    })
+
     // Tag pages:
     let tags = []
     // Iterate through each post, putting all found tags into `tags`

@@ -40,6 +40,15 @@ const Layout = ({ children, location }) => (
           >
             Lab Notes
           </Link>
+          {/* <Link
+            to="/case-studies/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            Case Studies
+          </Link> */}
         </Menu>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div>{children}</div>

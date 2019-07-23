@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 
 // import Bio from '../components/bio'
 import BlogLayout from '../components/BlogLayout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
 
-class BlogIndex extends React.Component {
+class CaseStudyIndex extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -15,9 +16,12 @@ class BlogIndex extends React.Component {
     return (
       <BlogLayout location={this.props.location} title={siteTitle}>
         <SEO
-          title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          title="All case studies"
+          keywords={[`case studies`, `gatsby`, `javascript`, `react`]}
         />
+        <Helmet>
+          <meta name="robots" content="noindex" />
+        </Helmet>
         {/* <Bio /> */}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
@@ -31,12 +35,11 @@ class BlogIndex extends React.Component {
               <h3>
                 <Link
                   style={{ boxShadow: `none` }}
-                  to={`/lab-notes/${node.fields.slug}`}
+                  to={`/case-studies/${node.fields.slug}`}
                 >
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           )
@@ -46,7 +49,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default CaseStudyIndex
 
 export const pageQuery = graphql`
   query {
@@ -56,7 +59,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { frontmatter: { layout: { eq: "post" } } }
+      filter: { frontmatter: { layout: { eq: "case-study" } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
