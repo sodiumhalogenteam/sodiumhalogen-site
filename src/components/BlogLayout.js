@@ -44,7 +44,7 @@ const BlogLayout = ({ children, location }) => (
             >
               Lab Notes
             </Link>
-            <Link
+            {/* <Link
               to="/case-studies/"
               style={{
                 color: `white`,
@@ -52,7 +52,7 @@ const BlogLayout = ({ children, location }) => (
               }}
             >
               Case Studies
-            </Link>
+            </Link> */}
           </Menu>
           <Header siteTitle={data.site.siteMetadata.title} />
           <BlogContainer>{children}</BlogContainer>

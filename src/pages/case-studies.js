@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 
 // import Bio from '../components/bio'
 import BlogLayout from '../components/BlogLayout'
@@ -18,6 +19,9 @@ class CaseStudyIndex extends React.Component {
           title="All case studies"
           keywords={[`case studies`, `gatsby`, `javascript`, `react`]}
         />
+        <Helmet>
+          <meta name="robots" content="noindex" />
+        </Helmet>
         {/* <Bio /> */}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug

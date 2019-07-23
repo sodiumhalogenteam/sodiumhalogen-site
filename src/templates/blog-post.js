@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import TagsSection from '../components/tags-section'
 import styled from 'styled-components'
+import Helmet from 'react-helmet'
 
 // import Bio from '../components/bio'
 import BlogLayout from '../components/BlogLayout'
@@ -33,10 +34,13 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
 
-    console.log(post)
-
     return (
       <BlogLayout location={this.props.location} title={siteTitle}>
+        <Helmet>
+          {post.frontmatter.layout === 'case-study' ? (
+            <meta name="robots" content="noindex" />
+          ) : null}
+        </Helmet>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
         <BlogContainer>
           {post.frontmatter.title &&
