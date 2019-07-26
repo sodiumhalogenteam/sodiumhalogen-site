@@ -70,17 +70,6 @@ const BlogContainer = styled.div`
         &:first-child {
           padding-left: 0;
         }
-        span {
-          /* background-image: none !important; */
-          padding-bottom: 0 !important;
-          /* max-width: 100% !important; */
-          span {
-            img {
-              position: relative !important;
-              width: 100%;
-            }
-          }
-        }
       }
     }
     .extra-padding {
