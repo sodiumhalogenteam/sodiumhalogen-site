@@ -12,6 +12,7 @@ const BlogContainer = styled.div`
   h3,
   p,
   ul,
+  ol,
   small {
     margin: 0 25%;
     padding-bottom: ${rhythm(0.75)};

@@ -146,7 +146,8 @@ const Styles = styled.div`
     color: #7e7e7e;
   }
 
-  ul {
+  ul,
+  ol {
     padding: 0 0 0 25px;
     li {
       font-size: 22px;
