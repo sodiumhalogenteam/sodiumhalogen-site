@@ -6,6 +6,7 @@
 /up_d/*        https://sh-drop.s3.us-east-1.amazonaws.com/dd/:splat
 
 /client/*         http://client.sodiumhalogen.com/:splat
+/clients/*        http://lab.sodiumhalogen.com/:splat
 /login/*          http://client.sodiumhalogen.com/:splat
 /project/*        http://client.sodiumhalogen.com/:splat
 
