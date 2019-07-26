@@ -72,8 +72,12 @@ Since Vertex had been working on and investing in Synapse for years, it had beco
     <img src="./william-chance-brainstorm.png">
     <img src="./idea-board.png">
   </div>
-  <div>
-    <img src="./sketches.png">
+  <div class="extra-padding">
+    <!-- <img src="./sketches.png"> -->
+    <img src="./sketch1.png">
+    <img src="./sketch2.png">
+    <img src="./sketch3.png">
+    <img src="./sketch4.png">
   </div>
 </div>
 

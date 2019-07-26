@@ -66,13 +66,14 @@ const BlogContainer = styled.div`
       a {
         flex: 1;
         padding-left: 30px;
+        width: 100%;
         &:first-child {
           padding-left: 0;
         }
         span {
-          background-image: none !important;
+          /* background-image: none !important; */
           padding-bottom: 0 !important;
-          max-width: 100% !important;
+          /* max-width: 100% !important; */
           span {
             img {
               position: relative !important;
@@ -81,6 +82,10 @@ const BlogContainer = styled.div`
           }
         }
       }
+    }
+    .extra-padding {
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 `
