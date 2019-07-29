@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/case-studies`,
-        name: `case-studies`,
+        path: `${__dirname}/src/images`,
+        name: `images`,
       },
     },
     {
@@ -63,7 +63,12 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaultQuality: 100,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
