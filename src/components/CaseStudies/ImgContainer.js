@@ -14,17 +14,28 @@ const ImgContainer = styled.div`
   div {
     width: 100%;
   }
-  & > div {
-    display: flex;
-    padding-top: 30px;
-    &:first-child {
-      padding-top: 0;
-    }
+  @media only screen and (min-width: 768px) {
     & > div {
-      flex: 1;
-      margin-left: 30px;
+      display: flex;
+      padding-top: 30px;
       &:first-child {
-        margin-left: 0;
+        padding-top: 0;
+      }
+      & > div {
+        flex: 1;
+        margin-left: 30px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    margin: 0;
+    & > div {
+      margin: 0;
+      & > div {
+        margin: 0 0 ${rhythm(1)};
       }
     }
   }

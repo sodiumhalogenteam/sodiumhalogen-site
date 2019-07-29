@@ -6,8 +6,15 @@ const Styles = styled.div`
   text-align: center;
   padding: 0;
   margin: 75px auto;
+  @media only screen and (max-width: 768px) {
+    margin: 75px 0;
+    width: 100%;
+  }
   h2 {
     margin: 0 15% 30px;
+    @media only screen and (max-width: 768px) {
+      margin: 0 5% 30px;
+    }
   }
   div {
     margin-bottom: 100px;
