@@ -26,13 +26,11 @@ const Header = styled.div`
   }
 `
 
-class CaseStudyIndex extends React.Component {
+class Vertex extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
-
-    console.log(data)
 
     return (
       <Styles location={this.props.location} title={siteTitle}>
@@ -202,17 +200,7 @@ class CaseStudyIndex extends React.Component {
   }
 }
 
-export default CaseStudyIndex
-
-export const fluidImage = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      fluid(maxWidth: 1920) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`
+export default Vertex
 
 export const pageQuery = graphql`
   query {
@@ -241,53 +229,101 @@ export const pageQuery = graphql`
     buttonsAndControls: file(
       relativePath: { eq: "case-studies/vertex/buttons-and-controls.png" }
     ) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     buttonsAndControls2: file(
       relativePath: { eq: "case-studies/vertex/buttons-and-controls-2.png" }
     ) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     colorPalette: file(
       relativePath: { eq: "case-studies/vertex/color-palette.png" }
     ) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     ideaBoard: file(
       relativePath: { eq: "case-studies/vertex/idea-board.png" }
     ) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     sketch1: file(relativePath: { eq: "case-studies/vertex/sketch1.png" }) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     sketch2: file(relativePath: { eq: "case-studies/vertex/sketch2.png" }) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     sketch3: file(relativePath: { eq: "case-studies/vertex/sketch3.png" }) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     sketch4: file(relativePath: { eq: "case-studies/vertex/sketch4.png" }) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     sketches: file(relativePath: { eq: "case-studies/vertex/sketches.png" }) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
 
     stormCliScreenshot: file(
       relativePath: { eq: "case-studies/vertex/storm-cli-screenshot.png" }
     ) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     tableView: file(
       relativePath: { eq: "case-studies/vertex/table-view.png" }
     ) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     typography: file(
       relativePath: { eq: "case-studies/vertex/typography.png" }
     ) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     vtxLogo: file(relativePath: { eq: "case-studies/vertex/vertex-logo.png" }) {
       childImageSharp {
@@ -297,15 +333,27 @@ export const pageQuery = graphql`
       }
     }
     vtxIcons: file(relativePath: { eq: "case-studies/vertex/vtx-icons.png" }) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     vtxLogos: file(relativePath: { eq: "case-studies/vertex/vtx-logos.png" }) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
     williamChanceBrainstorm: file(
       relativePath: { eq: "case-studies/vertex/william-chance-brainstorm.png" }
     ) {
-      ...fluidImage
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
   }
 `

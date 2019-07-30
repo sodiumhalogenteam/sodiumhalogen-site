@@ -12,6 +12,7 @@ import NotificationBox from '../components/NotificationBox'
 import SEO from '../components/seo'
 import Staff from '../components/Staff'
 import Styles from '../components/Styles'
+import WhoWeveHelped from '../components/WhoWeveHelped'
 
 //images
 import branding from '../images/icons/brand-creation-temp.png'
@@ -20,20 +21,6 @@ import molecule from '../images/designtific-molecule.png'
 import software from '../images/icons/software-development-temp.png'
 import ux from '../images/icons/user-experience-temp.png'
 import vr from '../images/icons/virtual-reality-temp.png'
-
-//company images
-import popvox from '../images/logo-images/logo-popvox.png'
-import geCapital from '../images/logo-images/logo-ge-capital.png'
-import vandy from '../images/logo-images/logo-vandy.png'
-import networkForGood from '../images/logo-images/logo-network-for-good.png'
-import iron from '../images/logo-images/logo-iron.png'
-import estateAssist from '../images/logo-images/logo-estate-assist.png'
-import haven from '../images/logo-images/logo-haven.png'
-import allygn from '../images/logo-images/logo-allygn.png'
-import bypass from '../images/logo-images/logo-bypass.png'
-import chickfila from '../images/logo-images/logo-chick-fil-a.png'
-import zonda from '../images/logo-images/logo-zonda.png'
-import mars from '../images/logo-images/logo-mars.png'
 
 //team gifs
 import adamThumbs from '../images/gifs/adam-thumbs-up-punch.gif'
@@ -48,57 +35,6 @@ import teamCelebration from '../images/gifs/team-celebrate.gif'
 import fistbumpTwo from '../images/gifs/thumbsup-fistbump2.gif'
 import zachKeeps from '../images/gifs/zach-keep-it-coming.gif'
 import zachWorks from '../images/gifs/zach-on-it.gif'
-
-const companyLogos = [
-  {
-    src: popvox,
-    alt: 'Popvox',
-  },
-  {
-    src: geCapital,
-    alt: 'GE Captial',
-  },
-  {
-    src: vandy,
-    alt: 'Vanderbilt',
-  },
-  {
-    src: networkForGood,
-    alt: 'Network for Good',
-  },
-  {
-    src: iron,
-    alt: 'Iron',
-  },
-  {
-    src: estateAssist,
-    alt: 'Estate Assist',
-  },
-  {
-    src: haven,
-    alt: 'Haven',
-  },
-  {
-    src: allygn,
-    alt: 'Allygn',
-  },
-  {
-    src: bypass,
-    alt: 'Bypass',
-  },
-  {
-    src: chickfila,
-    alt: 'Chick Fil A',
-  },
-  {
-    src: zonda,
-    alt: 'Zonda',
-  },
-  {
-    src: mars,
-    alt: 'Mars',
-  },
-]
 
 class IndexPage extends React.Component {
   componentDidMount() {
@@ -504,31 +440,7 @@ class IndexPage extends React.Component {
               </div>
             </div>
           </section>
-          <section className="bgsh-primary py-100" id="customers">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-8 offset-lg-2 text-center">
-                  <h2>
-                    Over the past 18 years, we've helped lots of companies
-                  </h2>
-                  <hr className="light" />
-                </div>
-                <div className="col-lg-12 text-center">
-                  {companyLogos.map((logo, index) => (
-                    <img
-                      key={index}
-                      src={logo.src}
-                      alt={`${logo.alt} sh customer`}
-                    />
-                  ))}
-                  <hr className="light" />
-                  <p className="text-faded">
-                    Over 300 companies from startups to enterprise
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          <WhoWeveHelped />
           <section>
             <Fade>
               <div className="container drop-in py-100">

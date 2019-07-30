@@ -26,7 +26,7 @@ const Footer = () => {
     <Styles>
       <div>
         <h2>
-          Do you have something that you'd like to buld but don't know how to
+          Do you have something that you'd like to build but don't know how to
           get started?
         </h2>
         <a
