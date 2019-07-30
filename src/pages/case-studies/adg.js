@@ -51,6 +51,11 @@ const Testimonials = styled.section`
   }
   .row {
     justify-content: center;
+    &.content {
+      div {
+        flex: 0 0 25% !important;
+      }
+    }
   }
   img {
     border-radius: 100%;
@@ -85,20 +90,16 @@ class Fellowship extends React.Component {
           <Header url={data.headerImage.childImageSharp.original.src}>
             <div>
               <h1>
-                Curious about the team that designed <br /> Fellowship Jackson's
-                group finder?
+                Curious about the team that designed <br /> Anderson Design
+                Group's New Site?
               </h1>
             </div>
           </Header>
           <WhoWeveHelped noMargin />
           <DesignAtom
-            header="You are built on purpose and your website should be too"
-            text1="Our Designtific Method is the science of making things work the
-                way they should – combined with the design sensibilities that
-                make you enjoy looking at them. Design + Science."
-            text2="We pair your ministry expertise with our technical expertise to
-                solve your members' problems and accomplish your organization's
-                goals."
+            header="The key is our Designtific Method"
+            text1="It’s the science of making things work the way they should – combined with the design sensibilities that make you enjoy looking at them. Design + Science."
+            text2="We pair your expertise of your market with our technical expertise to solve your customer's problems and accomplish your business objectives."
           />
           <Testimonials className="bg-primary" id="testimonials">
             <div class="container">
@@ -108,36 +109,7 @@ class Fellowship extends React.Component {
                   <hr class="light" />
                 </div>
               </div>
-              <div class="row">
-                <div class="col-sm-6 col-sm-offset-3 text-center">
-                  <div class="service-box--top">
-                    <p>
-                      “ Sign ups for home groups shouldn’t be a chore. Sodium
-                      Halogen made it easy for our people to survey our
-                      available groups and express their preference. The team at
-                      Sodium Halogen were eager partners in our mission and
-                      working with them was a pleasure.”
-                    </p>
-                    <div class="row  testimonial-image">
-                      <div class="col-sm-3 col-sm-offset-2 col-xs-4 img">
-                        <img
-                          src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/Eugene_staffphotos-4-272x272.jpg"
-                          alt=""
-                          width="100%"
-                          class="img-circle mt-10"
-                        />
-                      </div>
-                      <div class="col-sm-6">
-                        <cite class="text-faded">
-                          <br />
-                          Eugene Brandt - lead pastor, Fellowship Jackson
-                        </cite>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
+              <div class="row content">
                 <div class="col-sm-4 text-center">
                   <div class="service-box">
                     <p>
@@ -162,6 +134,15 @@ class Fellowship extends React.Component {
                 </div>
                 <div class="col-sm-4 text-center">
                   <div class="service-box">
+                    <p>
+                      “At each of the three projects, you guys were the best
+                      partner ever!”
+                    </p>
+                    <cite class="text-faded">Kris Bondi – iron.io</cite>
+                  </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                  <div class="service-box">
                     <p>“Since the redesign, our leads have doubled.”</p>
                     <cite class="text-faded">
                       Kevin Deiter – Expert Connect
@@ -173,10 +154,10 @@ class Fellowship extends React.Component {
           </Testimonials>
           <FreeWebsiteChecklist />
           <HereToHelp>
-            We designed a custom ministry group finder for the small group
-            leaders and attenders at Fellowship Bible Church Jackson, and we can
-            create something <em>amazing</em> for you. Put our Designtific
-            Method to work hitting your ministry's goals.
+            We designed a custom eCommerce website for illustrators and artists
+            at Anderson Deisgn Group, and we can create something amazing for
+            you. Put our Designtific Method to work hitting your organization's
+            goals.
           </HereToHelp>
           <Footer />
         </Layout>
@@ -211,9 +192,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    headerImage: file(
-      relativePath: { eq: "case-studies/fellowship/header.jpg" }
-    ) {
+    headerImage: file(relativePath: { eq: "case-studies/adg/header.jpg" }) {
       childImageSharp {
         original {
           src

@@ -80,7 +80,7 @@ const Headshots = styled.div`
   }
 `
 
-const HereToHelp = () => {
+const HereToHelp = ({ children }) => {
   const data = useStaticQuery(graphql`
     query {
       williamHeadshot: file(relativePath: { eq: "head-shots/william.jpg" }) {
@@ -129,12 +129,7 @@ const HereToHelp = () => {
           <div className="col-lg-8 col-lg-offset-2 text-center">
             <h2 className="section-heading">We're here to help</h2>
             <hr className="primary" />
-            <p>
-              We designed a custom ministry group finder for the small group
-              leaders and attenders at Fellowship Bible Church Jackson, and we
-              can create something <em>amazing</em> for you. Put our Designtific
-              Method to work hitting your ministry's goals.
-            </p>
+            <p>{children}</p>
           </div>
           <Headshots className="employees col-sm-12">
             <div className="employees__employee">
