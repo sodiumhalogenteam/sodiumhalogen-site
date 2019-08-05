@@ -121,7 +121,6 @@ const HereToHelp = ({ children }) => {
     }
   `)
 
-  console.log(data)
   return (
     <Styles id="contact">
       <div className="container">
