@@ -690,6 +690,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
   }
+
+  /* gatsby-image maxWidth fix */
+  div.gatsby-image-wrapper picture img {
+    max-width: none;
+  }
 `
 
 export { palette }

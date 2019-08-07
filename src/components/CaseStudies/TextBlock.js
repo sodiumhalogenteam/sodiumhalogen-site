@@ -11,7 +11,7 @@ const Header = styled.h1`
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   color: #434b52;
   @media only screen and (max-width: 768px) {
-    margin: 0 5%;
+    margin: 0 15px;
   }
 
 }
@@ -23,7 +23,7 @@ const Body = styled.p`
   line-height: 1.5;
   color: #7e7e7e;
   @media only screen and (max-width: 768px) {
-    margin: 0 5%;
+    margin: 15px;
   }
 `
 

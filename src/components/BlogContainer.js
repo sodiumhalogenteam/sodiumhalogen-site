@@ -16,6 +16,9 @@ const BlogContainer = styled.div`
   small {
     margin: 0 25%;
     padding-bottom: ${rhythm(0.75)};
+    @media only screen and (max-width: 768px) {
+      margin: 0 15px;
+    }
   }
 
   h2 {
