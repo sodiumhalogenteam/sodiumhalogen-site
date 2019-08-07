@@ -624,8 +624,8 @@ const Styles = styled.div`
     position: fixed;
     width: 39px;
     height: 39px;
-    right: 36px;
-    top: 28px;
+    right: 15px;
+    top: 15px;
     button {
       box-shadow: none;
     }

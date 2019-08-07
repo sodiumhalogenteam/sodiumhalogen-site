@@ -21,6 +21,9 @@ const Nav = styled.nav`
       display: flex;
       justify-content: center;
       margin: 0 auto;
+      @media only screen and (max-width: 768px) {
+        margin: 0;
+      }
     }
     .navbar-brand {
       // margin: 0 auto;
