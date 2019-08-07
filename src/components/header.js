@@ -22,7 +22,7 @@ const Nav = styled.nav`
       justify-content: center;
       margin: 0 auto;
       @media only screen and (max-width: 768px) {
-        margin: 0;
+        padding-right: 48px;
       }
     }
     .navbar-brand {
