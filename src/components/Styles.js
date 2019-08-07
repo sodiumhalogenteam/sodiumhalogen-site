@@ -692,8 +692,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   /* gatsby-image maxWidth fix */
-  div.gatsby-image-wrapper picture img {
-    max-width: none;
+  div.gatsby-image-wrapper {
+    picture img {
+      max-width: none;
+    }
+    img {
+      max-width: none;
+    }
   }
 `
 
