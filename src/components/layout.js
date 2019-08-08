@@ -8,45 +8,55 @@ import Header from './header'
 import './layout.css'
 import '../custom.scss'
 
-const Layout = ({ children, location }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
+import addVideoAsk from '../utils/addVideoAsk'
+
+const Layout = ({ children, location }) => {
+  React.useEffect(() => {
+    if (!document.getElementById('videoask-script')) {
+      addVideoAsk()
+    }
+  })
+
+  return (
+    <StaticQuery
+      query={graphql`
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
+            }
           }
         }
-      }
-    `}
-    render={data => (
-      <>
-        <Menu customBurgerIcon={<img src={burger} alt="burger icon" />} right>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            Homepage
-          </Link>
-          <Link
-            to="/lab-notes/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            Lab Notes
-          </Link>
-        </Menu>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div>{children}</div>
-      </>
-    )}
-  />
-)
+      `}
+      render={data => (
+        <>
+          <Menu customBurgerIcon={<img src={burger} alt="burger icon" />} right>
+            <Link
+              to="/"
+              style={{
+                color: `white`,
+                textDecoration: `none`,
+              }}
+            >
+              Homepage
+            </Link>
+            <Link
+              to="/lab-notes/"
+              style={{
+                color: `white`,
+                textDecoration: `none`,
+              }}
+            >
+              Lab Notes
+            </Link>
+          </Menu>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <div>{children}</div>
+        </>
+      )}
+    />
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
