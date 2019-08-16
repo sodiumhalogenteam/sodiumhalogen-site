@@ -37,11 +37,11 @@ class CaseStudyIndex extends React.Component {
           <meta name="robots" content="noindex" />
         </Helmet>
         {/* <Bio /> */}
-        <CaseStudy
+        {/* <CaseStudy
           title="Vertex"
           url="/case-studies/vertex/"
           excerpt="Synapse is a CLI program (command line interface) created by The Vertex Project that allows analysts to inspect massive amounts of data by showing the interconnections between the different values. Synapse is one of the most powerful data analysis tools currently available, but due to the fact that it was only available through the terminal, it was difficult for new users to learn and use..."
-        />
+        /> */}
         <CaseStudy
           title="Fellowship"
           url="/case-studies/fellowship/"

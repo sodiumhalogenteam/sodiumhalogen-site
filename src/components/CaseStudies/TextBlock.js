@@ -4,7 +4,8 @@ import { rhythm, scale } from '../../utils/typography'
 
 const Header = styled.h1`
   line-height: 40px;
-  margin: 0 25%;
+  width: 50%;
+  margin: 0 auto;
   padding-bottom: ${rhythm(1)};
   font-size: 30px;
   font-weight: 600;
@@ -17,8 +18,9 @@ const Header = styled.h1`
 }
 `
 
-const Body = styled.p`
-  margin: 0 25%;
+const Body = styled.div`
+  width: 50%;
+  margin: 0 auto;
   font-size: 20px;
   line-height: 1.5;
   color: #7e7e7e;
