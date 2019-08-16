@@ -12,9 +12,13 @@ const BlogContainer = styled.div`
   h3,
   p,
   ul,
+  ol,
   small {
     margin: 0 25%;
     padding-bottom: ${rhythm(0.75)};
+    @media only screen and (max-width: 768px) {
+      margin: 0 15px;
+    }
   }
 
   h2 {
@@ -65,21 +69,15 @@ const BlogContainer = styled.div`
       a {
         flex: 1;
         padding-left: 30px;
+        width: 100%;
         &:first-child {
           padding-left: 0;
         }
-        span {
-          background-image: none !important;
-          padding-bottom: 0 !important;
-          max-width: 100% !important;
-          span {
-            img {
-              position: relative !important;
-              width: 100%;
-            }
-          }
-        }
       }
+    }
+    .extra-padding {
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 `

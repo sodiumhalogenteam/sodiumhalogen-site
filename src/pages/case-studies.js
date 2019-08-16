@@ -7,11 +7,25 @@ import BlogLayout from '../components/BlogLayout'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
 
+const CaseStudy = ({ title, excerpt, url }) => (
+  <div
+    style={{
+      marginBottom: rhythm(2),
+    }}
+  >
+    <h3>
+      <Link style={{ boxShadow: `none` }} to={url}>
+        {title}
+      </Link>
+    </h3>
+    <p>{excerpt}</p>
+  </div>
+)
+
 class CaseStudyIndex extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
 
     return (
       <BlogLayout location={this.props.location} title={siteTitle}>
@@ -23,27 +37,21 @@ class CaseStudyIndex extends React.Component {
           <meta name="robots" content="noindex" />
         </Helmet>
         {/* <Bio /> */}
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div
-              key={node.fields.slug}
-              style={{
-                marginBottom: rhythm(2),
-              }}
-            >
-              <h3>
-                <Link
-                  style={{ boxShadow: `none` }}
-                  to={`/case-studies/${node.fields.slug}`}
-                >
-                  {title}
-                </Link>
-              </h3>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })}
+        {/* <CaseStudy
+          title="Vertex"
+          url="/case-studies/vertex/"
+          excerpt="Synapse is a CLI program (command line interface) created by The Vertex Project that allows analysts to inspect massive amounts of data by showing the interconnections between the different values. Synapse is one of the most powerful data analysis tools currently available, but due to the fact that it was only available through the terminal, it was difficult for new users to learn and use..."
+        /> */}
+        <CaseStudy
+          title="Fellowship"
+          url="/case-studies/fellowship/"
+          excerpt="We designed a custom ministry group finder for the small group leaders and attenders at Fellowship Bible Church Jackson, and we can create something amazing for you. Put our Designtific Method to work hitting your ministry's goals."
+        />
+        <CaseStudy
+          title="Anderson Design Group"
+          url="/case-studies/adg/"
+          excerpt="We designed a custom eCommerce website for illustrators and artists at Anderson Deisgn Group, and we can create something amazing for you. Put our Designtific Method to work hitting your organization's goals."
+        />
       </BlogLayout>
     )
   }
@@ -56,23 +64,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    allMarkdownRemark(
-      filter: { frontmatter: { layout: { eq: "case-study" } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-          }
-        }
       }
     }
   }

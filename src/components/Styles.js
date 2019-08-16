@@ -146,7 +146,8 @@ const Styles = styled.div`
     color: #7e7e7e;
   }
 
-  ul {
+  ul,
+  ol {
     padding: 0 0 0 25px;
     li {
       font-size: 22px;
@@ -623,8 +624,8 @@ const Styles = styled.div`
     position: fixed;
     width: 39px;
     height: 39px;
-    right: 36px;
-    top: 28px;
+    right: 15px;
+    top: 15px;
     button {
       box-shadow: none;
     }
@@ -688,6 +689,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
   /* Styling of overlay */
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
+  }
+
+  /* gatsby-image maxWidth fix */
+  div.gatsby-image-wrapper {
+    picture img {
+      max-width: none;
+    }
+    img {
+      max-width: none;
+    }
   }
 `
 
