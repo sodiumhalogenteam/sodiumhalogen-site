@@ -231,7 +231,7 @@ export const pageQuery = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -240,7 +240,7 @@ export const pageQuery = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -249,7 +249,7 @@ export const pageQuery = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -258,42 +258,42 @@ export const pageQuery = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     sketch1: file(relativePath: { eq: "case-studies/vertex/sketch1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     sketch2: file(relativePath: { eq: "case-studies/vertex/sketch2.png" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     sketch3: file(relativePath: { eq: "case-studies/vertex/sketch3.png" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     sketch4: file(relativePath: { eq: "case-studies/vertex/sketch4.png" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     sketches: file(relativePath: { eq: "case-studies/vertex/sketches.png" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -303,7 +303,7 @@ export const pageQuery = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -312,7 +312,7 @@ export const pageQuery = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -321,7 +321,7 @@ export const pageQuery = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -335,14 +335,14 @@ export const pageQuery = graphql`
     vtxIcons: file(relativePath: { eq: "case-studies/vertex/vtx-icons.png" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     vtxLogos: file(relativePath: { eq: "case-studies/vertex/vtx-logos.png" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -351,7 +351,7 @@ export const pageQuery = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

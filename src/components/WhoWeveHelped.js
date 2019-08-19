@@ -33,7 +33,7 @@ const companyLogos = [
   },
   {
     src: iron,
-    alt: 'Iron',
+    alt: 'Iron.io',
   },
   {
     src: estateAssist,
