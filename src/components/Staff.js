@@ -1,5 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+
+import Img from 'gatsby-image'
 
 // #region Styled Components
 const Styles = styled.div`
@@ -19,203 +22,281 @@ const Styles = styled.div`
 `
 // #endregion
 
-class Staff extends Component {
-  render() {
-    return (
-      <Styles className="row">
-        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
-          <div className="polygon-each-img-wrap">
-            <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/william_head_sm-e1517091609512.jpg"
-              alt="demo-clip-heptagon"
-              className="polygon-clip-hexagon"
-            />
-          </div>
-          <p className="team__name">William Donnell</p>
-          <p className="team__title">Founder &amp; Lead Designtist</p>
-          <p className="team__email">
-            <a href="mailto:wm@SodiumHalogen.com" className="btn">
-              email William
-            </a>
-          </p>
+const Staff = () => {
+  const headshots = useStaticQuery(graphql`
+    query HeaderQuery {
+      william: file(relativePath: { eq: "head-shots/william.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      barrett: file(relativePath: { eq: "head-shots/barrett.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      quincy: file(relativePath: { eq: "head-shots/quincy.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      shane: file(relativePath: { eq: "head-shots/shane.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      chance: file(relativePath: { eq: "head-shots/chance.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      brantley: file(relativePath: { eq: "head-shots/brantley.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      zach: file(relativePath: { eq: "head-shots/zach.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      kaitie: file(relativePath: { eq: "head-shots/kaitie.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      derrick: file(relativePath: { eq: "head-shots/derrick.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      adam: file(relativePath: { eq: "head-shots/adam.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      jill: file(relativePath: { eq: "head-shots/jill.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      braden: file(relativePath: { eq: "head-shots/braden.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `)
+
+  console.log(headshots)
+
+  return (
+    <Styles className="row">
+      <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+        <div className="polygon-each-img-wrap">
+          <Img
+            fluid={headshots.william.childImageSharp.fluid}
+            className="polygon-clip-hexagon"
+          />
         </div>
-        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
-          <div className="polygon-each-img-wrap">
-            <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/team-barrett-gay-1.jpg"
-              alt="demo-clip-heptagon"
-              className="polygon-clip-hexagon"
-            />
-          </div>
-          <p className="team__name">Barrett Gay</p>
-          <p className="team__title">Founder &amp; Sr. Software &amp; VR Dev</p>
-          <p className="team__email">
-            <a href="mailto:barrett@SodiumHalogen.com" className="btn">
-              email Barrett
-            </a>
-          </p>
+        <p className="team__name">William Donnell</p>
+        <p className="team__title">Founder &amp; Lead Designtist</p>
+        <p className="team__email">
+          <a href="mailto:wm@SodiumHalogen.com" className="btn">
+            email William
+          </a>
+        </p>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+        <div className="polygon-each-img-wrap">
+          <Img
+            fluid={headshots.barrett.childImageSharp.fluid}
+            className="polygon-clip-hexagon"
+          />
         </div>
-        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
-          <div className="polygon-each-img-wrap">
-            <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/team-quincy-jones-1.jpg"
-              alt="demo-clip-heptagon"
-              className="polygon-clip-hexagon"
-            />
-          </div>
-          <p className="team__name">Quincy Jones</p>
-          <p className="team__title">Founder &amp; Sr. Hardware &amp; VR Dev</p>
-          <p className="team__email">
-            <a href="mailto:quincy@SodiumHalogen.com" className="btn">
-              email Quincy
-            </a>
-          </p>
+        <p className="team__name">Barrett Gay</p>
+        <p className="team__title">Founder &amp; Sr. Software &amp; VR Dev</p>
+        <p className="team__email">
+          <a href="mailto:barrett@SodiumHalogen.com" className="btn">
+            email Barrett
+          </a>
+        </p>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+        <div className="polygon-each-img-wrap">
+          <Img
+            fluid={headshots.quincy.childImageSharp.fluid}
+            className="polygon-clip-hexagon"
+          />
         </div>
-        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
-          <div className="polygon-each-img-wrap">
-            <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/shane_sm.jpg"
-              alt="demo-clip-heptagon"
-              className="polygon-clip-hexagon"
-            />
-          </div>
-          <p className="team__name">Shane Aday</p>
-          <p className="team__title">Design Alchemist</p>
-          <p className="team__email">
-            <a href="mailto:shane@SodiumHalogen.com" className="btn">
-              email Shane
-            </a>
-          </p>
+        <p className="team__name">Quincy Jones</p>
+        <p className="team__title">Founder &amp; Sr. Hardware &amp; VR Dev</p>
+        <p className="team__email">
+          <a href="mailto:quincy@SodiumHalogen.com" className="btn">
+            email Quincy
+          </a>
+        </p>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+        <div className="polygon-each-img-wrap">
+          <Img
+            fluid={headshots.shane.childImageSharp.fluid}
+            className="polygon-clip-hexagon"
+          />
         </div>
-        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
-          <div className="polygon-each-img-wrap">
-            <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/chance_smith-sh1.jpg"
-              alt="demo-clip-heptagon"
-              className="polygon-clip-hexagon"
-            />
-          </div>
-          <p className="team__name">Chance Smith</p>
-          <p className="team__title">Innovation Strategist</p>
-          <p className="team__email">
-            <a href="mailto:chance@SodiumHalogen.com" className="btn">
-              email Chance
-            </a>
-          </p>
+        <p className="team__name">Shane Aday</p>
+        <p className="team__title">Design Alchemist</p>
+        <p className="team__email">
+          <a href="mailto:shane@SodiumHalogen.com" className="btn">
+            email Shane
+          </a>
+        </p>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+        <div className="polygon-each-img-wrap">
+          <Img
+            fluid={headshots.chance.childImageSharp.fluid}
+            className="polygon-clip-hexagon"
+          />
         </div>
-        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
-          <div className="polygon-each-img-wrap">
-            <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/team-brantley.jpg"
-              alt="demo-clip-heptagon"
-              className="polygon-clip-hexagon"
-            />
-          </div>
-          <p className="team__name">Brantley English</p>
-          <p className="team__title">Code Architect</p>
-          <p className="team__email">
-            <a href="mailto:brantley@SodiumHalogen.com" className="btn">
-              email Brantley
-            </a>
-          </p>
+        <p className="team__name">Chance Smith</p>
+        <p className="team__title">Innovation Strategist</p>
+        <p className="team__email">
+          <a href="mailto:chance@SodiumHalogen.com" className="btn">
+            email Chance
+          </a>
+        </p>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+        <div className="polygon-each-img-wrap">
+          <Img
+            fluid={headshots.brantley.childImageSharp.fluid}
+            className="polygon-clip-hexagon"
+          />
         </div>
-        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
-          <div className="polygon-each-img-wrap">
-            <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/zb/zach-head-bw.jpg"
-              alt="demo-clip-heptagon"
-              className="polygon-clip-hexagon"
-            />
-          </div>
-          <p className="team__name">Zach Boatwright</p>
-          <p className="team__title">Code Agronomist</p>
-          <p className="team__email">
-            <a href="mailto:zach@SodiumHalogen.com" className="btn">
-              email Zach
-            </a>
-          </p>
+        <p className="team__name">Brantley English</p>
+        <p className="team__title">Code Architect</p>
+        <p className="team__email">
+          <a href="mailto:brantley@SodiumHalogen.com" className="btn">
+            email Brantley
+          </a>
+        </p>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+        <div className="polygon-each-img-wrap">
+          <Img
+            fluid={headshots.zach.childImageSharp.fluid}
+            className="polygon-clip-hexagon"
+          />
         </div>
-        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
-          <div className="polygon-each-img-wrap">
-            <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/katie-cooper-bw.jpg"
-              alt="demo-clip-heptagon"
-              className="polygon-clip-hexagon"
-            />
-          </div>
-          <p className="team__name">Katie Cooper</p>
-          <p className="team__title">Brand Designtist</p>
-          <p className="team__email">
-            <a href="mailto:katie@SodiumHalogen.com" className="btn">
-              email Katie
-            </a>
-          </p>
+        <p className="team__name">Zach Boatwright</p>
+        <p className="team__title">Code Agronomist</p>
+        <p className="team__email">
+          <a href="mailto:zach@SodiumHalogen.com" className="btn">
+            email Zach
+          </a>
+        </p>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+        <div className="polygon-each-img-wrap">
+          <Img
+            fluid={headshots.kaitie.childImageSharp.fluid}
+            className="polygon-clip-hexagon"
+          />
         </div>
-        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
-          <div className="polygon-each-img-wrap">
-            <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/derrick-smith.jpg"
-              alt="demo-clip-heptagon"
-              className="polygon-clip-hexagon"
-            />
-          </div>
-          <p className="team__name">Derrick Smith</p>
-          <p className="team__title">Content Designtist</p>
-          <p className="team__email">
-            <a href="mailto:derrick@SodiumHalogen.com" className="btn">
-              email Derrick
-            </a>
-          </p>
+        <p className="team__name">Katie Cooper</p>
+        <p className="team__title">Brand Designtist</p>
+        <p className="team__email">
+          <a href="mailto:katie@SodiumHalogen.com" className="btn">
+            email Katie
+          </a>
+        </p>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+        <div className="polygon-each-img-wrap">
+          <Img
+            fluid={headshots.derrick.childImageSharp.fluid}
+            className="polygon-clip-hexagon"
+          />
         </div>
-        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
-          <div className="polygon-each-img-wrap">
-            <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/adam-curl-sh.jpg"
-              alt="demo-clip-heptagon"
-              className="polygon-clip-hexagon"
-            />
-          </div>
-          <p className="team__name">Adam Curl</p>
-          <p className="team__title">Code Chemist</p>
-          <p className="team__email">
-            <a href="mailto:adam@SodiumHalogen.com" className="btn">
-              email Adam
-            </a>
-          </p>
+        <p className="team__name">Derrick Smith</p>
+        <p className="team__title">Content Designtist</p>
+        <p className="team__email">
+          <a href="mailto:derrick@SodiumHalogen.com" className="btn">
+            email Derrick
+          </a>
+        </p>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+        <div className="polygon-each-img-wrap">
+          <Img
+            fluid={headshots.adam.childImageSharp.fluid}
+            className="polygon-clip-hexagon"
+          />
         </div>
-        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
-          <div className="polygon-each-img-wrap">
-            <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/cs/jill_sm.jpg"
-              alt="demo-clip-heptagon"
-              className="polygon-clip-hexagon"
-            />
-          </div>
-          <p className="team__name">Jill Donnell</p>
-          <p className="team__title">Pure Awesome</p>
-          <p className="team__email">
-            <a href="mailto:jill@SodiumHalogen.com" className="btn">
-              email Jill
-            </a>
-          </p>
+        <p className="team__name">Adam Curl</p>
+        <p className="team__title">Code Chemist</p>
+        <p className="team__email">
+          <a href="mailto:adam@SodiumHalogen.com" className="btn">
+            email Adam
+          </a>
+        </p>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+        <div className="polygon-each-img-wrap">
+          <Img
+            fluid={headshots.jill.childImageSharp.fluid}
+            className="polygon-clip-hexagon"
+          />
         </div>
-        <div className="col-xs-6 col-sm-4 col-md-3 team__member">
-          <div className="polygon-each-img-wrap">
-            <img
-              src="https://sh-drop.s3.us-east-1.amazonaws.com/wd/braden-donnell-2.jpg"
-              alt="demo-clip-heptagon"
-              className="polygon-clip-hexagon"
-            />
-          </div>
-          <p className="team__name">Braden Donnell</p>
-          <p className="team__title">Photography & Video</p>
-          <p className="team__email">
-            <a href="mailto:braden@SodiumHalogen.com" className="btn">
-              email Braden
-            </a>
-          </p>
+        <p className="team__name">Jill Donnell</p>
+        <p className="team__title">Pure Awesome</p>
+        <p className="team__email">
+          <a href="mailto:jill@SodiumHalogen.com" className="btn">
+            email Jill
+          </a>
+        </p>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+        <div className="polygon-each-img-wrap">
+          <Img
+            fluid={headshots.braden.childImageSharp.fluid}
+            className="polygon-clip-hexagon"
+          />
         </div>
-        {/* <svg className="clip-svg">
+        <p className="team__name">Braden Donnell</p>
+        <p className="team__title">Photography & Video</p>
+        <p className="team__email">
+          <a href="mailto:braden@SodiumHalogen.com" className="btn">
+            email Braden
+          </a>
+        </p>
+      </div>
+      {/* <svg className="clip-svg">
           <defs>
             <clipPath
               id="polygon-clip-hexagon"
@@ -225,9 +306,8 @@ class Staff extends Component {
             </clipPath>
           </defs>
         </svg> */}
-      </Styles>
-    )
-  }
+    </Styles>
+  )
 }
 
 export default Staff

@@ -110,6 +110,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-sass',
     'gatsby-transformer-yaml',
+    'gatsby-plugin-optimize-svgs',
   ],
   mapping: {
     'MarkdownRemark.frontmatter.author': `AuthorYaml`,
