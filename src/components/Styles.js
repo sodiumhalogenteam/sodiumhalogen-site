@@ -138,6 +138,12 @@ const Styles = styled.div`
     font-weight: 600;
   }
 
+  h3 {
+    font-weight: 600;
+    font-size: 25px;
+}
+  }
+
   p,
   li {
     font-size: 20px;
