@@ -46,4 +46,8 @@ Gatsby will also convert images from JPEG or PNG format into the new WebP format
 ### We’ll keep learning
 Finally, one of the most important ways that we keep our sites fast is by constantly learning. Whether that’s learning the latest best practices or the best platform for building sites, we’re always looking for new things and sharing that knowledge with each other so we can all benefit. And in turn, our clients benefit. We’re not satisfied to keep using old technology at Sodium Halogen just because we’re comfortable with it. We’d rather learn something new so that our clients' websites can be in the top 10% of websites for speed tests.
 
+
+## Finishing up
+Want to test your own site out? Enter your address into [Google's Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.sodiumhalogen.com&tab=desktop) to learn how your site scores. The initial link is to a test for our website. We just wanted to show off #humblebrag. Keep in mind that this not only affects the user experience but also your search rankings (SEO).
+
 Think your site could use some speed improvements? [Let us know how we can help](http://bit.ly/shform).
