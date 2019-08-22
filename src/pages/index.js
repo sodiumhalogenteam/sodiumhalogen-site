@@ -5,6 +5,7 @@ import lozad from 'lozad'
 import Particles from 'react-particles-js'
 import Fade from 'react-reveal/Fade'
 import { Link, Events } from 'react-scroll'
+import Img from 'gatsby-image'
 
 //components
 import Layout from '../components/layout'
@@ -13,14 +14,6 @@ import SEO from '../components/seo'
 import Staff from '../components/Staff'
 import Styles from '../components/Styles'
 import WhoWeveHelped from '../components/WhoWeveHelped'
-
-//images
-import branding from '../images/icons/brand-creation-temp.png'
-import janice from '../images/homepage/janicefraser-130x130.jpg'
-import molecule from '../images/designtific-molecule.png'
-import software from '../images/icons/software-development-temp.png'
-import ux from '../images/icons/user-experience-temp.png'
-import vr from '../images/icons/virtual-reality-temp.png'
 
 //team gifs
 import adamThumbs from '../images/gifs/adam-thumbs-up-punch.gif'
@@ -57,6 +50,8 @@ class IndexPage extends React.Component {
   }
   handleScroll(event) {}
   render() {
+    const { data } = this.props
+
     return (
       <Styles>
         <Particles
@@ -293,10 +288,10 @@ class IndexPage extends React.Component {
                 </div>
                 <div className="col-lg-10 offset-lg-1 drop-in-wait">
                   <Fade>
-                    <img
-                      src={molecule}
-                      alt="Sodium Halogen Designtific Method molecule"
+                    <Img
+                      fluid={data.atom.childImageSharp.fluid}
                       className="img-center img-fluid my-100"
+                      alt="atom with a nucleas reading 'your business thinking' and one electron orbiting it that says 'design: create a  clear and hand-crafted user experience that your customers will love to use' and another electron that says 'science: experiment and investigate to know exactly what works best for your business'"
                     />
                   </Fade>
                 </div>
@@ -336,9 +331,8 @@ class IndexPage extends React.Component {
                 </div>
                 <div id="service1" className="col-md-6">
                   <Fade>
-                    <img
-                      src={software}
-                      alt="Software Icon with Phone and Computer"
+                    <Img
+                      fluid={data.software.childImageSharp.fluid}
                       className="icon"
                     />
                     <h3>Software/application design &amp; development</h3>
@@ -359,7 +353,7 @@ class IndexPage extends React.Component {
                         <em className="link">Let’s chat.</em>
                       </Link>
                     </p>
-                    <img src={ux} alt="User Experience Icon" className="icon" />
+                    <Img fluid={data.ux.childImageSharp.fluid} className="icon" />
                     <h3>Interaction design (UX/UI)</h3>
                     <p>
                       Is your website or application not converting the way it
@@ -382,9 +376,8 @@ class IndexPage extends React.Component {
                 </div>
                 <div id="service2" className="col-md-6">
                   <Fade>
-                    <img
-                      src={branding}
-                      alt="Branding Thumbprint Icon"
+                    <Img
+                      fluid={data.branding.childImageSharp.fluid}
                       className="icon"
                     />
                     <h3>Brand design &amp; development</h3>
@@ -406,7 +399,7 @@ class IndexPage extends React.Component {
                         <em className="link">Let’s discover together.</em>
                       </Link>
                     </p>
-                    <img src={vr} alt="VR Glasses Icon" className="icon" />
+                    <Img fluid={data.vr.childImageSharp.fluid} className="icon" />
                     <h3>Virtual Reality design &amp; development</h3>
                     <p>
                       Got a crazy brilliant idea for how you can use virtual
@@ -456,9 +449,8 @@ class IndexPage extends React.Component {
                     </p>
                   </div>
                   <div className="offset-md-2 col-sm-3 offset-sm-2 col-xs-4 text-center">
-                    <img
-                      src={janice}
-                      alt="Janice Fraser"
+                    <Img
+                      fluid={data.janice.childImageSharp.fluid}
                       className="img-circle mt-10"
                     />
                   </div>
@@ -548,3 +540,56 @@ class IndexPage extends React.Component {
   }
 }
 export default IndexPage
+
+export const pageQuery = graphql`
+  query {
+    branding: file(relativePath: { eq: "icons/brand-creation-temp.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    software: file(
+      relativePath: { eq: "icons/software-development-temp.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    ux: file(
+      relativePath: { eq: "icons/user-experience-temp.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    vr: file(
+      relativePath: { eq: "icons/virtual-reality-temp.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    janice: file(relativePath: { eq: "head-shots/janice-fraser.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    atom: file(relativePath: { eq: "designtific-atom.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`

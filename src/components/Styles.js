@@ -256,6 +256,10 @@ const Styles = styled.div`
     padding-top: 20px;
   }
 
+  .img-circle {
+    border-radius: 300px;
+  }
+
   .img-center {
     margin-left: auto;
     margin-right: auto;
@@ -294,7 +298,7 @@ const Styles = styled.div`
     }
   }
   // service
-  img.icon {
+  .icon {
     width: 40%;
     margin: auto;
     display: block;
@@ -605,6 +609,11 @@ const Styles = styled.div`
         background-position: center bottom;
       }
     }
+  }
+
+  .polygon-each-img-wrap {
+    margin: 10%;
+    margin-bottom: 0;
   }
 
   .polygon-clip-hexagon {
