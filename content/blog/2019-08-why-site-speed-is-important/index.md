@@ -48,6 +48,8 @@ Finally, one of the most important ways that we keep our sites fast is by consta
 
 
 ## Finishing up
-Want to test your own site out? Enter your address into [Google's Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.sodiumhalogen.com&tab=desktop) to learn how your site scores. The initial link is to a test for our website. We just wanted to show off #humblebrag. Keep in mind that this not only affects the user experience but also your search rankings (SEO).
+Want to test your own site out? Enter your address into [Google's Page Speed Insights](https://developers.google.com/speed/pagespeed/insights) to learn how your site scores. You can change between seeing your score on mobile device using mobile data and a desktop computer using standard wifi.  Keep in mind that your speed score not only affects the user experience but also your search rankings (SEO). Here's a quick gif showing how it works.
+
+![gif showing how Google page speed insights works](site-speed-test.gif)
 
 Think your site could use some speed improvements? [Let us know how we can help](http://bit.ly/shform).
