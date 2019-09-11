@@ -494,7 +494,7 @@ class IndexPage extends React.Component {
           <section className="bg-dark footer">
             <div className="container vcenter">
               <div className="row">
-                <div id="contact" className="col-lg-6 offset-lg-3 text-center">
+                <div id="contact" className="col-lg-6 offset-lg-3 text-center contact">
                   <h2>
                     Your bottom-line called and wants to know how our
                     Designtific Method can help.

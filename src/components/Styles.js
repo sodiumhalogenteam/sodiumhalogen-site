@@ -322,6 +322,10 @@ const Styles = styled.div`
     h2 {
       color: white;
     }
+    .contact {
+      width: 100%;
+      margin: auto;
+    }
     .container {
       position: relative;
       .btn-primary {
