@@ -319,6 +319,9 @@ const Styles = styled.div`
       padding-top: 0;
       padding-bottom: 0;
     }
+    .btn {
+      margin-top: 40px;
+    }
     h2 {
       color: white;
     }
