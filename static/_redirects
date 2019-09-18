@@ -9,7 +9,7 @@
 /clients/*        http://lab.sodiumhalogen.com/:splat
 /login/*          http://client.sodiumhalogen.com/:splat
 /project/*        http://client.sodiumhalogen.com/:splat
-/strategyworkshop http://lab.sodiumhalogen.com/strategyworkshop
+/strategyworkshop/* http://lab.sodiumhalogen.com/strategyworkshop/:splat
 
 # email signature images + some other things
 /_images/william-email-sig-head.jpg   https://sh-drop.s3.us-east-1.amazonaws.com/wd/william-email-sig-head.jpg
