@@ -40,7 +40,7 @@ If a customer is asking for something that we know is dysfunctional or outdated,
 
 Ultimately this process helps us collaborate more efficiently with our client. In day-to-day terms, this saves us from unnecessary emails, meetings, and phone calls. It also makes our work more enjoyable (which is a core value on our team). We attribute a large part of our success to our customer communication, particularly at the beginning of the relationship.
 
-![powerpoint slide stating that we need to trust the expert](trust-the-expert-team.jpeg)
+![powerpoint slide stating that we need to trust the expert](trust-the-expert-strategy.jpeg)
 
 ### Action step: Make This Your Own
 
