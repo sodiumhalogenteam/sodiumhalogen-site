@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
 // image
-import bg from '../images/cta-get-the-website-guide.gif'
+import bg from '../images/success-checklist-cta.png'
 
 // utils
 // import getCookie from '../utils/getCookie'
@@ -68,8 +68,8 @@ const NotificationBox = props => {
       {showBox && !hasClosedThisBox && (
         <div>
           <span onClick={handleClose}>x</span>
-          <a href="https://sodiumhalogen.typeform.com/to/VLNvbj">
-            <img src={bg} alt="cta-get-the-website-guide" />
+          <a href="https://mailchi.mp/5bd3084b6387/success">
+            <img src={bg} alt="success-checklist-cta" />
           </a>
         </div>
       )}
