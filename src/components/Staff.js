@@ -109,6 +109,13 @@ const Staff = () => {
           }
         }
       }
+      jeremy: file(relativePath: { eq: "head-shots/braden.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `)
 
@@ -293,6 +300,21 @@ const Staff = () => {
         <p className="team__email">
           <a href="mailto:braden@SodiumHalogen.com" className="btn">
             email Braden
+          </a>
+        </p>
+      </div>
+      <div className="col-xs-6 col-sm-4 col-md-3 team__member">
+        <div className="polygon-each-img-wrap">
+          <Img
+            fluid={headshots.jeremy.childImageSharp.fluid}
+            className="polygon-clip-hexagon"
+          />
+        </div>
+        <p className="team__name">Jeremy Batchelor</p>
+        <p className="team__title">Byte Biologist</p>
+        <p className="team__email">
+          <a href="mailto:jeremy@SodiumHalogen.com" className="btn">
+            email Jeremy
           </a>
         </p>
       </div>
