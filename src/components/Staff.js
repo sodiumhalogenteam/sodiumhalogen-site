@@ -109,7 +109,7 @@ const Staff = () => {
           }
         }
       }
-      jeremy: file(relativePath: { eq: "head-shots/braden.jpg" }) {
+      jeremy: file(relativePath: { eq: "head-shots/jeremy.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
