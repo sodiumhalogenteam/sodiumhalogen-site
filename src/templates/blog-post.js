@@ -47,7 +47,7 @@ class BlogPostTemplate extends React.Component {
           post.frontmatter.layout !== 'case-study' ? (
             <h1>{post.frontmatter.title}</h1>
           ) : null}
-          {post.frontmatter.date || post.frontmatter.author ? (
+          {post.frontmatter.author ? (
             <p
               style={{
                 ...scale(-1 / 5),
@@ -56,8 +56,6 @@ class BlogPostTemplate extends React.Component {
                 marginTop: rhythm(1 / 4),
               }}
             >
-              {post.frontmatter.date ? post.frontmatter.date : null}
-              {post.frontmatter.date && post.frontmatter.author ? ' | ' : null}
               {post.frontmatter.author ? (
                 <a href={`${post.frontmatter.author.social}`}>
                   {post.frontmatter.author.id}
@@ -126,7 +124,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         tags
-        date(formatString: "MMMM DD, YYYY")
         layout
         author {
           id
