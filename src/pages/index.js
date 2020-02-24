@@ -1,4 +1,5 @@
 import React from 'react'
+import Styled from 'styled-components'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import '../custom.scss'
 import lozad from 'lozad'
@@ -28,6 +29,10 @@ import teamCelebration from '../images/gifs/team-celebrate.gif'
 import fistbumpTwo from '../images/gifs/thumbsup-fistbump2.gif'
 import zachKeeps from '../images/gifs/zach-keep-it-coming.gif'
 import zachWorks from '../images/gifs/zach-on-it.gif'
+
+const Li = Styled.li`
+  white-space: nowrap;
+`
 
 class IndexPage extends React.Component {
   componentDidMount() {
@@ -353,7 +358,10 @@ class IndexPage extends React.Component {
                         <em className="link">Let’s chat.</em>
                       </Link>
                     </p>
-                    <Img fluid={data.ux.childImageSharp.fluid} className="icon" />
+                    <Img
+                      fluid={data.ux.childImageSharp.fluid}
+                      className="icon"
+                    />
                     <h3>Interaction design (UX/UI)</h3>
                     <p>
                       Is your website or application not converting the way it
@@ -399,7 +407,10 @@ class IndexPage extends React.Component {
                         <em className="link">Let’s discover together.</em>
                       </Link>
                     </p>
-                    <Img fluid={data.vr.childImageSharp.fluid} className="icon" />
+                    <Img
+                      fluid={data.vr.childImageSharp.fluid}
+                      className="icon"
+                    />
                     <h3>Virtual Reality design &amp; development</h3>
                     <p>
                       Got a crazy brilliant idea for how you can use virtual
@@ -509,18 +520,19 @@ class IndexPage extends React.Component {
                 <div className="footer__bottom">
                   <div className="col-md-6">
                     <ul>
-                      <li>
+                      <Li>
                         Jackson, TN <br />
                         <a href="tel:731-506-4535">731.506.4535</a>
-                      </li>
-                      <li>
-                        Nashville, TN <br />
+                      </Li>
+                      <Li>
+                        Nashville, TN
+                        <br />
                         <a href="tel:615-382-1550">615.382.1550</a>
-                      </li>
-                      <li>
+                      </Li>
+                      <Li>
                         Secret HQ <br />
                         <button>***.***.****</button>
-                      </li>
+                      </Li>
                     </ul>
                   </div>
                   <div className="col-md-6">
@@ -559,18 +571,14 @@ export const pageQuery = graphql`
         }
       }
     }
-    ux: file(
-      relativePath: { eq: "icons/user-experience-temp.png" }
-    ) {
+    ux: file(relativePath: { eq: "icons/user-experience-temp.png" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    vr: file(
-      relativePath: { eq: "icons/virtual-reality-temp.png" }
-    ) {
+    vr: file(relativePath: { eq: "icons/virtual-reality-temp.png" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid_withWebp
