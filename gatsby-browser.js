@@ -1,4 +1,7 @@
-// custom typefaces
-import 'typeface-open-sans'
-// import "typeface-montserrat"; // blog maybe?
-// import "typeface-merriweather";
+/**
+ * Implement Gatsby's Browser APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/browser-apis/
+ */
+
+// You can delete this file if you're not using it

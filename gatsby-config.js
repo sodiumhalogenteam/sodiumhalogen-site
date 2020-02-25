@@ -1,130 +1,34 @@
 module.exports = {
   siteMetadata: {
-    title: `Application design and development, User Experience &amp; User Interface Design for Web, Mobile and Virtual
-		Reality`,
-    description: `We create customer centered and results focused applications for web, mobile and virtual reality | Jackson, TN &amp; Nashville, TN`,
-    author: `Sodium Halogen Team`,
-    social: {
-      twitter: `sodiumhalogen`,
-    },
-    siteUrl: `https://new.sodiumhalogen.com/`,
+    title: `Gatsby Default Starter`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `@gatsbyjs`,
   },
   plugins: [
-    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/images`,
         name: `images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
-    },
-    `gatsby-transformer-yaml`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `./src/data`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1524,
-              quality: 100,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        ],
+        path: `${__dirname}/src/images`,
       },
     },
     `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        defaultQuality: 100,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-196100-12`,
-      },
-    },
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Sodium Halogen Blog`,
-        short_name: `SH-Blog`,
-        start_url: `/lab-notes`,
-        background_color: `#ffffff`,
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/sh-logo-favicon-source.png`,
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Sodium Halogen Case Studies`,
-        short_name: `SH-Case-Studies`,
-        start_url: `/case-studies`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/sh-logo-favicon-source.png`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Sodium Halogen Purpose`,
-        short_name: `SH-Purpose`,
-        start_url: `/purpose`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/sh-logo-favicon-source.png`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
-    `gatsby-plugin-feed`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-sass',
-    'gatsby-transformer-yaml',
-    'gatsby-plugin-optimize-svgs',
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
   ],
-  mapping: {
-    'MarkdownRemark.frontmatter.author': `AuthorYaml`,
-  },
 }
