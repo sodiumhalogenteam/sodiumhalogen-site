@@ -1,3 +1,8 @@
+/* variables */
+:root {
+  --yellow: #d3d47b;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;

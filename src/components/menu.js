@@ -7,20 +7,30 @@ const Wrapper = Styled.div`
   /* Position and sizing of burger button */
   .bm-burger-button {
     position: fixed;
-    width: 36px;
     height: 30px;
-    right: 36px;
-    top: 36px;
+    right: 0;
+    top: 50px;
+    padding: 0 15px;
+    border-radius: 100px 0 0 100px;
+    font-size: 30px;
+    background: red;
+    display: flex;
+    align-items: center;
+    background-color: var(--yellow);
+    color: #fff;
+    &:before {
+      content: "•••";
+    }
   }
 
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: #373a47;
+    /* background: #373a47; */
   }
 
   /* Color/shape of burger icon bars on hover*/
   .bm-burger-bars-hover {
-    background: #a90000;
+    /* background: #a90000; */
   }
 
   /* Position and sizing of clickable cross button */
