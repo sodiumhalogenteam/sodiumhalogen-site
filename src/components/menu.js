@@ -2,6 +2,7 @@ import React from "react"
 import Styled from "styled-components"
 
 import { slide as Burger } from "react-burger-menu"
+import { Link } from "gatsby"
 
 const Wrapper = Styled.div`
   /* Position and sizing of burger button */
@@ -85,8 +86,7 @@ const Wrapper = Styled.div`
 const Menu = () => (
   <Wrapper>
     <Burger right>
-      <p>page 1</p>
-      <p>page 2</p>
+      <Link to="/page-2/">Go to page 2</Link>
     </Burger>
   </Wrapper>
 )
