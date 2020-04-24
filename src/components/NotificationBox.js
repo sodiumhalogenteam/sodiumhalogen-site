@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
 // image
-import bg from '../images/success-checklist-cta.png'
+import bg from '../images/ew-lead-gen-sign-up.png'
 
 // utils
 // import getCookie from '../utils/getCookie'
@@ -36,7 +36,7 @@ const Styles = styled.div`
 `
 // #endregion
 
-const NotificationBox = props => {
+const NotificationBox = (props) => {
   const handleClose = () => {
     document.cookie = `sh_cta_website_guide=closed;max-age=604800;domain=localhost`
     setShowBox(false)
@@ -68,7 +68,7 @@ const NotificationBox = props => {
       {showBox && !hasClosedThisBox && (
         <div>
           <span onClick={handleClose}>x</span>
-          <a href="https://mailchi.mp/5bd3084b6387/success">
+          <a href="https://mailchi.mp/afcfe7027d87/innovationexperiments">
             <img src={bg} alt="success-checklist-cta" />
           </a>
         </div>
