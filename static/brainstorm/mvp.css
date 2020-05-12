@@ -455,6 +455,10 @@ article {
   text-align: center;
 }
 
+footer.center nav ul {
+  margin: auto;
+}
+
 .iframe-container {
   position: relative;
   width: 100%;
