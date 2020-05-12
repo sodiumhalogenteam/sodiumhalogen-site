@@ -443,11 +443,11 @@ article {
   margin: 0 auto;
 }
 
-article.medium {
+.medium {
   max-width: var(--width-card-medium);
 }
 
-article.wide {
+.wide {
   max-width: var(--width-card-wide);
 }
 
