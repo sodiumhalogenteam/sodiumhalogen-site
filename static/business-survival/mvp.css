@@ -447,14 +447,6 @@ article.medium {
   max-width: var(--width-card-medium);
 }
 
-article.wide {
-  max-width: var(--width-card-wide);
-}
-
-.center {
-  text-align: center;
-}
-
 .iframe-container {
   position: relative;
   width: 100%;
