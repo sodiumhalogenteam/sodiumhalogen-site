@@ -23,32 +23,28 @@ const getMobileOperatingSystem = () => {
 const getQueryVariable = (variable) => {
   var query = window.location.search.substring(1)
   var vars = query.split('&')
-
   for (var i = 0; i < vars.length; i++) {
     var pair = vars[i].split('=')
-
     if (pair[0] == variable) {
       return pair[1]
     }
   }
-
   return false
 }
 
-if (getMobileOperatingSystem() === 'Andriod') {
+if (
+  getMobileOperatingSystem() === 'Andriod' ||
+  getMobileOperatingSystem() === 'iOS'
+) {
   var now = new Date().valueOf()
   setTimeout(() => {
     if (new Date().valueOf() - now > 100) return
     window.location =
-      'https://apps.apple.com/us/app/brain-storm/id1508034751?ls=1'
+      getMobileOperatingSystem() === 'iOS'
+        ? 'https://apps.apple.com/us/app/brain-storm/id1508034751?ls=1'
+        : 'https://play.google.com/store/apps/details?id=com.shbrainstorm'
   }, 25)
-  window.location = `brainstorm://${getQueryVariable('prompt')}`
-} else if (getMobileOperatingSystem() === 'iOS') {
-  var now = new Date().valueOf()
-  setTimeout(() => {
-    if (new Date().valueOf() - now > 100) return
-    window.location =
-      'https://play.google.com/store/apps/details?id=com.shbrainstorm'
-  }, 25)
-  window.location = `brainstorm://${getQueryVariable('prompt')}`
+  window.location = getQueryVariable('prompt')
+    ? `brainstorm://${getQueryVariable('prompt')}`
+    : 'brainstorm://'
 }
