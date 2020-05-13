@@ -32,19 +32,17 @@ const getQueryVariable = (variable) => {
   return false
 }
 
-if (
-  getMobileOperatingSystem() === 'Andriod' ||
-  getMobileOperatingSystem() === 'iOS'
-) {
-  var now = new Date().valueOf()
+const deviceOS = getMobileOperatingSystem()
+
+if (deviceOS === 'Andriod' || deviceOS === 'iOS') {
+  const prompt = getQueryVariable('prompt')
+  const now = new Date().valueOf()
   setTimeout(() => {
-    if (new Date().valueOf() - now > 100) return
+    if (new Date().valueOf() - now > 500) return
     window.location =
-      getMobileOperatingSystem() === 'iOS'
+      deviceOS === 'iOS'
         ? 'https://apps.apple.com/us/app/brain-storm/id1508034751?ls=1'
         : 'https://play.google.com/store/apps/details?id=com.shbrainstorm'
   }, 25)
-  window.location = getQueryVariable('prompt')
-    ? `brainstorm://${getQueryVariable('prompt')}`
-    : 'brainstorm://'
+  window.location = prompt ? `brainstorm://${prompt}` : 'brainstorm://'
 }
