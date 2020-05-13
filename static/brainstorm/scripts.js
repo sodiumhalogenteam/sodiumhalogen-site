@@ -39,19 +39,19 @@ const prompt = getQueryVariable('prompt')
 if (deviceOS === 'Andriod') {
   const now = new Date().valueOf()
   setTimeout(function () {
-    if (new Date().valueOf() - now > 100) return
+    if (new Date().valueOf() - now > 4000) return
     window.location =
       'https://play.google.com/store/apps/details?id=com.shbrainstorm'
-  }, 25)
+  }, 2000)
   window.location = `brainstorm://${prompt}`
 }
 
 if (deviceOS === 'iOS') {
   const now = new Date().valueOf()
   setTimeout(function () {
-    if (new Date().valueOf() - now > 100) return
+    if (new Date().valueOf() - now > 4000) return
     window.location =
       'https://apps.apple.com/us/app/brain-storm/id1508034751?ls=1'
-  }, 25)
+  }, 2000)
   window.location = `brainstorm://${prompt}`
 }
