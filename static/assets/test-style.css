@@ -3498,16 +3498,16 @@ figcaption {
 .footer-text.mobile {
   display: none;
 }
-.icons {
+.icon {
   width: auto;
-  height: 65px;
-  margin-top: 34px;
-  margin-bottom: 57px;
+  height: 165px;
+  margin-top: 1rem;
+  margin-bottom: 2rem /* 57px; */
   padding-right: 0px;
   padding-left: 0px;
   text-align: center;
 }
-.icons.brain {
+.icon.brain {
   position: static;
   z-index: 5;
   width: auto;
