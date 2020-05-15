@@ -36,6 +36,6 @@ const getQueryVariable = (variable) => {
 
 const prompt = getQueryVariable('prompt')
 
-if (deviceOS === 'Andriod' || deviceOS === 'iOS') {
-  window.location = `brainstorm://${prompt}`
-}
+// if (deviceOS === 'Andriod' || deviceOS === 'iOS') {
+//   window.location = `brainstorm://${prompt}`
+// }
