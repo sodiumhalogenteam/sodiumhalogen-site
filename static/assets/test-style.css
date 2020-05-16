@@ -35,6 +35,7 @@ progress,
 video {
   display: inline-block;
   vertical-align: baseline;
+  width: 100%;
 }
 audio:not([controls]) {
   display: none;
@@ -338,7 +339,12 @@ h6 {
 }
 p {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 1.5rem;
+  padding: 14px 0px 10px;
+  font-family: 'Freight Sans Pro', sans-serif;
+  color: #575756;
+  font-size: 18px;
+  font-weight: 500;
 }
 blockquote {
   margin: 0 0 10px 0;
@@ -346,6 +352,15 @@ blockquote {
   border-left: 5px solid #e2e2e2;
   font-size: 18px;
   line-height: 22px;
+}
+blockquote p {
+  margin: 1rem auto;
+  font-size: 20px;
+  line-height: 1.5rem;
+  font-weight: 300;
+  padding: 0 0 1rem 0;
+  font-family: Jubilat, sans-serif;
+  color: #323e48;
 }
 figure {
   margin: 0;
@@ -1906,18 +1921,21 @@ body {
   font-weight: 400;
 }
 h1 {
-  margin-top: 20px;
-  margin-bottom: 15px;
-  font-size: 44px;
-  line-height: 62px;
-  font-weight: 400;
+  margin-top: 1rem auto;
+  font-family: Jubilat, sans-serif;
+  font-size: 60px;
+  line-height: 1.25rem;
+  font-weight: 900;
 }
 h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 36px;
-  line-height: 50px;
-  font-weight: 400;
+  margin-top: 1rem auto;
+  font-size: 45px;
+  line-height: 3rem;
+  font-weight: 700;
+  padding: 0px;
+  font-family: Jubilat, sans-serif;
+  color: #323e48;
+  text-align: center;
 }
 h3 {
   margin-top: 10px;
@@ -1927,11 +1945,14 @@ h3 {
   font-weight: 400;
 }
 h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 24px;
-  line-height: 38px;
-  font-weight: 400;
+  margin: 1rem auto;
+  font-size: 28px;
+  line-height: 2rem;
+  font-weight: 500;
+  padding-right: 0px;
+  padding-left: 0px;
+  font-family: Jubilat, sans-serif;
+  color: #323e48;
 }
 h5 {
   margin-top: 10px;
@@ -3554,22 +3575,39 @@ figcaption {
   margin-bottom: 140px;
 }
 .grid-7 {
-  margin-top: 100px;
-  margin-right: -120px;
-  margin-left: -120px;
+  margin: 20px inherit 50px;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
-.brand-case-text {
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.ptb-100 {
+  padding-top: 100px;
+}
+.bg-grey {
+  background-color: #97969617;
+}
+.brand-case-text, .tile-text {
   padding: 34px 33px 30px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #fff;
 }
-.brand-case-study {
+.brand-case-study, .tile {
   box-shadow: 4px 4px 16px -6px rgba(0, 0, 0, 0.28);
+  margin-bottom: 1rem;
+}
+.tile p {
+  min-height: 170px;
+}
+.video-wrapper {
+  margin: 1rem;
 }
 .div-block-8 {
   width: auto;
@@ -3582,6 +3620,16 @@ figcaption {
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+.catagory .icon-c {
+  height: 26px;
+  display: inline-block;
+  max-width: none;
+  width: 25px;
+}
+.catagory em {
+  float: right;
+  font-style: normal;
 }
 .text-span {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -3686,6 +3734,10 @@ figcaption {
 }
 .intro-sw {
   margin-bottom: 60px;
+}
+.intro-sw p {
+  max-width: 600px;
+  margin: auto;
 }
 .list-item {
   color: #323e48;
