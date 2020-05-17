@@ -1993,9 +1993,25 @@ ul {
 li {
   margin-bottom: 10px;
 }
+ul.checkmark li {
+  background-image: url("file:///Users/williamdonnell/wip/sodiumhalogen-site/static/assets/icon-check.png") 0 0 no-repeat;
+}
 img {
   display: block;
 }
+
+.imgContainer{
+  float:left;
+  width: 33.3333333%
+}
+.imgContainer img {
+  width: 100%;
+}
+.imgContainer p {
+  text-align: center;
+}
+
+
 label {
   margin-bottom: 10px;
   font-size: 12px;
@@ -3473,6 +3489,7 @@ figcaption {
 }
 .card-section {
   margin-bottom: 140px;
+  padding: 0 20px;
 }
 .short-section {
   margin-bottom: 40px;
@@ -3586,6 +3603,9 @@ figcaption {
 }
 .mt-20 {
   margin-top: 20px;
+}
+.mb-50 {
+  margin-bottom: 50px;
 }
 .mt-50 {
   margin-top: 50px;
