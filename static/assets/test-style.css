@@ -346,6 +346,14 @@ p {
   font-size: 18px;
   font-weight: 500;
 }
+li {
+  margin: 0.5em;
+  padding: 0;
+  font-family: 'Freight Sans Pro', sans-serif;
+  color: #575756;
+  font-size: 18px;
+  font-weight: 500;
+}
 blockquote {
   margin: 0 0 10px 0;
   padding: 10px 20px;
@@ -1994,15 +2002,16 @@ li {
   margin-bottom: 10px;
 }
 ul.checkmark li {
-  background-image: url("file:///Users/williamdonnell/wip/sodiumhalogen-site/static/assets/icon-check.png") 0 0 no-repeat;
+  background-image: url('file:///Users/williamdonnell/wip/sodiumhalogen-site/static/assets/icon-check.png')
+    0 0 no-repeat;
 }
 img {
   display: block;
 }
 
-.imgContainer{
-  float:left;
-  width: 33.3333333%
+.imgContainer {
+  float: left;
+  width: 33.3333333%;
 }
 .imgContainer img {
   width: 100%;
@@ -2010,7 +2019,6 @@ img {
 .imgContainer p {
   text-align: center;
 }
-
 
 label {
   margin-bottom: 10px;
@@ -3543,7 +3551,7 @@ figcaption {
   width: auto;
   height: 165px;
   margin-top: 1rem;
-  margin-bottom: 2rem /* 57px; */
+  margin-bottom: 2rem; /* 57px; */
   padding-right: 0px;
   padding-left: 0px;
   text-align: center;
@@ -3616,18 +3624,27 @@ figcaption {
 .bg-grey {
   background-color: #97969617;
 }
-.brand-case-text, .tile-text {
+.brand-case-text,
+.tile-text {
   padding: 34px 33px 30px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #fff;
 }
-.brand-case-study, .tile {
+.brand-case-study,
+.tile {
   box-shadow: 4px 4px 16px -6px rgba(0, 0, 0, 0.28);
   margin-bottom: 1rem;
 }
 .tile p {
   min-height: 170px;
+}
+.tile ul {
+  margin: 0 0 20px;
+  padding-left: 20px;
+}
+.tile ul li {
+  margin: 0;
 }
 .video-wrapper {
   margin: 1rem;
@@ -3636,7 +3653,7 @@ figcaption {
   width: auto;
   height: 30px;
 }
-.catagory {
+.category {
   background-color: transparent;
   font-family: 'Freight Sans Pro', sans-serif;
   color: #979696;
@@ -3644,13 +3661,13 @@ figcaption {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.catagory .icon-c {
+.category .icon-c {
   height: 26px;
   display: inline-block;
   max-width: none;
   width: 25px;
 }
-.catagory em {
+.category em {
   float: right;
   font-style: normal;
 }
@@ -3758,11 +3775,17 @@ figcaption {
 .w600 {
   margin-bottom: 60px;
 }
-.w600 p, .w600 ul {
+.w600 p,
+.w600 ul,
+p.w600 {
   max-width: 600px;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+.w800 {
+  max-width: 800px;
+  margin-bottom: 50px;
 }
 .list-item {
   color: #323e48;
@@ -4912,7 +4935,7 @@ figcaption {
     margin-right: 60px;
     margin-left: 60px;
   }
-  .catagory {
+  .category {
     text-align: left;
   }
   .h1.left {
@@ -5218,7 +5241,7 @@ figcaption {
     margin-right: 0px;
     margin-left: 0px;
   }
-  .catagory {
+  .category {
     font-size: 14px;
   }
   .h1.left {
