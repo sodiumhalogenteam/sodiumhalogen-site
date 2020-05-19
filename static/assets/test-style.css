@@ -2539,7 +2539,7 @@ figcaption {
   -ms-flex-align: center;
   align-items: center;
   background-color: #f4f4f4;
-  background-image: url('https://uploads-ssl.webflow.com/5e6a51d4adf84bf874e2d8ed/5e72382132a30c527b247ad2_hero.png');
+  background-image: url('../workshop/assets/strategy-workshop-header.jpg');
   background-position: 50% 50%;
   background-size: cover;
   color: #fff;
