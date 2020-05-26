@@ -3,17 +3,18 @@ import Styled from 'styled-components'
 
 import Img from 'gatsby-image'
 
-const StyledImg = Styled(Img)`
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  opacity: 0;
-  transition-delay: 500ms;
-`
+// const StyledImg = Styled(Img)`
+//   position: absolute;
+//   top: 0px;
+//   left: 0px;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   object-position: center center;
+//   opacity: 0;
+//   transition-delay: 500ms;
+// `
+
 const Wrapper = Styled.div`
   width: 20%;
   padding: 0 1% 20px;

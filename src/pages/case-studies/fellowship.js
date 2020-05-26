@@ -1,16 +1,16 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Helmet from 'react-helmet'
-import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
+// import Helmet from 'react-helmet'
+// import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 // components
 import Styles from '../../components/Styles'
 import Layout from '../../components/layout'
-import TextBlock from '../../components/CaseStudies/TextBlock'
-import ImgContainer from '../../components/CaseStudies/ImgContainer'
+// import TextBlock from '../../components/CaseStudies/TextBlock'
+// import ImgContainer from '../../components/CaseStudies/ImgContainer'
 import Footer from '../../components/CaseStudies/Footer'
-import Divider from '../../components/Divider'
+// import Divider from '../../components/Divider'
 import WhoWeveHelped from '../../components/WhoWeveHelped'
 import DesignAtom from '../../components/CaseStudies/DesignAtom'
 import FreeWebsiteChecklist from '../../components/CaseStudies/FreeWebsiteChecklist'
@@ -21,7 +21,7 @@ const Header = styled.div`
   width: 100%;
   height: 50vh;
   text-align: center;
-  background-image: url(${props => props.url});
+  background-image: url(${(props) => props.url});
   background-position: center;
   background-color: #696969;
   background-blend-mode: overlay;

@@ -22,15 +22,19 @@ const Styles = styled.div`
       display: block;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     }
-    span {
+    button {
       position: absolute;
-      opacity: 0.3;
+      opacity: 0.4;
       font-family: helvetica;
       font-size: 12px;
-      right: 10px;
+      right: 5px;
       top: 3px;
       font-size: 1.4rem;
-      /* padding: 5px; */
+      padding: 5px;
+      box-shadow: none;
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 `
@@ -53,7 +57,7 @@ const NotificationBox = (props) => {
     if (getCookie('sh_cta_website_guide') === 'closed') {
       setHasClosedThisBox(true)
     }
-  })
+  }, [])
   const [showBox, setShowBox] = useState(false)
   useEffect(() => {
     if (!hasClosedThisBox) {
@@ -67,7 +71,7 @@ const NotificationBox = (props) => {
     <Styles>
       {showBox && !hasClosedThisBox && (
         <div>
-          <span onClick={handleClose}>x</span>
+          <button onClick={handleClose}>x</button>
           <a href="https://mailchi.mp/afcfe7027d87/innovationexperiments">
             <img src={bg} alt="success-checklist-cta" />
           </a>

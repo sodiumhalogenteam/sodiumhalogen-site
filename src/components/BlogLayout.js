@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import { slide as Menu } from 'react-burger-menu'
@@ -22,7 +21,7 @@ const BlogLayout = ({ children, location }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <Styles>
           <Menu customBurgerIcon={<img src={burger} alt="burger icon" />} right>

@@ -5,7 +5,6 @@ import { slide as Menu } from 'react-burger-menu'
 import burger from '../images/burger.svg'
 
 import Styles from '../components/Styles'
-import Header from '../components/header'
 import './webflow-styles.css'
 
 const Layout = ({ children, location }) => (
@@ -94,6 +93,7 @@ const Layout = ({ children, location }) => (
                   class="button cc-contact-us w-inline-block"
                   href="https://sodiumhalogen.typeform.com/to/iKe3eC"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <div class="button-text">Contact Us</div>
                 </a>
@@ -120,6 +120,7 @@ const Layout = ({ children, location }) => (
               class="button cc-jumbo-button w-inline-block"
               href="https://sodiumhalogen.com/wm"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <div class="text-block mobile">
                 Schedule your Strategy Session
@@ -159,6 +160,7 @@ const Layout = ({ children, location }) => (
                 class="button cc-contact-us w-inline-block"
                 href="https://sodiumhalogen.typeform.com/to/iKe3eC"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <div class="button-text">Contact US</div>
               </a>
@@ -166,6 +168,7 @@ const Layout = ({ children, location }) => (
                 class="button cc-contact-us mobile w-inline-block"
                 href="https://sodiumhalogen.typeform.com/to/iKe3eC"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <div class="button-text">Contact US</div>
               </a>
