@@ -13,7 +13,7 @@ const Card = ({ title, description, steps, time, price, img }) => (
         ))}
       </ul>
       <div className="category">
-        <img src={TimerIcon} className="icon-c" />
+        <img src={TimerIcon} className="icon-c" alt="timer" />
         {time}
         <em>${price}</em>
       </div>
