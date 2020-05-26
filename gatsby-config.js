@@ -7,7 +7,7 @@ module.exports = {
     social: {
       twitter: `sodiumhalogen`,
     },
-    siteUrl: `https://new.sodiumhalogen.com/`,
+    siteUrl: `https://sodiumhalogen.com/`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
