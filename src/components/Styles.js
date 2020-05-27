@@ -468,6 +468,7 @@ const Styles = styled.div`
       &:hover .hover-gif__img {
         height: 100%;
         width: 100%;
+        padding: 0;
       }
       figure {
         height: 0%;
