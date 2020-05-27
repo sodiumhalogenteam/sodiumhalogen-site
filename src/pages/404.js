@@ -102,7 +102,10 @@ class NotFoundPage extends React.Component {
           <Container>
             <h1>Not Found</h1>
             <p>
-              You just hit a route that doesn&#39;t exist... the sadness. 😢
+              You just hit a route that doesn&#39;t exist... the sadness.{' '}
+              <span role="img" aria-label="so sad about this 404">
+                😢
+              </span>
             </p>
           </Container>
         </Layout>

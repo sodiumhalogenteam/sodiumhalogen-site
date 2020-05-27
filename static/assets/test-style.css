@@ -3639,6 +3639,9 @@ figcaption {
 .tile p {
   min-height: 170px;
 }
+.case .tile p {
+  min-height: 120px;
+}
 .tile ul {
   margin: 0 0 20px;
   padding-left: 20px;

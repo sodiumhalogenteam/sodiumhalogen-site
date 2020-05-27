@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { rhythm, scale } from '../utils/typography'
+import { rhythm } from '../utils/typography'
 
 const BlogContainer = styled.div`
   /* margin: 0 15%; */
