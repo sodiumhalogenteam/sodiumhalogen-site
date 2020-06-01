@@ -41,11 +41,11 @@ class IndexPage extends React.Component {
     observer.observe()
 
     ///Scrolling
-    Events.scrollEvent.register('begin', function() {
+    Events.scrollEvent.register('begin', function () {
       console.log('begin', arguments)
     })
 
-    Events.scrollEvent.register('end', function() {
+    Events.scrollEvent.register('end', function () {
       console.log('end', arguments)
     })
   }
@@ -262,19 +262,32 @@ class IndexPage extends React.Component {
               <div className="row header-content-inner">
                 <div className="col-md-12 text-center">
                   <h1>
-                    We believe creating great digital products starts with{' '}
-                    <em>your</em> customer. This leads to more profitable
-                    applications because they actually solve human problems.
+                    Hey there. We create great digital products, strategy, and
+                    branding.
                   </h1>
-
                   <Link
                     className="btn btn-primary button-link btn-xl sr-button"
                     to="method"
                     smooth
                     duration={500}
                   >
-                    How do we apply what we believe?
+                    Learn More
                   </Link>
+
+                  {/* <h1>
+                    We believe creating great digital products starts with{' '}
+                    <em>your</em> customer. This leads to more profitable
+                    applications because they actually solve human problems.
+                  </h1> */}
+
+                  {/* <Link
+                    className="btn btn-primary button-link btn-xl sr-button"
+                    to="method"
+                    smooth
+                    duration={500}
+                  >
+                    How do we apply what we believe?
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -286,9 +299,15 @@ class IndexPage extends React.Component {
                 <div className="col-lg-10 offset-lg-1 drop-in text-center">
                   <Fade>
                     <h2 id="method" className="designtific-section">
+                      The Designtific Method is a user-focused, collaborative
+                      process that helps us strategize and build the right thing
+                      at the right time for you. The Strategy Workshop is where
+                      the journey begins.
+                    </h2>
+                    {/* <h2 id="method" className="designtific-section">
                       Our Designtific Method focuses on solving your customers’
                       problems while accomplishing your business goals.
-                    </h2>
+                    </h2> */}
                   </Fade>
                 </div>
                 <div className="col-lg-10 offset-lg-1 drop-in-wait">
