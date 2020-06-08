@@ -3609,6 +3609,12 @@ figcaption {
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
+.pb-50 {
+  padding-bottom: 50px;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
 .mt-20 {
   margin-top: 20px;
 }
