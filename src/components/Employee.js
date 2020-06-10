@@ -16,7 +16,7 @@ import Img from 'gatsby-image'
 // `
 
 const Wrapper = Styled.div`
-  width: 20%;
+  /* width: 20%; */
   padding: 0 1% 20px;
   figure {
     width: 100%;
@@ -64,7 +64,7 @@ const Wrapper = Styled.div`
 const Employee = ({ img, firstName, lastName, title, email, gif }) => {
   console.log({ gif })
   return (
-    <Wrapper className="employees__employee">
+    <Wrapper className="employees__employee col-6 col-md-4 col-lg-2">
       <figure className="employees__headshot">
         <Img className="headshot" fluid={img} />
         {gif ? (

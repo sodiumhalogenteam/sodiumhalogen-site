@@ -121,54 +121,54 @@ const WebflowComponentTestPage = () => {
             <img src="" alt="" />
             <img src="" alt="" />
           </ImgGrid> */}
-          <section className="card-section"></section>           
-          <div class="card-section bg-grey">
-            <div class="container ptb-100">
-              <h2>Testimonials</h2>
-              <video controls class="video-wrapper">
-                <source
-                  src="../../static/workshop/assets/costarters-rebekah-sw-testimonial.mp4"
-                  type="video/mp4"
-                />
-                Sorry, your browser doesn't support embedded videos.
-              </video>
-              <Quote  
-                author="Rebekah Marr"
-                position="Director of Operations &amp; Programs"
-                company="CO.STARTERS"
-              >
-                <p>
-                  &ldquo;We had Sodium Halogen come in to do a Strategy Workshop with
-                  us to help figure out a really complicated and complex project that
-                  we've been struggling to work through for many, many months.
-                </p>
-                <p>
-                  The exercises and activities they did allowed our team to get in
-                  alignment much quicker than we had been able to do on our own. It
-                  surfaced all the really important issues that we needed to resolve –
-                  fairly quickly and succinctly.
-                </p>
-                <p>It was an awesome experience for us!&rdquo;</p>
-              </Quote>
-            </div>
+        <section className="card-section"></section>
+        <div class="card-section bg-grey">
+          <div class="container ptb-100">
+            <h2>Testimonials</h2>
+            <video controls class="video-wrapper">
+              <source
+                src="../../static/workshop/assets/costarters-rebekah-sw-testimonial.mp4"
+                type="video/mp4"
+              />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+            <Quote
+              author="Rebekah Marr"
+              position="Director of Operations &amp; Programs"
+              company="CO.STARTERS"
+            >
+              <p>
+                &ldquo;We had Sodium Halogen come in to do a Strategy Workshop
+                with us to help figure out a really complicated and complex
+                project that we've been struggling to work through for many,
+                many months.
+              </p>
+              <p>
+                The exercises and activities they did allowed our team to get in
+                alignment much quicker than we had been able to do on our own.
+                It surfaced all the really important issues that we needed to
+                resolve – fairly quickly and succinctly.
+              </p>
+              <p>It was an awesome experience for us!&rdquo;</p>
+            </Quote>
           </div>
-          <div class="card-section">
-            <Author  
-              title="Your Facilitator"
-              img={authorImg} 
-              name="William Donnell"
-              description=" is the founder of Sodium Halogen. He
+        </div>
+        <div class="card-section">
+          <Author
+            title="Your Facilitator"
+            img={authorImg}
+            name="William Donnell"
+            description=" is the founder of Sodium Halogen. He
               has led over 50+ workshops, created several of the exercises you'll be
               led through, and even helped facilitate a workshop at the White House."
-              />
-          </div>
-          <section className="card-section"></section>
-        </Layout>
-        <NotificationBox />
-      </div>
+          />
+        </div>
+        <section className="card-section"></section>
+      </Layout>
+      <NotificationBox />
+    </div>
   )
 }
-
 
 export default WebflowComponentTestPage
 

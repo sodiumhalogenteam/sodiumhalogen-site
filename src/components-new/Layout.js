@@ -5,7 +5,7 @@ import { slide as Menu } from 'react-burger-menu'
 import burger from '../images/burger.svg'
 
 import Styles from '../components/Styles'
-import './webflow-styles.css'
+import './webflow-styles.scss'
 
 const Layout = ({ children, location }) => (
   <StaticQuery
@@ -19,7 +19,7 @@ const Layout = ({ children, location }) => (
       }
     `}
     render={(data) => (
-      <>
+      <div className="webflow">
         <Styles>
           <Menu customBurgerIcon={<img src={burger} alt="burger icon" />} right>
             <Link
@@ -133,7 +133,10 @@ const Layout = ({ children, location }) => (
         <div className="footer">
           <div className="container">
             <div className="footer-wrap">
-              <a className="logo-link w-nav-brand" href="https://SodiumHalogen.com">
+              <a
+                className="logo-link w-nav-brand"
+                href="https://SodiumHalogen.com"
+              >
                 <img
                   alt=""
                   className="image"
@@ -175,7 +178,7 @@ const Layout = ({ children, location }) => (
             </div>
           </div>
         </div>
-      </>
+      </div>
     )}
   />
 )
