@@ -5,7 +5,7 @@ import { slide as Menu } from 'react-burger-menu'
 import burger from '../images/burger.svg'
 
 import Styles from '../components/Styles'
-import './webflow-styles.css'
+import './webflow-styles.scss'
 
 const Layout = ({ children, location }) => (
   <StaticQuery
@@ -19,7 +19,7 @@ const Layout = ({ children, location }) => (
       }
     `}
     render={(data) => (
-      <>
+      <div className="webflow">
         <Styles>
           <Menu customBurgerIcon={<img src={burger} alt="burger icon" />} right>
             <Link
@@ -51,25 +51,25 @@ const Layout = ({ children, location }) => (
             </Link>
           </Menu>
         </Styles>
-        <div class="hero">
-          <div class="intro-header">
+        <div className="hero">
+          <div className="intro-header">
             <div
-              class="navigation navbar navbar-2 navbar-3 w-nav"
+              className="navigation navbar navbar-2 navbar-3 w-nav"
               data-animation="default"
               data-collapse="medium"
               data-duration="400"
             >
-              <div class="navigation-wrap">
+              <div className="navigation-wrap">
                 <a
-                  class="logo-link w-nav-brand"
+                  className="logo-link w-nav-brand"
                   href="https://SodiumHalogen.com"
                 >
                   <img
                     alt=""
-                    class="logo-image"
+                    className="logo-image"
                     sizes="(max-width: 479px) 83vw, 276px"
                     src="https://uploads-ssl.webflow.com/5e6a51d4adf84bf874e2d8ed/5e6a5332a5ebb57c5e441737_white-logo.png"
-                    srcset="
+                    srcSet="
                   https://uploads-ssl.webflow.com/5e6a51d4adf84bf874e2d8ed/5e6a5332a5ebb57c5e441737_white-logo-p-500.png   500w,
                   https://uploads-ssl.webflow.com/5e6a51d4adf84bf874e2d8ed/5e6a5332a5ebb57c5e441737_white-logo-p-800.png   800w,
                   https://uploads-ssl.webflow.com/5e6a51d4adf84bf874e2d8ed/5e6a5332a5ebb57c5e441737_white-logo-p-1080.png 1080w,
@@ -79,29 +79,29 @@ const Layout = ({ children, location }) => (
                     width="276"
                   />
                 </a>
-                <div class="menu">
-                  <div class="menu-button w-nav-button">
+                <div className="menu">
+                  <div className="menu-button w-nav-button">
                     <img
                       alt=""
-                      class="menu-icon"
+                      className="menu-icon"
                       src="https://uploads-ssl.webflow.com/5e6a51d4adf84bf874e2d8ed/5e6a51d4b13e2248f623a43f_menu-icon.png"
                       width="22"
                     />
                   </div>
                 </div>
                 <a
-                  class="button cc-contact-us w-inline-block"
+                  className="button cc-contact-us w-inline-block"
                   href="https://sodiumhalogen.typeform.com/to/iKe3eC"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div class="button-text">Contact Us</div>
+                  <div className="button-text">Contact Us</div>
                 </a>
               </div>
-              <div class="w-nav-overlay" data-wf-ignore=""></div>
+              <div className="w-nav-overlay" data-wf-ignore=""></div>
             </div>
-            <div class="intro-content cc-homepage">
-              <div class="intro-text">
+            <div className="intro-content cc-homepage">
+              <div className="intro-text">
                 <h1>Strategy Workshop</h1>
               </div>
             </div>
@@ -109,37 +109,40 @@ const Layout = ({ children, location }) => (
         </div>
         <div>{children}</div>
 
-        <div class="cta">
-          <div class="container">
+        <div className="cta">
+          <div className="container">
             <h2>Need help deciding?</h2>
             <p>
               Can't decide which exercises are right for you? <br />
               You can receive a Strategy Session consultation with just $95.
             </p>
             <a
-              class="button cc-jumbo-button w-inline-block"
+              className="button cc-jumbo-button w-inline-block"
               href="https://sodiumhalogen.com/wm"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div class="text-block mobile">
+              <div className="text-block mobile">
                 Schedule your Strategy Session
               </div>
-              <div class="text-block">Schedule your Strategy Session</div>
+              <div className="text-block">Schedule your Strategy Session</div>
             </a>
           </div>
         </div>
 
-        <div class="footer">
-          <div class="container">
-            <div class="footer-wrap">
-              <a class="logo-link w-nav-brand" href="https://SodiumHalogen.com">
+        <div className="footer">
+          <div className="container">
+            <div className="footer-wrap">
+              <a
+                className="logo-link w-nav-brand"
+                href="https://SodiumHalogen.com"
+              >
                 <img
                   alt=""
-                  class="image"
+                  className="image"
                   sizes="(max-width: 479px) 90vw, 188px"
                   src="https://uploads-ssl.webflow.com/5e6a51d4adf84bf874e2d8ed/5e6a5332a5ebb57c5e441737_white-logo.png"
-                  srcset="
+                  srcSet="
                 https://uploads-ssl.webflow.com/5e6a51d4adf84bf874e2d8ed/5e6a5332a5ebb57c5e441737_white-logo-p-500.png   500w,
                 https://uploads-ssl.webflow.com/5e6a51d4adf84bf874e2d8ed/5e6a5332a5ebb57c5e441737_white-logo-p-800.png   800w,
                 https://uploads-ssl.webflow.com/5e6a51d4adf84bf874e2d8ed/5e6a5332a5ebb57c5e441737_white-logo-p-1080.png 1080w,
@@ -150,32 +153,32 @@ const Layout = ({ children, location }) => (
                 />
               </a>
 
-              <div class="footer-text">
+              <div className="footer-text">
                 <a href="mailto:info@sodiumhalogen.com">
                   info@sodiumhalogen.com
                 </a>{' '}
                 •<a href="tel:731.506.4535">731.506.4535</a>
               </div>
               <a
-                class="button cc-contact-us w-inline-block"
+                className="button cc-contact-us w-inline-block"
                 href="https://sodiumhalogen.typeform.com/to/iKe3eC"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div class="button-text">Contact US</div>
+                <div className="button-text">Contact US</div>
               </a>
               <a
-                class="button cc-contact-us mobile w-inline-block"
+                className="button cc-contact-us mobile w-inline-block"
                 href="https://sodiumhalogen.typeform.com/to/iKe3eC"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div class="button-text">Contact US</div>
+                <div className="button-text">Contact US</div>
               </a>
             </div>
           </div>
         </div>
-      </>
+      </div>
     )}
   />
 )
