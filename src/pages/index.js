@@ -10,7 +10,7 @@ import Img from 'gatsby-image'
 
 //components
 import Layout from '../components/layout'
-import NotificationBox from '../components/NotificationBox'
+// import NotificationBox from '../components/NotificationBox'
 import SEO from '../components/seo'
 import Staff from '../components/Staff'
 import Styles from '../components/Styles'
@@ -41,11 +41,11 @@ class IndexPage extends React.Component {
     observer.observe()
 
     ///Scrolling
-    Events.scrollEvent.register('begin', function() {
+    Events.scrollEvent.register('begin', function () {
       console.log('begin', arguments)
     })
 
-    Events.scrollEvent.register('end', function() {
+    Events.scrollEvent.register('end', function () {
       console.log('end', arguments)
     })
   }
@@ -546,7 +546,8 @@ class IndexPage extends React.Component {
             </div>
           </section>
         </Layout>
-        <NotificationBox />
+
+        {/* <NotificationBox /> */}
       </Styles>
     )
   }
