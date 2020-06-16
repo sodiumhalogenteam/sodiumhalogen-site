@@ -35,6 +35,7 @@ progress,
 video {
   display: inline-block;
   vertical-align: baseline;
+  width: 100%;
 }
 audio:not([controls]) {
   display: none;
@@ -338,7 +339,20 @@ h6 {
 }
 p {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 1.5rem;
+  padding: 14px 0px 10px;
+  font-family: 'Freight Sans Pro', sans-serif;
+  color: #575756;
+  font-size: 18px;
+  font-weight: 500;
+}
+li {
+  margin: 0.5em;
+  padding: 0;
+  font-family: 'Freight Sans Pro', sans-serif;
+  color: #575756;
+  font-size: 18px;
+  font-weight: 500;
 }
 blockquote {
   margin: 0 0 10px 0;
@@ -346,6 +360,15 @@ blockquote {
   border-left: 5px solid #e2e2e2;
   font-size: 18px;
   line-height: 22px;
+}
+blockquote p {
+  margin: 1rem auto;
+  font-size: 20px;
+  line-height: 1.5rem;
+  font-weight: 300;
+  padding: 0 0 1rem 0;
+  font-family: Jubilat, sans-serif;
+  color: #323e48;
 }
 figure {
   margin: 0;
@@ -1906,18 +1929,21 @@ body {
   font-weight: 400;
 }
 h1 {
-  margin-top: 20px;
-  margin-bottom: 15px;
-  font-size: 44px;
-  line-height: 62px;
-  font-weight: 400;
+  margin-top: 1rem auto;
+  font-family: Jubilat, sans-serif;
+  font-size: 60px;
+  line-height: 1.25rem;
+  font-weight: 900;
 }
 h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 36px;
-  line-height: 50px;
-  font-weight: 400;
+  margin-top: 1rem auto;
+  font-size: 45px;
+  line-height: 3rem;
+  font-weight: 700;
+  padding: 0px;
+  font-family: Jubilat, sans-serif;
+  color: #323e48;
+  text-align: center;
 }
 h3 {
   margin-top: 10px;
@@ -1927,11 +1953,14 @@ h3 {
   font-weight: 400;
 }
 h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 24px;
-  line-height: 38px;
-  font-weight: 400;
+  margin: 1rem auto;
+  font-size: 28px;
+  line-height: 2rem;
+  font-weight: 500;
+  padding-right: 0px;
+  padding-left: 0px;
+  font-family: Jubilat, sans-serif;
+  color: #323e48;
 }
 h5 {
   margin-top: 10px;
@@ -1972,9 +2001,25 @@ ul {
 li {
   margin-bottom: 10px;
 }
+ul.checkmark li {
+  background-image: url('file:///Users/williamdonnell/wip/sodiumhalogen-site/static/assets/icon-check.png')
+    0 0 no-repeat;
+}
 img {
   display: block;
 }
+
+.imgContainer {
+  float: left;
+  width: 33.3333333%;
+}
+.imgContainer img {
+  width: 100%;
+}
+.imgContainer p {
+  text-align: center;
+}
+
 label {
   margin-bottom: 10px;
   font-size: 12px;
@@ -2064,6 +2109,9 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.container ul li {
+  text-align: left;
 }
 .paragraph-tiny {
   font-size: 12px;
@@ -2491,7 +2539,7 @@ figcaption {
   -ms-flex-align: center;
   align-items: center;
   background-color: #f4f4f4;
-  background-image: url('https://uploads-ssl.webflow.com/5e6a51d4adf84bf874e2d8ed/5e72382132a30c527b247ad2_hero.png');
+  background-image: url('../workshop/assets/strategy-workshop-header.jpg');
   background-position: 50% 50%;
   background-size: cover;
   color: #fff;
@@ -3449,6 +3497,7 @@ figcaption {
 }
 .card-section {
   margin-bottom: 140px;
+  padding: 0 20px;
 }
 .short-section {
   margin-bottom: 40px;
@@ -3502,7 +3551,7 @@ figcaption {
   width: auto;
   height: 165px;
   margin-top: 1rem;
-  margin-bottom: 2rem /* 57px; */
+  margin-bottom: 2rem; /* 57px; */
   padding-right: 0px;
   padding-left: 0px;
   text-align: center;
@@ -3554,34 +3603,85 @@ figcaption {
   margin-bottom: 140px;
 }
 .grid-7 {
-  margin-top: 100px;
-  margin-right: -120px;
-  margin-left: -120px;
+  margin: 20px inherit 50px;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
-.brand-case-text {
+.pb-50 {
+  padding-bottom: 50px;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.mb-100 {
+  margin-bottom: 100px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.ptb-100 {
+  padding-top: 100px;
+}
+.bg-grey {
+  background-color: #97969617;
+}
+.brand-case-text,
+.tile-text {
   padding: 34px 33px 30px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #fff;
 }
-.brand-case-study {
+.brand-case-study,
+.tile {
   box-shadow: 4px 4px 16px -6px rgba(0, 0, 0, 0.28);
+  margin-bottom: 1rem;
+}
+.tile p {
+  min-height: 170px;
+}
+.case .tile p {
+  min-height: 120px;
+}
+.tile ul {
+  margin: 0 0 20px;
+  padding-left: 20px;
+}
+.tile ul li {
+  margin: 0;
+}
+.video-wrapper {
+  margin: 1rem;
 }
 .div-block-8 {
   width: auto;
   height: 30px;
 }
-.catagory {
+.category {
   background-color: transparent;
   font-family: 'Freight Sans Pro', sans-serif;
   color: #979696;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+.category .icon-c {
+  height: 26px;
+  display: inline-block;
+  max-width: none;
+  width: 25px;
+}
+.category em {
+  float: right;
+  font-style: normal;
 }
 .text-span {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -3684,8 +3784,20 @@ figcaption {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.intro-sw {
+.w600 {
   margin-bottom: 60px;
+}
+.w600 p,
+.w600 ul,
+p.w600 {
+  max-width: 600px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.w800 {
+  max-width: 800px;
+  margin-bottom: 50px;
 }
 .list-item {
   color: #323e48;
@@ -4835,7 +4947,7 @@ figcaption {
     margin-right: 60px;
     margin-left: 60px;
   }
-  .catagory {
+  .category {
     text-align: left;
   }
   .h1.left {
@@ -5141,7 +5253,7 @@ figcaption {
     margin-right: 0px;
     margin-left: 0px;
   }
-  .catagory {
+  .category {
     font-size: 14px;
   }
   .h1.left {
