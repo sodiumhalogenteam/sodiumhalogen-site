@@ -10,7 +10,7 @@ import Img from 'gatsby-image'
 
 //components
 import Layout from '../components/layout'
-import NotificationBox from '../components/NotificationBox'
+// import NotificationBox from '../components/NotificationBox'
 import SEO from '../components/seo'
 import Staff from '../components/Staff'
 import Styles from '../components/Styles'
@@ -565,7 +565,8 @@ class IndexPage extends React.Component {
             </div>
           </section>
         </Layout>
-        <NotificationBox />
+
+        {/* <NotificationBox /> */}
       </Styles>
     )
   }
