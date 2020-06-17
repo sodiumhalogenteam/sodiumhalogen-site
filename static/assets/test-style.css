@@ -3658,6 +3658,21 @@ figcaption {
 .tile ul li {
   margin: 0;
 }
+.tile.tags ul {
+  margin: 0 0 40px;
+  padding: 0;
+}
+.tile.tags ul li {
+  display: block;
+  background: #c1c6c8;
+  margin: 5px 10px 5px 0;
+  padding: 0px 8px;
+  float: left;
+  font-size: 0.8em;
+}
+.tile.tags b {
+  display: block;
+}
 .video-wrapper {
   margin: 1rem;
 }
