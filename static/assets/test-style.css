@@ -3673,9 +3673,31 @@ figcaption {
 .tile.tags b {
   display: block;
 }
-.case-detail p {
+.case-stats {
+  text-align: center;
+}
+.case-stats em {
+  font-size: 2rem;
+  text-align: center;
+}
+.w600 .case-detail p {
   margin: 1rem 0;
   padding: 0;
+}
+.case-detail h2 {
+  margin-top: 2rem;
+}
+.case-detail video {
+  max-width: 300px;
+}
+.case-detail img {
+  max-width: 300px;
+  margin: auto;
+  border: 1px solid #efefef;
+}
+.image-wrapper {
+  display: block;
+  clear: both;
 }
 .video-wrapper {
   margin: 1rem;
