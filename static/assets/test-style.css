@@ -3673,6 +3673,10 @@ figcaption {
 .tile.tags b {
   display: block;
 }
+.case-detail p {
+  margin: 1rem 0;
+  padding: 0;
+}
 .video-wrapper {
   margin: 1rem;
 }
@@ -4339,7 +4343,7 @@ p.w600 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 90%;
+    width: 99%; /* was 90% */
   }
   .button {
     -webkit-box-pack: center;
