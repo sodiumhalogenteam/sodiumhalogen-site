@@ -3658,6 +3658,47 @@ figcaption {
 .tile ul li {
   margin: 0;
 }
+.tile.tags ul {
+  margin: 0 0 40px;
+  padding: 0;
+}
+.tile.tags ul li {
+  display: block;
+  background: #c1c6c8;
+  margin: 5px 10px 5px 0;
+  padding: 0px 8px;
+  float: left;
+  font-size: 0.8em;
+}
+.tile.tags b {
+  display: block;
+}
+.case-stats {
+  text-align: center;
+}
+.case-stats em {
+  font-size: 2rem;
+  text-align: center;
+}
+.w600 .case-detail p {
+  margin: 1rem 0;
+  padding: 0;
+}
+.case-detail h2 {
+  margin-top: 2rem;
+}
+.case-detail video {
+  max-width: 300px;
+}
+.case-detail img {
+  max-width: 300px;
+  margin: auto;
+  border: 1px solid #efefef;
+}
+.image-wrapper {
+  display: block;
+  clear: both;
+}
 .video-wrapper {
   margin: 1rem;
 }
@@ -4324,7 +4365,7 @@ p.w600 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 90%;
+    width: 99%; /* was 90% */
   }
   .button {
     -webkit-box-pack: center;
