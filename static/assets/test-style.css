@@ -3645,6 +3645,9 @@ figcaption {
   box-shadow: 4px 4px 16px -6px rgba(0, 0, 0, 0.28);
   margin-bottom: 1rem;
 }
+.innovation-videos .tile {
+  min-height: 170px;
+}
 .tile p {
   min-height: 170px;
 }
