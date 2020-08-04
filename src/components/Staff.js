@@ -87,13 +87,7 @@ const Staff = () => {
           }
         }
       }
-      kaitie: file(relativePath: { eq: "head-shots/kaitie.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1920) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
+
       derrick: file(relativePath: { eq: "head-shots/derrick.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1920) {
@@ -123,6 +117,20 @@ const Staff = () => {
         }
       }
       jeremy: file(relativePath: { eq: "head-shots/jeremy.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      alex: file(relativePath: { eq: "head-shots/alex-rumsey.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      spencer: file(relativePath: { eq: "head-shots/spencer-moore.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -192,11 +200,11 @@ const Staff = () => {
         email="zach@sodiumhalogen.com"
       />
       <Employee
-        firstName="Katie"
-        lastName="Cooper"
-        img={headshots.kaitie.childImageSharp.fluid}
-        title="Brand Designtist"
-        email="katie@sodiumhalogen.com"
+        firstName="Alex"
+        lastName="Rumsey"
+        img={headshots.alex.childImageSharp.fluid}
+        title="Dev-ologist "
+        email="alex@sodiumhalogen.com"
       />
       <Employee
         firstName="Derrick"
@@ -236,6 +244,14 @@ const Staff = () => {
         gif={jeremyGif}
         title="Byte Biologist"
         email="jeremy@sodiumhalogen.com"
+      />
+      <Employee
+        firstName="Spencer"
+        lastName="Moore"
+        img={headshots.spencer.childImageSharp.fluid}
+        gif={jeremyGif}
+        title="Devologist"
+        email="spencer@sodiumhalogen.com"
       />
     </Styles>
   )

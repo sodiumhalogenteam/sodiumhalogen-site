@@ -322,7 +322,7 @@ class IndexPage extends React.Component {
                 <div className="col-lg-10 offset-lg-1 drop-in">
                   <Fade>
                     <p>
-                      Our small, multi-disciplinary team has spent the last 18
+                      Our small, multi-disciplinary team has spent the last 19
                       years experimenting and refining our process for turning
                       great ideas into solid strategy and great digital products
                       and experiences.
@@ -487,10 +487,9 @@ class IndexPage extends React.Component {
                   <div className="col-sm-5 col-xs-8 pt-40">
                     <cite>
                       Janice Fraser –
-                      <a href="http://bionicsolution.com/">
-                        Chief Product Officer at Bionic Solution and founding
-                        CEO of Adaptive Path, the world’s first User Experience
-                        firm
+                      <a href="http://janicefraser.com/">
+                        Founding partner of Seneca VC and founding CEO of
+                        Adaptive Path, the world’s first User Experience firm
                       </a>
                     </cite>
                   </div>
