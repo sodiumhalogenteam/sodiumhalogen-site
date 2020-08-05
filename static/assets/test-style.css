@@ -3645,11 +3645,14 @@ figcaption {
   box-shadow: 4px 4px 16px -6px rgba(0, 0, 0, 0.28);
   margin-bottom: 1rem;
 }
-.innovation-videos .tile p {
-  min-height: none;
-}
 .tile p {
   min-height: 170px;
+}
+.innovation-videos .tile p {
+  min-height: 75px;
+}
+.innovation-videos a {
+  text-decoration: none;
 }
 .case .tile p {
   min-height: 120px;
