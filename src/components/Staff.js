@@ -203,7 +203,7 @@ const Staff = () => {
         firstName="Alex"
         lastName="Rumsey"
         img={headshots.alex.childImageSharp.fluid}
-        title="Dev-ologist "
+        title="Dev-ologist"
         email="alex@sodiumhalogen.com"
       />
       <Employee
@@ -249,7 +249,6 @@ const Staff = () => {
         firstName="Spencer"
         lastName="Moore"
         img={headshots.spencer.childImageSharp.fluid}
-        gif={jeremyGif}
         title="Devologist"
         email="spencer@sodiumhalogen.com"
       />
