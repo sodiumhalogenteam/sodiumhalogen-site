@@ -635,6 +635,7 @@ textarea.w-select {
 }
 .w-container.medium {
   max-width: 560px;
+  padding: 0 1rem;
 }
 .w-container:before,
 .w-container:after {
@@ -4979,7 +4980,7 @@ p.w600 {
     padding-bottom: 0px;
   }
   .card-section {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   .div-centered {
     margin-right: 44px;
@@ -5035,7 +5036,7 @@ p.w600 {
     align-items: center;
   }
   .div-block-16 {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
   .grid-9 {
     -ms-grid-columns: 1fr;
@@ -5089,7 +5090,7 @@ p.w600 {
     line-height: 48px;
   }
   .heading-jumbo.alt {
-    margin-bottom: 11px;
+    margin: 50px 0 11px;
     padding-right: 2px;
     padding-left: 2px;
     font-size: 35px;
