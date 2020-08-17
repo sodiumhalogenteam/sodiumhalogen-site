@@ -34,7 +34,9 @@
 /mtwchance      https://meet.google.com/oeq-rewx-rgm?authuser=1
 /chat           https://plus.google.com/hangouts/_/event/cpgo2l8dk8jqnkpdkc6ddkbr85s
 /derrick        https://calendly.com/derricksmithco/meet
-/jeremy        https://calendly.com/shjeremy/30min
+/jeremy         https://calendly.com/shjeremy/30min
+/jeremychat     https://meet.google.com/vob-atwh-xyc
+/jeremy-chat    https://meet.google.com/vob-atwh-xyc
 
 # Redirect default Netlify subdomain to primary domain
 https://inspiring-knuth-f6a767.netlify.com/* https://sodiumhalogen.com/:splat 301!   
