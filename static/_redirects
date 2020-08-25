@@ -37,6 +37,7 @@
 /jeremy         https://calendly.com/shjeremy/30min
 /jeremychat     https://meet.google.com/vob-atwh-xyc
 /jeremy-chat    https://meet.google.com/vob-atwh-xyc
+/rayyan         https://calendly.com/rayyan-1
 
 # Redirect default Netlify subdomain to primary domain
 https://inspiring-knuth-f6a767.netlify.com/* https://sodiumhalogen.com/:splat 301!   
