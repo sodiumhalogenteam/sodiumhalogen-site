@@ -23,9 +23,10 @@
 /wm             https://calendly.com/wm/30min/
 /Wm             https://calendly.com/wm/30min/
 /adam           https://calendly.com/adamcurl/30min/
+/adam-chat      https://meet.google.com/iew-mvcn-maz
 /brantley       https://calendly.com/brantleyenglish/meet/
 /brantley-chat  https://meet.google.com/fgd-rxdr-vka?authuser=0
-/brantleychat  https://meet.google.com/fgd-rxdr-vka?authuser=0
+/brantleychat   https://meet.google.com/fgd-rxdr-vka?authuser=0
 /zach           https://calendly.com/zachboatwright/30min
 /zachchat       https://appear.in/zachboatwrightchat
 /chance         https://calendly.com/chance/30min/
@@ -38,6 +39,7 @@
 /jeremychat     https://meet.google.com/vob-atwh-xyc
 /jeremy-chat    https://meet.google.com/vob-atwh-xyc
 /rayyan         https://calendly.com/rayyan-1
+/rayyan-chat    https://meet.google.com/hxw-eiko-whk
 
 # Redirect default Netlify subdomain to primary domain
 https://inspiring-knuth-f6a767.netlify.com/* https://sodiumhalogen.com/:splat 301!   
