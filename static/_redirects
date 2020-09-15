@@ -23,21 +23,31 @@
 /wm             https://calendly.com/wm/30min/
 /Wm             https://calendly.com/wm/30min/
 /adam           https://calendly.com/adamcurl/30min/
+/adam-chat      https://meet.google.com/iew-mvcn-maz
+/adamchat       https://meet.google.com/iew-mvcn-maz
 /brantley       https://calendly.com/brantleyenglish/meet/
 /brantley-chat  https://meet.google.com/fgd-rxdr-vka?authuser=0
-/brantleychat  https://meet.google.com/fgd-rxdr-vka?authuser=0
+/brantleychat   https://meet.google.com/fgd-rxdr-vka?authuser=0
+/braden-chat    https://meet.google.com/rsw-jydv-jaz
+/bradenchat     https://meet.google.com/rsw-jydv-jaz
 /zach           https://calendly.com/zachboatwright/30min
 /zachchat       https://appear.in/zachboatwrightchat
+/zach-chat      https://meet.google.com/fbw-xpmv-pft
 /chance         https://calendly.com/chance/30min/
 /chance-chat    https://meet.google.com/oeq-rewx-rgm?authuser=1
 /chancechat     https://meet.google.com/oeq-rewx-rgm?authuser=1
 /mtwchance      https://meet.google.com/oeq-rewx-rgm?authuser=1
 /chat           https://plus.google.com/hangouts/_/event/cpgo2l8dk8jqnkpdkc6ddkbr85s
 /derrick        https://calendly.com/derricksmithco/meet
+/derrick-chat   https://meet.google.com/rmu-eczn-cie
+/derrickchat    https://meet.google.com/rmu-eczn-cie
 /jeremy         https://calendly.com/shjeremy/30min
 /jeremychat     https://meet.google.com/vob-atwh-xyc
 /jeremy-chat    https://meet.google.com/vob-atwh-xyc
 /rayyan         https://calendly.com/rayyan-1
+/rayyan-chat    https://meet.google.com/hxw-eiko-whk
+/rayyanchat     https://meet.google.com/hxw-eiko-whk
+
 
 # Redirect default Netlify subdomain to primary domain
 https://inspiring-knuth-f6a767.netlify.com/* https://sodiumhalogen.com/:splat 301!   
